@@ -13,8 +13,6 @@ busuanzi: true ## If you want to use Busuanzi page views please set the value to
 wordcount: true ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
 
-dark: true ## If you want to toggle between light/dark themes, set the value to true.
-
 menu:
   - page: home
     directory: .
