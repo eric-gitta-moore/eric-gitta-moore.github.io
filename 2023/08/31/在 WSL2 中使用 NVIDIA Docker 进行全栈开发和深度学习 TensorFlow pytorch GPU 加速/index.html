@@ -81,7 +81,7 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/docker/daemon.json</span><br></pre></td></tr></table></figure>
 
 <p>正常走到这一步应该是这样的</p>
-<p><img src="https://img.tianhaoltd.top/img/16934842593104adf16cae3f4c17cb676b650e7ab189a.png" alt="16934842593104adf16cae3f4c17cb676b650e7ab189a.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934842593104adf16cae3f4c17cb676b650e7ab189a.png" alt="16934842593104adf16cae3f4c17cb676b650e7ab189a.png"></p>
 <br/>
 
 <p>添加一行</p>
@@ -89,7 +89,7 @@
 
 <br/>
 
-<p><img src="https://img.tianhaoltd.top/img/169348443613133713cbe8c88e63ec50c28abeb2a443e.png" alt="169348443613133713cbe8c88e63ec50c28abeb2a443e.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348443613133713cbe8c88e63ec50c28abeb2a443e.png" alt="169348443613133713cbe8c88e63ec50c28abeb2a443e.png"></p>
 <br/>
 
 <p>按下 <code>ctrl+o</code> 再按下 <code>回车</code> 保存文件</p>
@@ -97,7 +97,7 @@
 <p>检查一下结果，<code>cat /etc/docker/daemon.json</code></p>
 <br/>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484492129119f80574646149e30461fa3f60246fc.png" alt="1693484492129119f80574646149e30461fa3f60246fc.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484492129119f80574646149e30461fa3f60246fc.png" alt="1693484492129119f80574646149e30461fa3f60246fc.png"></p>
 <br/>
 
 <p>重启 Docker</p>
@@ -131,31 +131,31 @@
 <h3 id="4-3-启动-Docker-compose"><a href="#4-3-启动-Docker-compose" class="headerlink" title="4.3. 启动 Docker compose"></a>4.3. 启动 Docker compose</h3><p>启动 docker compose</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> code-os-debian/docker/wsl/</span><br><span class="line">bash run-gpu.sh</span><br></pre></td></tr></table></figure>
 
-<p>可以看到已经启动成功了<br><img src="https://img.tianhaoltd.top/img/1693484526128a07ecfed1340e7d02b919f23da9378c3.png" alt="1693484526128a07ecfed1340e7d02b919f23da9378c3.png"></p>
+<p>可以看到已经启动成功了<br><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484526128a07ecfed1340e7d02b919f23da9378c3.png" alt="1693484526128a07ecfed1340e7d02b919f23da9378c3.png"></p>
 <h2 id="5-检验成果"><a href="#5-检验成果" class="headerlink" title="5. 检验成果"></a>5. 检验成果</h2><p>先进入 Docker 容器</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> .gpu-envrc</span><br><span class="line">docker compose <span class="built_in">exec</span> os zsh</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484539128fb39edd4cc37214c59b3cfd33a419119.png" alt="1693484539128fb39edd4cc37214c59b3cfd33a419119.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484539128fb39edd4cc37214c59b3cfd33a419119.png" alt="1693484539128fb39edd4cc37214c59b3cfd33a419119.png"></p>
 <blockquote>
 <p>如果字体乱码，应该是没有配置 powerlevel10k 的 <code>MesloLGS NF</code> 字体支持。</p>
 <p>我使用的终端是 <code>tabby</code> 全平台支持    </p>
-<p> <img src="https://img.tianhaoltd.top/img/169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png" alt="169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png"><br> 在项目中有这几个字体，复制到 <code>c:\windows\fonts</code> 中即可<br> <img src="https://img.tianhaoltd.top/img/1693484558129f5fa68a6adf756a7251eddb9cf098e08.png" alt="1693484558129f5fa68a6adf756a7251eddb9cf098e08.png"></p>
+<p> <img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png" alt="169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png"><br> 在项目中有这几个字体，复制到 <code>c:\windows\fonts</code> 中即可<br> <img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484558129f5fa68a6adf756a7251eddb9cf098e08.png" alt="1693484558129f5fa68a6adf756a7251eddb9cf098e08.png"></p>
 </blockquote>
 <h3 id="5-1-检测-wslg-支持"><a href="#5-1-检测-wslg-支持" class="headerlink" title="5.1. 检测 wslg 支持"></a>5.1. 检测 wslg 支持</h3><p><code>xeyes</code> 会显示一个跟随鼠标的小眼睛</p>
 <p><code>xclock</code> 是显示一个时钟</p>
 <br/>
 
-<p><img src="https://img.tianhaoltd.top/img/16934845681289dc2fb94f291f99e9c92fb8286d1299e.png" alt="16934845681289dc2fb94f291f99e9c92fb8286d1299e.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934845681289dc2fb94f291f99e9c92fb8286d1299e.png" alt="16934845681289dc2fb94f291f99e9c92fb8286d1299e.png"></p>
 <h3 id="5-2-检测-NVIDIA-支持"><a href="#5-2-检测-NVIDIA-支持" class="headerlink" title="5.2. 检测 NVIDIA 支持"></a>5.2. 检测 NVIDIA 支持</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/16934845861283b76e4afea48293b2be2659a6259389e.png" alt="16934845861283b76e4afea48293b2be2659a6259389e.png"><br>我这里显示出了母机的 3060，说明 Docker 已经检测到这张显卡</p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934845861283b76e4afea48293b2be2659a6259389e.png" alt="16934845861283b76e4afea48293b2be2659a6259389e.png"><br>我这里显示出了母机的 3060，说明 Docker 已经检测到这张显卡</p>
 <h3 id="5-3-检测-TensorFlow支持"><a href="#5-3-检测-TensorFlow支持" class="headerlink" title="5.3. 检测 TensorFlow支持"></a>5.3. 检测 TensorFlow支持</h3><h4 id="5-3-1-TensorFlow-CPU"><a href="#5-3-1-TensorFlow-CPU" class="headerlink" title="5.3.1 TensorFlow CPU"></a>5.3.1 TensorFlow CPU</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -c <span class="string">&quot;import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png" alt="1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png" alt="1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png"></p>
 <p>打印出了张量</p>
 <h4 id="5-3-2-TensorFlow-GPU"><a href="#5-3-2-TensorFlow-GPU" class="headerlink" title="5.3.2 TensorFlow GPU"></a>5.3.2 TensorFlow GPU</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -c <span class="string">&quot;import tensorflow as tf; print(tf.config.list_physical_devices(&#x27;GPU&#x27;))&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484602126dce0e8a22b6a116b0332392835e9010e.png" alt="1693484602126dce0e8a22b6a116b0332392835e9010e.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484602126dce0e8a22b6a116b0332392835e9010e.png" alt="1693484602126dce0e8a22b6a116b0332392835e9010e.png"></p>
 <p>可以看到 TensorFlow 也检测到了显卡</p>
 <h4 id="5-3-3-安装-kaggle-cli"><a href="#5-3-3-安装-kaggle-cli" class="headerlink" title="5.3.3 安装 kaggle cli"></a>5.3.3 安装 kaggle cli</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install kaggle</span><br></pre></td></tr></table></figure>
 
@@ -166,10 +166,10 @@
 <p>设置权限</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> 600 ~/.kaggle/kaggle.json</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484611126002ed3169310ad3a2442ea36491ac828.png" alt="1693484611126002ed3169310ad3a2442ea36491ac828.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484611126002ed3169310ad3a2442ea36491ac828.png" alt="1693484611126002ed3169310ad3a2442ea36491ac828.png"></p>
 <h4 id="5-3-4-检测-TensorFlow-GPU-负载支持"><a href="#5-3-4-检测-TensorFlow-GPU-负载支持" class="headerlink" title="5.3.4 检测 TensorFlow GPU 负载支持"></a>5.3.4 检测 TensorFlow GPU 负载支持</h4><p>这里我们使用 kaggle cli 下载比赛中别人提交的代码进行测试，<a target="_blank" rel="noopener" href="https://www.kaggle.com/code/hassanamin/tensorflow-mnist-gpu-tutorial">https://www.kaggle.com/code/hassanamin/tensorflow-mnist-gpu-tutorial</a></p>
-<p><img src="https://img.tianhaoltd.top/img/16934846191270cd4adf205ebd8790e2b4bde76166a2b.png" alt="16934846191270cd4adf205ebd8790e2b4bde76166a2b.png"><br>复制下载命令</p>
-<p><img src="https://img.tianhaoltd.top/img/1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png" alt="1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934846191270cd4adf205ebd8790e2b4bde76166a2b.png" alt="16934846191270cd4adf205ebd8790e2b4bde76166a2b.png"><br>复制下载命令</p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png" alt="1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png"></p>
 <p><strong>启动 openssh-server</strong></p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo service ssh start</span><br></pre></td></tr></table></figure>
 
@@ -178,13 +178,13 @@
 <p>默认用户和密码都是 <code>linux</code></p>
 <p><code>root</code> 用户名也是 <code>linux</code></p>
 </blockquote>
-<p><img src="https://img.tianhaoltd.top/img/16934846331264737dece647d08f3fd827674cb12bd7b.png" alt="16934846331264737dece647d08f3fd827674cb12bd7b.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934846331264737dece647d08f3fd827674cb12bd7b.png" alt="16934846331264737dece647d08f3fd827674cb12bd7b.png"></p>
 <p><strong>打开 vscode 进行远程连接</strong><br>需要先下载远程开发插件 <code>ms-vscode-remote.vscode-remote-extensionpack</code></p>
-<p><img src="https://img.tianhaoltd.top/img/16934846411276154d21eb0a904f597d3fcb891ce5345.png" alt="16934846411276154d21eb0a904f597d3fcb891ce5345.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934846411276154d21eb0a904f597d3fcb891ce5345.png" alt="16934846411276154d21eb0a904f597d3fcb891ce5345.png"></p>
 <p>点击左下角的蓝标，会弹出命令列表，选择 <code>Connect to host</code></p>
 <br/>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484662126f34f5829cb9c8ae47ed3eba65b933212.png" alt="1693484662126f34f5829cb9c8ae47ed3eba65b933212.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484662126f34f5829cb9c8ae47ed3eba65b933212.png" alt="1693484662126f34f5829cb9c8ae47ed3eba65b933212.png"></p>
 <br/>
 
 <p>直接连接 <code>localhost</code> 即可</p>
@@ -197,41 +197,41 @@
 <li>docker compose 中设置的 <code>network</code> 类型是 <code>host</code>，也就是和 WSL 公用一个网络</li>
 </ol>
 </blockquote>
-<p><img src="https://img.tianhaoltd.top/img/1693484685126844afa00df2604630c9f9dc7df47533a.png" alt="1693484685126844afa00df2604630c9f9dc7df47533a.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484685126844afa00df2604630c9f9dc7df47533a.png" alt="1693484685126844afa00df2604630c9f9dc7df47533a.png"></p>
 <p>点击右侧的 <code>Connect</code> </p>
-<p><img src="https://img.tianhaoltd.top/img/16934846901241578876302c28e81b0e1922330432b6f.png" alt="16934846901241578876302c28e81b0e1922330432b6f.png"><br>会提示选择平台和输入密码</p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934846901241578876302c28e81b0e1922330432b6f.png" alt="16934846901241578876302c28e81b0e1922330432b6f.png"><br>会提示选择平台和输入密码</p>
 <p>完成之后即可进行远程开发</p>
 <p><strong>进入刚刚 kaggle 的项目</strong></p>
 <p>这里由于的刚刚我下载的目录是 <code>/tmp/kaggle/tf</code> 所以这里我需要打开这个目录</p>
-<p><img src="https://img.tianhaoltd.top/img/1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png" alt="1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png"><br><strong>安装插件</strong><br>需要安装的插件有</p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png" alt="1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png"><br><strong>安装插件</strong><br>需要安装的插件有</p>
 <ul>
 <li>donjayamanne.python-extension-pack</li>
 <li>donjayamanne.python-extension-pack</li>
 </ul>
 <p>安装完成之后需要加载窗口</p>
-<p><strong>选择运行环境</strong><br>选择 conda Python3.9 作为运行环境<br><img src="https://img.tianhaoltd.top/img/16934847051258ce5bc169a1945be5f4a05805a73f026.png" alt="16934847051258ce5bc169a1945be5f4a05805a73f026.png"><br>逐个单元格运行试试效果</p>
-<p>可以看到检测到 GPU 了<br><img src="https://img.tianhaoltd.top/img/1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png" alt="1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png"><br>可以看到成功调用宿主机显卡<br><img src="https://img.tianhaoltd.top/img/16934847201250b779cecd0e73850fd2689ddf9d169cc.png" alt="16934847201250b779cecd0e73850fd2689ddf9d169cc.png"><br>不过似乎没有使得显卡满载</p>
+<p><strong>选择运行环境</strong><br>选择 conda Python3.9 作为运行环境<br><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934847051258ce5bc169a1945be5f4a05805a73f026.png" alt="16934847051258ce5bc169a1945be5f4a05805a73f026.png"><br>逐个单元格运行试试效果</p>
+<p>可以看到检测到 GPU 了<br><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png" alt="1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png"><br>可以看到成功调用宿主机显卡<br><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934847201250b779cecd0e73850fd2689ddf9d169cc.png" alt="16934847201250b779cecd0e73850fd2689ddf9d169cc.png"><br>不过似乎没有使得显卡满载</p>
 <h3 id="5-4-检测-pytorch-cuda-支持"><a href="#5-4-检测-pytorch-cuda-支持" class="headerlink" title="5.4. 检测 pytorch cuda 支持"></a>5.4. 检测 pytorch cuda 支持</h3><p>在 WSL 中执行</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 -c <span class="string">&quot;import torch;print(torch.cuda.is_available());&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/169348472712535ea23e934d88048e2c6c8dab35c3aea.png" alt="169348472712535ea23e934d88048e2c6c8dab35c3aea.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348472712535ea23e934d88048e2c6c8dab35c3aea.png" alt="169348472712535ea23e934d88048e2c6c8dab35c3aea.png"></p>
 <blockquote>
 <p>这里我还没有换 vscode 的终端字体，所以乱码了，忽略即可</p>
 </blockquote>
 <h4 id="5-4-1-检测-pytorch-GPU-负载支持"><a href="#5-4-1-检测-pytorch-GPU-负载支持" class="headerlink" title="5.4.1 检测 pytorch GPU 负载支持"></a>5.4.1 检测 pytorch GPU 负载支持</h4><p>对于 pytorch，这里使用 <a target="_blank" rel="noopener" href="https://www.kaggle.com/code/lyhue1991/pytorch-gpu-examples%EF%BC%8C%E4%BD%9C%E4%B8%BA%E6%B5%8B%E8%AF%95">https://www.kaggle.com/code/lyhue1991/pytorch-gpu-examples，作为测试</a> demo</p>
-<p><img src="https://img.tianhaoltd.top/img/1693484734124b153e92b893a5c208c7eb054b3154899.png" alt="1693484734124b153e92b893a5c208c7eb054b3154899.png"></p>
-<p><img src="https://img.tianhaoltd.top/img/1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png" alt="1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png"></p>
-<p><img src="https://img.tianhaoltd.top/img/169348475112489327abd58292ac9fc75036ecd4b132e.png" alt="169348475112489327abd58292ac9fc75036ecd4b132e.png"></p>
-<p><img src="https://img.tianhaoltd.top/img/169348476212373dcb403f84c118c1e16e48e6bf352ad.png" alt="169348476212373dcb403f84c118c1e16e48e6bf352ad.png"><br>可以看到成功调度 GPU</p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484734124b153e92b893a5c208c7eb054b3154899.png" alt="1693484734124b153e92b893a5c208c7eb054b3154899.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png" alt="1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348475112489327abd58292ac9fc75036ecd4b132e.png" alt="169348475112489327abd58292ac9fc75036ecd4b132e.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348476212373dcb403f84c118c1e16e48e6bf352ad.png" alt="169348476212373dcb403f84c118c1e16e48e6bf352ad.png"><br>可以看到成功调度 GPU</p>
 <h3 id="6-检查-nodejs"><a href="#6-检查-nodejs" class="headerlink" title="6. 检查 nodejs"></a>6. 检查 nodejs</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">nvm list</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png" alt="16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png" alt="16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png"></p>
 <h3 id="7-检查-java"><a href="#7-检查-java" class="headerlink" title="7. 检查 java"></a>7. 检查 java</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br><span class="line">javac -version</span><br><span class="line">jenv versions</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/1693484779123aaba208a8173522f6b82e93ac2a64cb9.png" alt="1693484779123aaba208a8173522f6b82e93ac2a64cb9.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/1693484779123aaba208a8173522f6b82e93ac2a64cb9.png" alt="1693484779123aaba208a8173522f6b82e93ac2a64cb9.png"></p>
 <h3 id="8-检查-c"><a href="#8-检查-c" class="headerlink" title="8. 检查 c++"></a>8. 检查 c++</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">g++ -v</span><br><span class="line">gcc -v</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://img.tianhaoltd.top/img/169348478612341eb734dbd75537dc43fba98abb4c225.png" alt="169348478612341eb734dbd75537dc43fba98abb4c225.png"></p>
+<p><img src="https://fastly.jsdelivr.net/gh/james-curtis/blog-img@img/img/169348478612341eb734dbd75537dc43fba98abb4c225.png" alt="169348478612341eb734dbd75537dc43fba98abb4c225.png"></p>
 <h3 id="9-容器卷"><a href="#9-容器卷" class="headerlink" title="9. 容器卷"></a>9. 容器卷</h3><p>在 Dockerfile 中有写到</p>
 <figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># =========== 配置 容器卷 =============</span></span><br><span class="line"><span class="keyword">VOLUME</span><span class="language-bash"> [ <span class="string">&quot;/mnt/workspace&quot;</span>, <span class="string">&quot;/mnt/data&quot;</span> ]</span></span><br></pre></td></tr></table></figure>
 
