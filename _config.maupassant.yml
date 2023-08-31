@@ -28,17 +28,17 @@ menu:
     icon: fa-rss
 
 info:
-  avatar: /img/avatar.png
+  avatar: https://avatars.githubusercontent.com/james-curtis
   discription: To be a better man.
   outlinkitem:
     - name: twitter
-      outlink: https://twitter.com/username
+      outlink: https://twitter.com/james_curtis_oh
       message: Twitter
     - name: envelope
-      outlink: mailto:admin@domain.com
+      outlink: mailto:jamescurtis@foxmail.com
       message: Email
     - name: github
-      outlink: https://github.com/username
+      outlink: https://github.com/james-curtis
       message: Github
     - name: rss
       outlink: /atom.xml
