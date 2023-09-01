@@ -1,25 +1,8 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
 title: James Curtis
-subtitle: "just life"
-description: "just life"
-keywords: "just life"
-author: James Curtis
+subtitle: 大事小事都记下来
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: Asia/Shanghai
 
-# URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://james-curtis.github.io
 
-# Category & Tag
-category_map:
-tag_map:
-
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
 theme: maupassant
