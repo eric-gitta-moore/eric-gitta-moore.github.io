@@ -7,3 +7,15 @@
 .post .post-content blockquote p {
     margin: 0;
 }
+
+
+@media print,
+screen and (min-width: 1700px) {
+    #toc {
+        position: fixed;
+        top: 20vh;
+        height: 60vh;
+        overflow-x: scroll;
+        transform: translateX(calc(-100% - 60px));
+    }
+}
