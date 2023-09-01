@@ -12,6 +12,7 @@ toc_number: false ## If you want to add list number to toc please set the value 
 busuanzi: true ## If you want to use Busuanzi page views please set the value to true.
 wordcount: true ## If you want to display the word counter and the reading time expected to spend of each post please set the value to true, and you must have hexo-wordcount installed.
 widgets_on_small_screens: true ## Set to true to enable widgets on small screens.
+external_css: true ## If you want to load an external CSS file, set the value to true and create a file named "external.css" in the source/css folder.
 
 menu:
   - page: home
