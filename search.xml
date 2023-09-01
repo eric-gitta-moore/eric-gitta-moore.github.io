@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>WSL Ubuntu 中非 root 的普通用户怎么直接执行 Docker 命令</title>
+      <link href="/2023/09/01/wsl%20Ubuntu%E4%B8%AD%E9%9D%9Eroot%E7%9A%84%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%80%8E%E4%B9%88%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8Cdocker%E5%91%BD%E4%BB%A4/"/>
+      <url>/2023/09/01/wsl%20Ubuntu%E4%B8%AD%E9%9D%9Eroot%E7%9A%84%E6%99%AE%E9%80%9A%E7%94%A8%E6%88%B7%E6%80%8E%E4%B9%88%E7%9B%B4%E6%8E%A5%E6%89%A7%E8%A1%8Cdocker%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<p>docker需要root权限，如果希望非root用户直接使用docker命令，而不是使用sudo，可以选择将该用户加入到docker用户组。</p><p><code>sudo groupadd docker</code>：添加到groupadd用户组（已经有docker用户组，所以可以不用再新增docker用户组）</p><p><code>sudo gpasswd -a $USER docker</code>：添加当前用户到docker组</p><p><code>newgrp docker</code>：更新docker用户组</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在 WSL2 中使用 NVIDIA Docker 进行全栈开发和深度学习 TensorFlow pytorch GPU 加速</title>
       <link href="/2023/08/31/%E5%9C%A8%20WSL2%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20NVIDIA%20Docker%20%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%20TensorFlow%20pytorch%20GPU%20%E5%8A%A0%E9%80%9F/"/>
       <url>/2023/08/31/%E5%9C%A8%20WSL2%20%E4%B8%AD%E4%BD%BF%E7%94%A8%20NVIDIA%20Docker%20%E8%BF%9B%E8%A1%8C%E5%85%A8%E6%A0%88%E5%BC%80%E5%8F%91%E5%92%8C%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%20TensorFlow%20pytorch%20GPU%20%E5%8A%A0%E9%80%9F/</url>
