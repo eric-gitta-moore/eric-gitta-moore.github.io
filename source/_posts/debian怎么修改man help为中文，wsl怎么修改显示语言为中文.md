@@ -1,6 +1,7 @@
 ---
 title: debian 怎么修改 man help 为中文，wsl 怎么修改显示语言为中文
 subtitle: How to change man help to Chinese in debian, how to change the display language of wsl to Chinese
+permalink: How to change man help to Chinese in debian, how to change the display language of wsl to Chinese
 date: 2023-08-03 16:47:35
 toc: true
 categories: 

@@ -1,6 +1,7 @@
 ---
 title: educoder头歌强制显示右侧目录按钮，方便查看测试代码，便于怎么在本地自测头歌代码？
 subtitle: The educoder Touge is forced to display the directory button on the right, which is convenient for viewing the test code, and how to test the Touge code locally?
+permalink: The educoder Touge is forced to display the directory button on the right, which is convenient for viewing the test code, and how to test the Touge code locally?
 date: 2023-04-30 14:07:06
 toc: true
 categories: 
