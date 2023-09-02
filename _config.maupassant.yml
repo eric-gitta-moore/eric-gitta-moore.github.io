@@ -46,15 +46,15 @@ info:
       message: RSS
 
 links:
-  - title: Google
+  - title: Blog
+    desc: Blog
     url: //james-curtis.github.io
     src: //james-curtis.github.io
-    desc: just life
-  - title: Twitter
-    url: //james-curtis.github.io
-    src: //james-curtis.github.io
-    desc: just life
+  - title: GitHub
+    desc: GitHub
+    url: https://github.com/james-curtis
+    src: https://github.com/james-curtis
   - title: CSS 参考手册
+    desc: CSS 参考手册 - web前端开发参考手册系列
     url: https://james-curtis.github.io/css-handbook/
     src: https://james-curtis.github.io/css-handbook/
-    desc: CSS 参考手册 - web前端开发参考手册系列
