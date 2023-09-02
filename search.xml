@@ -158,6 +158,19 @@
     </entry>
     
     
+    
+    <entry>
+      <title>interface wan is error (16) and tracking is not enabled，openwrt iStoreOS软路由mwan3负载均衡报错</title>
+      <link href="/2023/02/26/interface%20wan%20is%20error%20(16)%20and%20tracking%20is%20not%20enabled%EF%BC%8Copenwrt%20iStoreOS%E8%BD%AF%E8%B7%AF%E7%94%B1mwan3%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%8A%A5%E9%94%99/"/>
+      <url>/2023/02/26/interface%20wan%20is%20error%20(16)%20and%20tracking%20is%20not%20enabled%EF%BC%8Copenwrt%20iStoreOS%E8%BD%AF%E8%B7%AF%E7%94%B1mwan3%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%8A%A5%E9%94%99/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题现象"><a href="#问题现象" class="headerlink" title="问题现象"></a>问题现象</h1><p>进入 状态-负载均衡-详细信息</p><p>在Interface status下面显示，只有一个接口是在线状态</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Interface status:</span><br><span class="line"> interface wan is error (16) and tracking is not enabled</span><br><span class="line"> interface wan1 is error (16) and tracking is not enabled</span><br><span class="line"> interface wan2 is error (16) and tracking is not enabled</span><br><span class="line"> interface wan3 is error (16) and tracking is not enabled</span><br><span class="line"> interface wan4 is online 00h:00m:00s, uptime 01h:59m:08s and tracking is not enabled</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936366885391693636687849.png" alt="16936366885391693636687849.png"></p><h1 id="故障原因"><a href="#故障原因" class="headerlink" title="故障原因"></a>故障原因</h1><p>各个接口的跃点数不能一致，默认创建接口之后跃点数是0</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936367075351693636706779.png" alt="16936367075351693636706779.png"></p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>在 网络-接口-WAN-高级设置-使用网关跃点数，这里手动把各个接口设置成不一样的即可 </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936367195391693636718808.png" alt="16936367195391693636718808.png"></p><h1 id="效果检验"><a href="#效果检验" class="headerlink" title="效果检验"></a>效果检验</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Interface status:</span><br><span class="line"> interface wan is online 00h:00m:00s, uptime 02h:02m:20s and tracking is not enabled</span><br><span class="line"> interface wan1 is online 00h:00m:00s, uptime 02h:01m:54s and tracking is not enabled</span><br><span class="line"> interface wan2 is online 00h:00m:00s, uptime 02h:01m:54s and tracking is not enabled</span><br><span class="line"> interface wan3 is online 00h:00m:00s, uptime 02h:01m:54s and tracking is not enabled</span><br><span class="line"> interface wan4 is online 00h:00m:00s, uptime 02h:01m:54s and tracking is not enabled</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936367395351693636738707.png" alt="16936367395351693636738707.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
   
   
 </search>
