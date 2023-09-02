@@ -629,6 +629,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>Qt使用CMake在Clion中运行显示出的UI界面看起来很老，很过时怎么办？CMake下的Qt怎么使用SQLite？</title>
+      <link href="/2022/what-should-i-do-if-the-ui-interface-displayed-when-qt-is-run-in-clion-using-cmake-looks-very-old-and-outdated-how-does-qt-under-cmake-use-sqlite/"/>
+      <url>/2022/what-should-i-do-if-the-ui-interface-displayed-when-qt-is-run-in-clion-using-cmake-looks-very-old-and-outdated-how-does-qt-under-cmake-use-sqlite/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、问题概述"><a href="#一、问题概述" class="headerlink" title="一、问题概述"></a>一、问题概述</h1><p>如果使用Clion默认配置编译出来的UI界面看起来很老套，就像是win2000的界面。但是如果使用Qt Creator运行就没有问题，是现代windows的界面</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936509765371693650975967.png" alt="16936509765371693650975967.png"></p><h1 id="二、问题原因"><a href="#二、问题原因" class="headerlink" title="二、问题原因"></a>二、问题原因</h1><p>最后经过一番搜索，在stackoverflow上找到了类似的问题。不过我这里提供一个更好的解决方案。</p><p>包括SQLite等其他模块会报错无法加载DLL驱动，“QSqlDatabase: QSQLITE driver not loaded”，都会涉及到这个问题，就是 cmake-build-debug 目录下的文件没有拿到Qt中MinGW下的plugins目录</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936509875381693650987433.png" alt="16936509875381693650987433.png"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936509955371693650995461.png" alt="16936509955371693650995461.png"></p><p> 此时只要把，D:\Qt\Qt5.14.2\5.14.2\mingw73_64\plugins目录下的东西复制到cmake-build-debug下面就可以了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936510065371693651005841.png" alt="16936510065371693651005841.png"></p><p>不过这并不能一劳永逸，重新build项目之后还是需要手动配置 </p><h1 id="三、解决方案"><a href="#三、解决方案" class="headerlink" title="三、解决方案"></a>三、解决方案</h1><p>在CMakeLists.txt中的if (WIN32)语句末尾，添加下面两行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">add_custom_command(TARGET $&#123;PROJECT_NAME&#125; POST_BUILD</span><br><span class="line">        COMMAND $&#123;CMAKE_COMMAND&#125; -E copy_directory &quot;$&#123;QT_INSTALL_PATH&#125;/plugins/&quot; &quot;$&lt;TARGET_FILE_DIR:$&#123;PROJECT_NAME&#125;&gt;/&quot;)</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936510165371693651016389.png" alt="16936510165371693651016389.png"></p><p> 此时重新build项目再运行的时候会自动检查对应的plugins是否存在</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
