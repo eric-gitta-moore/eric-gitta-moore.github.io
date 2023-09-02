@@ -914,6 +914,101 @@
     </entry>
     
     
+    
+    <entry>
+      <title>输出字符菱形</title>
+      <link href="/2022/output-character-diamond/"/>
+      <url>/2022/output-character-diamond/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p> 编程输入字符X，输出由字符X构成的以下样式的字符图形。</p><h3 id="输入样例"><a href="#输入样例" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">*</span><br></pre></td></tr></table></figure><h3 id="输出样例"><a href="#输出样例" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   *</span><br><span class="line">  ***</span><br><span class="line"> *****</span><br><span class="line">*******</span><br><span class="line"> *****</span><br><span class="line">  ***</span><br><span class="line">   *</span><br></pre></td></tr></table></figure><h3 id="输入样例-1"><a href="#输入样例-1" class="headerlink" title="输入样例:"></a>输入样例:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A</span><br></pre></td></tr></table></figure><h3 id="输出样例-1"><a href="#输出样例-1" class="headerlink" title="输出样例:"></a>输出样例:</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">   A</span><br><span class="line">  AAA</span><br><span class="line"> AAAAA</span><br><span class="line">AAAAAAA</span><br><span class="line"> AAAAA</span><br><span class="line">  AAA</span><br><span class="line">   A</span><br></pre></td></tr></table></figure></blockquote><p>突然想到一个比较方便的</p><p>最中间那一竖条先不看，看左边空白，从上至下</p><p>分别是</p><p>3个空白</p><p>2个空白</p><p>1个空白</p><p>0个空白</p><p>1个空白</p><p>2个空白</p><p>3个空白</p><p>相应的A也就是3-n个</p><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;vector&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;map&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;algorithm&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;math.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="comment">//    freopen(&quot;../i.txt&quot;, &quot;r&quot;, stdin);</span></span><br><span class="line">    <span class="type">char</span> e;</span><br><span class="line">    cin &gt;&gt; e;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">7</span>; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i!=<span class="number">0</span>)</span><br><span class="line">            cout &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="built_in">abs</span>(<span class="number">3</span> - i); ++j) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; (<span class="number">3</span> - <span class="built_in">abs</span>(<span class="number">3</span> - i)) * <span class="number">2</span> + <span class="number">1</span>; ++j) &#123;</span><br><span class="line">            cout &lt;&lt; e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p> 进而想到通用的</p><blockquote><p>菱形图案</p><p>请编程输入一个奇数n(n&lt;100)和一个字符c，输出n行由字符c组成的菱形图案。</p><p>输入样例:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5 A</span><br></pre></td></tr></table></figure><p>输出样例:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  A</span><br><span class="line"> AAA</span><br><span class="line">AAAAA</span><br><span class="line"> AAA</span><br><span class="line">  A</span><br></pre></td></tr></table></figure><p>输入样例:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">13 ?</span><br></pre></td></tr></table></figure><p>输出样例:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">      ?</span><br><span class="line">     ???</span><br><span class="line">    ?????</span><br><span class="line">   ???????</span><br><span class="line">  ?????????</span><br><span class="line"> ???????????</span><br><span class="line">?????????????</span><br><span class="line"> ???????????</span><br><span class="line">  ?????????</span><br><span class="line">   ???????</span><br><span class="line">    ?????</span><br><span class="line">     ???</span><br><span class="line">      ?</span><br></pre></td></tr></table></figure></blockquote><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/97c2f43a62c24a3fada21a0f25db6c45.png" alt="img">编辑</p><p> 假设左边这里叫做halfWidth，则halfWidth&#x3D;(行数- 1) &#x2F; 2</p><p>那么有</p><blockquote><p> 最中间那一竖条先不看，看左边空白，从上至下</p><p>分别是</p><p>第0行，abs(halfWidth-0)个空白</p><p>第1行，abs(halfWidth-1)个空白</p><p>第2行，abs(halfWidth-2)个空白</p><p>第3行，abs(halfWidth-3)个空白</p><p>第4行，abs(halfWidth-4)个空白</p><p>第5行，abs(halfWidth-5)个空白</p><p>第6行，abs(halfWidth-6)个空白</p><p>相应的A也就是(halfWidth - abs(halfWidth - 行号)) * 2 + 1个</p></blockquote><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;cstdio&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;vector&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;iostream&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;map&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;algorithm&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;math.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line"><span class="comment">//    freopen(&quot;../i.txt&quot;, &quot;r&quot;, stdin);</span></span><br><span class="line">    <span class="type">char</span> e;</span><br><span class="line">    <span class="type">int</span> line;</span><br><span class="line">    cin &gt;&gt; line;</span><br><span class="line">    cin &gt;&gt; e;</span><br><span class="line">    <span class="type">int</span> halfWidth = (line - <span class="number">1</span>) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; line; ++i) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i != <span class="number">0</span>)</span><br><span class="line">            cout &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; <span class="built_in">abs</span>(halfWidth - i); ++j) &#123;</span><br><span class="line">            cout &lt;&lt; <span class="string">&#x27; &#x27;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; (halfWidth - <span class="built_in">abs</span>(halfWidth - i)) * <span class="number">2</span> + <span class="number">1</span>; ++j) &#123;</span><br><span class="line">            cout &lt;&lt; e;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何判断dll是64位，还是32位</title>
+      <link href="/2022/how-to-tell-if-dll-is-64-bit-or-32-bit/"/>
+      <url>/2022/how-to-tell-if-dll-is-64-bit-or-32-bit/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p> 感觉这个方法最好用</p></blockquote><p>PE文件头里有个machine字段指定CPU类型，如果是0x8664就是64位程序，0x14c 表示Intel 386或后继处理器及其兼容处理器<br> 可以用c32asm工具导入dll文件查看<br> 这个是x86的：</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2d9188566c684db497cb4d7489f047ff.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p>这个是x64的</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5606fe864e7e4b9aaa26da0faba554fb.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动">编辑</p><p> 出处</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://bbs.pediy.com/thread-200189-1.htm#1369197</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>studio one3 32位64位 最新版 3.5.6.46910带注册机</title>
+      <link href="/2022/studio-one3-32-bit-64-bit-latest-version-3-5-6-46910-with-registration-machine/"/>
+      <url>/2022/studio-one3-32-bit-64-bit-latest-version-3-5-6-46910-with-registration-machine/</url>
+      
+        <content type="html"><![CDATA[<p> 我是通过正版自动更新下载过来的安装包</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2c9a7aed25204dfb900eaeca60b40da1.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/4f1032dcad8c4d1c9ba40cea766ed61c.png" alt="img"></p><p>这里还有谷歌上下载过来的3.5.1.43560，带mac版本</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/40649f34980044ca9c5d4118cf21e1cb.png" alt="img"></p><p>如果Mac也想要最新版可以试试我这个方法。</p><blockquote><p>先安装正版，不要破解。</p><p>然后申请一个试用账号，进去之后点检查更新，会自动下载。下载完成找到安装包就ok了</p></blockquote><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/139c7e617be4462d8eeafd1441e44a8b.png" alt="img"></p><hr><p>至于百度网盘怎么下载，可以去搜一下百度网盘vip解析高速链接，然后用Aria2或者motrix下载</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">链接：https://pan.baidu.com/s/1b7IUP2WUulIiUgLUlHUqAw </span><br><span class="line">提取码：hewh</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>studio one3激活显示无效的授权文件解决方法</title>
+      <link href="/2022/studio-one3-activation-shows-invalid-authorization-file-solution/"/>
+      <url>/2022/studio-one3-activation-shows-invalid-authorization-file-solution/</url>
+      
+        <content type="html"><![CDATA[<p>只要先卸载原来的再重装，然后随便找个安全软件给他断网再激活就好了</p><p>这里我用的是火绒</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b5be7b57cdf64ce89af061f71370b92f.png" alt="img"></p><p>这里的联网控制默认是关闭的，记得要开启</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/ebda2b6c512f4830aa4d628a2d39e574.png" alt="img"></p><p>下面就是正常的步骤，直接抄别人的了。</p><hr><p>打开PreSonus Studio One 3 Pro软件，这里随便输入邮箱及密码登录即可，即使是无效的邮箱帐号和密码都没关系，登录成功后，选择离线激活</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a20145ce290c47b193f180fc0d38dcf7.png" alt="img"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0cdac53bf0b4485d99249cbae4bbcc3f.png" alt="img"></p><p>找到压缩包中的StudioOne_Keygen.exe注册机</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a0f1e95f46064abea706af2064af0a5a.png" alt="img"></p><p>将“离线激活”后得到的“激活码”复制到注册机中的“Machiine ID”选项内，第二项就直接复制第一项的内容即可，然后将studio one 3整个软件都关闭，记住一定要关闭，要不然激活会不成功，会出现无效的授权文件的提示。 </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/ee7c904389904959997122272da86fa8.png" alt="img"></p><p>点击“PATCH”，到软件的安装目录选择“Studio One.exe”，点击“打开”</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5900f6c0d8ca4d618b0b805c2dda7d78.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/30268809fc4548019e517792f49a23e9.png" alt="img"></p><p>如果不清楚安装位置，可以右击PreSonus Studio One 3快捷方式——属性——复制目标中的路径，注意不要复制“”及Studio One.exe，之后回车就可以打开安装位置了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/51f2555398564dd6a7d71abd97a3e57e.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dbce136528c2464599143ed3afa62290.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/6e639fc1ff3d44df8685682d364f1369.png" alt="img"></p><p>回到注册机界面点击“CENERATE”,随便学泽一个位置放置许可证，建议选择桌面，因为这样比较好找到</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/c05fc4d7bf5f4de486da80cc654ee3f3.png" alt="img"></p><p>下面这些就是得到的许可证文件了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/acc972e8d4834d718158a20c20fa57f7.png" alt="img"> </p><p>打开PreSonus Studio One 3，以相同的方式，到达激活界面，这时候点击“选择许可证文件”选项</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/be476880eb5c4a1e94f85805cde440f1.png" alt="img"></p><p>选择生成好的许可证文件，点击“打开”</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/af69ae5fc0dc41bebbce167420fd3f31.png" alt="img"> </p><p>这时候PreSonus Studio One 3就破解成功了，现在就可以无限制使用了</p><hr><p>如果出现</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/71a9c53d1b2d41bc9d970fede88b3293.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/c286ce7616fc424abafb77784908a3b7.png" alt="img"></p><p>就按照开头的方法试一下 </p><hr><p>我在分享一下最新版的studio one3 32bit和64bit，我再另外开一篇博客吧</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LittleAlterBoy.dll VST插件</title>
+      <link href="/2022/littlealterboy-dll-vst-plugin/"/>
+      <url>/2022/littlealterboy-dll-vst-plugin/</url>
+      
+        <content type="html"><![CDATA[<p>谷歌了很久都没有找到破解版的，最后在一个群里面，一位好心的老哥分享给我了。我也分享出来。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://yunling.lanzout.com/ic3Tpyhz0cd</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0e03b184ed3f46d587917e3f83af60f7.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
