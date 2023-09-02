@@ -20,5 +20,7 @@ screen and (min-width: 1700px) {
         overflow: auto;
         white-space: nowrap;
         transform: translateX(calc(-100% - 60px));
+        min-width: 200px;
+        min-height: 40px;
     }
 }
