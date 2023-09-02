@@ -15,7 +15,10 @@ screen and (min-width: 1700px) {
         position: fixed;
         top: 20vh;
         height: 60vh;
-        overflow-x: scroll;
+        word-break: break-all;
+        max-width: 300px;
+        overflow: auto;
+        white-space: nowrap;
         transform: translateX(calc(-100% - 60px));
     }
 }
