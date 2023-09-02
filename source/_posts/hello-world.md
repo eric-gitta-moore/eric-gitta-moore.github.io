@@ -1,6 +1,7 @@
 ---
 title: Hello World
 subtitle: Hello World
+permalink: Hello World
 date: 2023-08-30 18:52:47
 toc: true
 categories: 

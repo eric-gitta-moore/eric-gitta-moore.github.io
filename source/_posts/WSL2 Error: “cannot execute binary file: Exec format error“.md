@@ -1,6 +1,7 @@
 ---
 title: WSL2 Error: “cannot execute binary file: Exec format error“
 subtitle: WSL2 Error: “cannot execute binary file: Exec format error“
+permalink: WSL2 Error: “cannot execute binary file: Exec format error“
 date: 2023-08-02 00:31:37
 toc: true
 categories: 

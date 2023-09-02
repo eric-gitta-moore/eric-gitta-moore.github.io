@@ -1,6 +1,7 @@
 ---
 title: RKE2部署高可用Rancher v2.7.1
 subtitle: RKE2 deploys highly available Rancher v2.7.1
+permalink: RKE2 deploys highly available Rancher v2.7.1
 date: 2023-02-13 21:33:35
 toc: true
 categories: 

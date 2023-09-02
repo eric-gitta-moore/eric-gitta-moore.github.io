@@ -1,6 +1,7 @@
 ---
 title: rke2集群安装完成之后使用kubectl反应很慢
 subtitle: After the rke2 cluster is installed, kubectl responds very slowly
+permalink: After the rke2 cluster is installed, kubectl responds very slowly
 date: 2023-03-17 12:21:19
 toc: true
 categories: 

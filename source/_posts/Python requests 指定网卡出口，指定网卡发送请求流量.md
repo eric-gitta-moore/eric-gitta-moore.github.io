@@ -1,6 +1,7 @@
 ---
 title: Python requests 指定网卡出口，指定网卡发送请求流量
 subtitle: Python requests specifies the network card export and specifies the network card to send request traffic.
+permalink: Python requests specifies the network card export and specifies the network card to send request traffic.
 date: 2023-02-26 21:55:49
 toc: true
 categories: 
