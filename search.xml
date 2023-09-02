@@ -197,6 +197,19 @@
     </entry>
     
     
+    
+    <entry>
+      <title>VMware NSX-T网络不稳定，ssh自动断开，iperf3测速没有速度</title>
+      <link href="/2023/02/12/VMware%20NSX-T%E7%BD%91%E7%BB%9C%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%8Cssh%E8%87%AA%E5%8A%A8%E6%96%AD%E5%BC%80%EF%BC%8Ciperf3%E6%B5%8B%E9%80%9F%E6%B2%A1%E6%9C%89%E9%80%9F%E5%BA%A6/"/>
+      <url>/2023/02/12/VMware%20NSX-T%E7%BD%91%E7%BB%9C%E4%B8%8D%E7%A8%B3%E5%AE%9A%EF%BC%8Cssh%E8%87%AA%E5%8A%A8%E6%96%AD%E5%BC%80%EF%BC%8Ciperf3%E6%B5%8B%E9%80%9F%E6%B2%A1%E6%9C%89%E9%80%9F%E5%BA%A6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题现象："><a href="#问题现象：" class="headerlink" title="问题现象："></a>问题现象：</h1><p>笔记本直连交换机，对服务器进行iperf3测试，结果发现带宽只有50Kbits&#x2F;S，只有第一次能发出流量，后面直接就是0bits&#x2F;S</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936371165341693637116260.png" alt="16936371165341693637116260.png"></p><h1 id="问题分析："><a href="#问题分析：" class="headerlink" title="问题分析："></a>问题分析：</h1><p>nsx的overlay和vlan传输区域接口都是使用的1700MTU</p><p>如果流量要跑在大二层，都是使用1700MTU进行传输，但是我的上行链路VDS交换机只有1500MTU</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936371285401693637127647.png" alt="16936371285401693637127647.png"></p><h1 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h1><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>将主机的NSX交换机MTU修改为1700</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936371395401693637139013.png" alt="16936371395401693637139013.png"></p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>修改物理交换机MTU</p><blockquote><p>我这里使用的嵌套环境，所以直接改母鸡的esxi标准交换机</p><p>因为我的主板是螃蟹网卡，所以只能用6.7的vmkernel螃蟹网卡驱动，在esxi7及以上都砍掉了vmkernel驱动，只用用native模式驱动网卡，所以才迟迟没有人写出esxi7的螃蟹网卡驱动 </p></blockquote><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936371515391693637151261.png" alt="16936371515391693637151261.png"></p><h1 id="修复验证"><a href="#修复验证" class="headerlink" title="修复验证"></a>修复验证</h1><p>可以看到已经恢复到了正常带宽，而且ssh也不掉了，sftp传输也不会卡在那儿半天不动 </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936371825391693637182343.png" alt="16936371825391693637182343.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
   
   
 </search>
