@@ -6,4 +6,8 @@ timezone: Asia/Shanghai
 url: https://james-curtis.github.io
 permalink: :title/
 
+# Generate an archive of posts, powered by hexo-generator-index	
+index_generator:
+  per_page: 50
+
 theme: maupassant
