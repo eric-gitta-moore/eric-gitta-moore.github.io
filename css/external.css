@@ -14,7 +14,7 @@ screen and (min-width: 1700px) {
     #toc {
         position: fixed;
         top: 20vh;
-        height: 60vh;
+        max-height: 60vh;
         word-break: break-all;
         max-width: 300px;
         overflow: auto;
