@@ -6,11 +6,7 @@ timezone: Asia/Shanghai
 url: https://james-curtis.github.io
 permalink: :title/
 
-# global pagination
-per_page: 25
-
-# home pagination
-index_generator:
-  per_page: 10
+archive_generator:
+  per_page: 25
 
 theme: maupassant
