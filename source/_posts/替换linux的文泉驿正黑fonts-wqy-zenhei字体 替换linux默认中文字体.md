@@ -3,6 +3,8 @@ title: 替换linux的文泉驿正黑fonts-wqy-zenhei字体 替换linux默认中�
 subtitle: 替换linux的文泉驿正黑fonts-wqy-zenhei字体 替换linux默认中文字体
 date: 2023-08-01 22:03:46
 toc: true
+categories: 
+    - 默认
 ---
 
 WSL 怎么替换 linux 的文泉驿正黑 fonts-wqy-zenhei 字体

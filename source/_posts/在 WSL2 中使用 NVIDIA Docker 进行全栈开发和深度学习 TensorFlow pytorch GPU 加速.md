@@ -3,6 +3,8 @@ title: 在 WSL2 中使用 NVIDIA Docker 进行全栈开发和深度学习 Tensor
 subtitle: Full-stack development and deep learning TensorFlow pytorch GPU acceleration using NVIDIA Docker in WSL2
 date: 2023-08-31 11:13:32
 toc: true
+categories: 
+    - 默认
 ---
 
 

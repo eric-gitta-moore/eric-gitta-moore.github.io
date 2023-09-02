@@ -3,6 +3,8 @@ title: interface wan is error (16) and tracking is not enabled，openwrt iStoreO
 subtitle: interface wan is error (16) and tracking is not enabled, openwrt iStoreOS soft routing mwan3 load balancing error
 date: 2023-02-26 21:17:30
 toc: true
+categories: 
+    - 默认
 ---
 
 #  问题现象
