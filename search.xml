@@ -212,6 +212,19 @@
     
     
     <entry>
+      <title>OpenStack生产环境应该部署哪些组件，OpenStack选型实践</title>
+      <link href="/2023/02/10/OpenStack%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%BA%94%E8%AF%A5%E9%83%A8%E7%BD%B2%E5%93%AA%E4%BA%9B%E7%BB%84%E4%BB%B6%EF%BC%8COpenStack%E9%80%89%E5%9E%8B%E5%AE%9E%E8%B7%B5/"/>
+      <url>/2023/02/10/OpenStack%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E5%BA%94%E8%AF%A5%E9%83%A8%E7%BD%B2%E5%93%AA%E4%BA%9B%E7%BB%84%E4%BB%B6%EF%BC%8COpenStack%E9%80%89%E5%9E%8B%E5%AE%9E%E8%B7%B5/</url>
+      
+        <content type="html"><![CDATA[<p>官网虽然有示例配置，但仅仅是示例而已，并不是最佳实践。</p><p>可以看到有四种：计算入门套件、容器优化、网络应用、大数据 </p><p>其实下面的有些组件，很多部署OpenStack的企业也没有使用。而且许多边缘组件使用人数很少，使用频率低，也更新并不勤快</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936374995351693637498609.png" alt="16936374995351693637498609.png"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375115361693637510839.png" alt="16936375115361693637510839.png"></p><p>分析一下2019-2021年，各个组件在生产环境的使用比例。</p><p>进入用户调查</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375205351693637520181.png" alt="16936375205351693637520181.png"></p><p>查看Deployments调查部分中在生产环境使用的项目</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375325341693637531650.png" alt="16936375325341693637531650.png"></p><p>可以看到大部分组件的比例都低于10%，2022数据经过整理得到如下图</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375445351693637544073.png" alt="16936375445351693637544073.png"></p><p>2021数据</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375625401693637562007.png" alt="16936375625401693637562007.png"></p><p>2020数据</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375745401693637574397.png" alt="16936375745401693637574397.png"></p><p>2019数据</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375835401693637583273.png" alt="16936375835401693637583273.png"></p><p>2018数据</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936375915351693637591124.png" alt="16936375915351693637591124.png"></p><p>我暂且认为</p><ul><li>生产比例小于等于10%的均不要部署在自己生产环境上</li><li>生产比例小于等于15%的可以经过考虑、测试后部署在生产环境上</li><li>生产比例大于等于20%可以部署在生产环境</li></ul><p>我认为中小企业至少要部署以下组件（当然场景优先）</p><p>OpenStack Core ( glance, keystone, neutron, nova, heat, horizon )、cinder、octavia</p><p>推荐部署以下组件</p><p>designate、swift、manila、ironic</p><p>可选部署以下组件（按需）</p><p>barbican、rally、ceilometer</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936376025391693637602214.png" alt="16936376025391693637602214.png"></p><p>部署操作系统：Ubuntu Server。从2018以来Ubuntu的占比就超过了centos </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936376145341693637613536.png" alt="16936376145341693637613536.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OpenStack各个CLI Client客户端安装</title>
       <link href="/2023/02/08/OpenStack%E5%90%84%E4%B8%AACLI%20Client%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/"/>
       <url>/2023/02/08/OpenStack%E5%90%84%E4%B8%AACLI%20Client%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/</url>
