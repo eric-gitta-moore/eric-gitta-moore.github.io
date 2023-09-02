@@ -781,6 +781,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>Clion怎么在一个项目中编写C和C++两种语言</title>
+      <link href="/2022/how-does-clion-write-c-and-c-in-one-project/"/>
+      <url>/2022/how-does-clion-write-c-and-c-in-one-project/</url>
+      
+        <content type="html"><![CDATA[<p>如果在C或C++项目中编写C++或C会提示 <code>CMake Error: CMake can not determine linker language for target:</code> </p><p>解决方案：<br>修改根目录下面的<br><code>CMakeLists.txt</code></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cmake_minimum_required(VERSION 3.22)</span><br><span class="line">project(Algorithm C)</span><br><span class="line"></span><br><span class="line">set(CMAKE_C_STANDARD 11)</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>把其中的 <code>project(Algorithm C)</code> 后面那个 <code>C</code> 去掉就可以了。(如果是C++项目，这里应该是 <code>CXX</code> )<br>写成这样 <code>project(Algorithm)</code> </p><p>然后如果要添加C++或者C语言标准的话</p><ul><li>C++11标准 <code>set(CMAKE_CXX_STANDARD 11)</code></li><li>C11标准 <code>set(CMAKE_C_STANDARD 11)</code></li></ul><p>至于单独跑一个文件的话用这个插件就好了 <code>C/C+​+​ Single File Execution</code></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
