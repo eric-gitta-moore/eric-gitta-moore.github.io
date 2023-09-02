@@ -422,6 +422,25 @@
     
     
     <entry>
+      <title>打游戏csgo的时候莫名其妙卡一下</title>
+      <link href="/2021/unexpectedly-stuck-when-playing-the-game-csgo/"/>
+      <url>/2021/unexpectedly-stuck-when-playing-the-game-csgo/</url>
+      
+        <content type="html"><![CDATA[<p> 经过长期观察发现如下情况</p><p>我是天选2 3060<br> 也是csgo突然卡一下，有时候声音也一起同时卡一下，半秒的样子</p><p>这篇文章适用于开启了核显和独显的，并且是核显直连。</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1884ca57d7871a4763c5f6b9b5b69d6e.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/39cc4fef70f173164bfc7ab9ff9a7741.png" alt="img"></p><p> 之前一直在找，看了好多解决方案，都不行，换驱动，Xbox，游戏模式，游戏设置，启用Windows设备上的缓存，csgo控制台命令等等等，都不行。今天用微星小飞机监控又看了下，发现显存一直在跳</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b15c37b0d3b36c2f15d07d4fc474f948.png" alt="img"></p><p>查了下百度，发现有网友说是显卡没有工作。我怀疑是游戏跑起来太简单了，独显在摸鱼。就果断把刷新率限制解除了。结果还是卡得。然后把显示器分辨率也调高了，调成了144hz。</p><p>把csgo和系统放在用一块硬盘上，csgo设置的刷新率别太低，至少要让显存动起来，别让显卡摸鱼了。开显示器最高刷新率，csgo的帧数可以低于显示器最高刷新率</p><p>xbox game ba，r游戏模式其实是可以开的，没影响。csgo设置很重要。要么全屏。或者全屏窗口，然后帧数不要锁在显示器刷新率，可以先试一下不要锁帧数，fps_max 999，然后再锁显示器刷新率的两倍。反正我的电脑如果开全屏窗口锁显示器刷新率144的话就会突然莫名其妙卡一下</p><p>还有就是在英伟达控制面板设置一下</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/eb805776b462470ea200dcfc7f86b4c9.png" alt="img"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/744eb2e706b941d1abddc6d772f6b95e.png" alt="img"></p><p>之后应该就没有问题了 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OpenStack Kolla-Ansible部署Manila文件存储服务，对接Proxmox Ceph配置Manila文件存储</title>
       <link href="/2023/openstack-kolla-ansible-deploys-manila-file-storage-service-and-connects-to-proxmox-ceph-to-configure-manila-file-storage/"/>
       <url>/2023/openstack-kolla-ansible-deploys-manila-file-storage-service-and-connects-to-proxmox-ceph-to-configure-manila-file-storage/</url>
@@ -1073,6 +1092,310 @@
       <url>/2021/asus-notebook-full-hard-disk-recovery-to-the-original-factory-state-real-machine-operation-myasus-in-winre-recovery-asus-recovery-recovery/</url>
       
         <content type="html"><![CDATA[<p> 本教程的前提的在之前就备份了原厂的RECOVERY分区，RESTORE分区，MYASUS分区</p><p>如果这些分区都没有的话那就只能找同型号笔记本的朋友要一份了，或者去售后，告诉他这三个分区都要恢复。一般售后为了节约硬盘空间，不会给你恢复restore分区，这个分区有将近20G。</p><p>我机器撒天选2 i7-11800H，3060，32G，512GB，型号FX506HM，</p><blockquote><p>附上我的msinfo32，链接：<a href="https://yunling.lanzouo.com/iJEO5xj1tgd">https://yunling.lanzouo.com/iJEO5xj1tgd</a> </p></blockquote><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/31aee62d00ec4844bf1b76c1e237f9aa.png" alt="img"></p><p>这篇教程先说全格式化怎么做，下次有空再说免格式化怎么弄。下面开始。</p><p>首先首先你的先做给优盘或者移动硬盘做一个PE。网上做PE启动盘的教程很多，这里就不再累述。我用的优启通的PE，感觉东西比WEPE多一点。</p><p>一、先插U盘（我这里插的是移动硬盘），然后开机或者重启一直不断的按F2，进入bios</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ce6bf9931e248378cb00151035f922c.jpg" alt="img"></p><p> 二、按F8进入PE</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dbe67173bf55410b8dcd0362dcd56b57.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/769cd95973dc4efe9069680f285baa5c.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e172f3a3eea642e2ae2234619c4da337.jpg" alt="img"> </p><p>三、分区，分成出厂那个样子</p><p>我备份了出厂的分区表，按照这个来分就好了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/08e3c070967f4b61adbb5813eec6c9b2.jpg" alt="img"></p><p>本地磁盘D这个就忽略吧合并到os里面去。这个本地磁盘D是我机器到手之后没几天用win自带的磁盘管理工具分的，我不喜欢C盘那么大。</p><p>①先分一个区出来</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e7e11d2ca8834470979b16000ddcad42.jpg" alt="img"> </p><p>然后把这个OS调整一下，缩小为200G，因为后面不知道还要用多少。</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7511ad1b11a94b58a8e0079add049be8.jpg" alt="img"> </p><p>然后我们依次把RECOVERY、restore、MYASUS建立出来</p><p>RECOVERY分区是1000MB</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/00627725fd194e4d9bcae5c8d9c17720.jpg" alt="img"></p><p>RESTORE分区是19.5GB也就是19968MB</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3af4087c2c6148b9a39d2b1268c5b2ad.jpg" alt="img"></p><p>MYASUS是200MB </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dafa293bf5294ab9afb4b05bb0e48fa8.jpg" alt="img"> </p><p>保存更改，然后把多出的还给OS分区</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/36b45205c70e4c119e596e07b16086e7.jpg" alt="img"> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/76740c9d4dad4f2e96b99cc1d7693e4b.jpg" alt="img"> </p><p>四、恢复各个分区的备份</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7b952aea8a3748049b081b9acafca71f.jpg" alt="img"><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/6315dbc6ac1249e2a136504769f62033.jpg" alt="img"></p><p> 用diskgenius恢复RECOVERY、RESTORE、MYASUS</p><p>然后打开dism++，左上角 文件-释放镜像，这一步恢复出厂系统</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e9045a768b0f45e795d61c9cc756a224.jpg" alt="img"></p><p> 然后现在还是无法开机的，接下来我们重建引导。</p><p>回到diskgenius，我们将esp分区指定一个驱动器号，os分区也指定一个驱动器号。</p><p>（右键某个分区，找到指定驱动器号就可以找到这个功能了 ）</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b486d0c1e63c4d2081f5be1dd89f9faf.jpg" alt="img"></p><p>按win+r输入cmd</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d5879ab87e1544f9a97cb91818e09b49.jpg" alt="img"></p><p>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdboot d:\windows /s c: /f UEFI /l zh-cn</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> 这里d:\windows中的d要看你那边os分区指定的驱动器号</p><p>&#x2F;s c:也是，看你那边esp分区指定的驱动器号</p><p>五、还有点开机前的收尾工作</p><p>然后之前有一步忘记说了。就在这里做是一样的。</p><p><strong>右键esp分区，设置卷标。设置为SYSTEM</strong></p><p> 右键RECOVERY分区，更改分区参数，</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0640ca85d6c94b1fa42a49edc1fee88b.jpg" alt="img"></p><p>文件系统类型改为Microsoft recovery partition其它的不用动</p><p>还有RESTORE分区和MYASUS分区也这样操作一下，修改文件系统类型</p><p>六、重启进入系统配置winre</p><p> 重启，不断的按f2</p><p>进入bios把启动顺序改一下，</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a301e079bcf422a8a001663fb1eb6fd.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a0c40faec38945de9b53f74cfb815a77.jpg" alt="img"></p><p>然后按f10保存并退出，这时候主板会断电一下，这时候把优盘赶紧把下来（不拔问题也不大咯） </p><p> 七、配置当前系统的winre</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/029602c7a48448858b05c9cf6b42c9d3.jpg" alt="img"></p><p>开机又是这个东西</p><p>一顿操作之后总算进来了，按win+s输入cmd以管理员身份运行</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5f29599968824e44a7809a854bb00b6d.png" alt="img">输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagnetc /info</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/636e88b582af4fb0985b324a24d26b5b.jpg" alt="img"></p><p>果然很正常的出现了disabled</p><p>然后修改一下显示隐藏文件和显示拓展名</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/052e1079000e44faa31e3111f5cdd802.png" alt="img"></p><p>接下来给winre指定镜像路径，在刚刚打开的命令提示符里面 照着我这样输入</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/613ce2a05f8b4711aca0812b77f7d548.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ddf4c0be2b445b983d012a8e646543f.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/4e9d23cb716f4e0e9a17e754c1469c83.jpg" alt="img"></p><p>这样就把recovery分区挂载上了</p><p>进入recovery分区所在盘，找到winre，按shift键的同时按下鼠标右键复制为路径</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16b9fff2a8294fee93e388b0f4a7261b.jpg" alt="img"> </p><p>接下来我们另外再用管理员权限打开一个小黑窗</p><p>输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setreimage /path 刚刚复制的路径</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a60a583ab8443c3bcf2643431ec402b.jpg" alt="img"></p><p> 然后修改winre配置文件</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1d654611eff242cd8acf714c68b8bda1.jpg" alt="img"></p><p>把c:\windows\system32\recovery下面的reagentxml删了，从c:\recovery里面的reagentold.xml复制过去，并改名为ReAgent.xml </p><p>下面就是启用winre咯</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/9e1d5300104c4f75999d21e920c5155d.jpg" alt="img"></p><p>在命令行里面输入</p><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /enable</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> 不出意外的话这里会稍微停顿一下再出来操作成功的提示</p><p>然后我们可以输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /info</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> 看一下是否成功启用了</p><p>别急别急，这里才只是进行到三分之二</p><p>还有一步，写入MYASUS in winre的入口</p><p>把这个文件复制到桌面</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e95634d43475492597360d1cb5af1d9e.jpg" alt="img"></p><p>按住shift键的同时按下鼠标右键，复制路径</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/770fb2d4e7c847f7921bba10f6d4faa6.jpg" alt="img"></p><p>然后在命令行里面输入</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setbootshelllink /configfile 刚刚复制的路径</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> 到这里为止，现在用的这个系统的MYASUS in winre就已经配置好了</p><p>我们可以按住shift不放，点击重启，就会出现这个蓝色的界面，然后点击疑难解答就会出现这个界面</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e5a85df5fac141629d4e72bea6412e92.jpg" alt="img"></p><p> 八、配置asus.sum里面的winre</p><p> 点击这个向左的小箭头</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e8ed571a7e0047f986410f6ecf902ca9.png" alt="img"></p><p>然后选择继续使用win10，这里应该会重启一下，我们不断的按f2进入bios，然后进入pe</p><p>打开cmd，</p><p> 然后找个地方，比如OS所在的那个盘，我这是D盘</p><p>创建目录，输入命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">md d:\mount</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>把asus.sum挂载到这个目录下面</p><p> 输入命令挂载</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /mount-image /imagefile:你的asus.sum路径 /index:1 /MountDir:d:\mount</span><br></pre></td></tr></table></figure><p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0c52f66dc8384253bfd289bb69120af0.jpg" alt="img"></p><p>接下来将刚刚我们系统弄好的ReAgent.xml复制这个镜像里面对应的位置去</p><p>也就是os所在驱动器下面的Windows\System32\Recovery\ReAgent.xml复制到d:\mount\Windows\System32\Recovery\ReAgent.xml</p><p>复制完成之后就成了，然后我们输入命令取消挂载并保存修改</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /Unmount-image /MountDir:d:\mount /commit</span><br></pre></td></tr></table></figure><p> 这样我们修改好镜像了。把这个镜像去替换RESTORE分区里面的（我这里是修改的我移动硬盘里面那一个镜像副本，要是你们直接改的是RESTORE分区里面那个就不用替换了）</p><p>至此，修改全部完成。并且用asus recovery重置系统之后，MYASUS in winre的入口也是存在的</p><p>后面的话可以看也可以不看了</p><p>九、重启系统进入MYASUS in winre，并用傲梅全盘备份（这里的傲梅pe版要事先下载好，傲梅国内版的网站里面有提供傲梅轻松备份PE版本）</p><p>重启的时候记得拔掉优盘，开机的时候不断按f12进入winre</p><p>选择MYASUS in winre</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/612ef3aad0454fada0b7eb5d8129b2ff.jpg" alt="img"></p><p>选择asus recovery</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/cf8a257638c74639a99b3095ab2312ed.jpg" alt="img"></p><p>重置 </p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a94a198f08904916a63ddc35f33fa65c.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a17bf8f869a94bd9b87c48e8cbea669c.jpg" alt="img"></p><p>ok搞定，应该会自动重启，这时候要快点操作，插上优盘，重启的时候不断按f2进入bios，然后f8进入pe，</p><p>进去之后第一件事情删除刚刚asus recovery产生的日志文件</p><p>在RESTORE分区下面和asus.sum一起的。删掉那两个log（其实这里可以直接用dism++恢复备份的，我那时候是为了测试一下这个asus recovery是不是能用的才这样） </p><p>之后就可以打开傲梅备份备份全硬盘了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/8a3e46d919544421a6ff33a29c18fed3.jpg" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e44f59cb7f8242018447a44f77bc0de0.jpg" alt="img"></p><p>至此教程全部结束</p><blockquote><p>参考：</p><p><a href="https://tieba.baidu.com/p/7221452991">https://tieba.baidu.com/p/7221452991</a></p><p><a href="http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml">http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml</a></p></blockquote><blockquote><p>资料：</p><p>分区表：<a href="https://yunling.lanzouo.com/ib7Nuxiyo7g">分区表.zip - 蓝奏云</a></p><p>MYASUS镜像：<a href="https://yunling.lanzouo.com/iXrLLxiyqqh">MYASUS.zip - 蓝奏云</a></p><p>RECOVERY镜像和RESTORE太大了一个1G一个15G，我慢慢传吧</p></blockquote><p>2022年1月4日 18:07:39</p><blockquote><p>链接:<a href="https://caiyun.139.com/m/i?005Cj0oBCE8As">https://caiyun.139.com/m/i?005Cj0oBCE8As</a><br> 提取码:bHT7<br> 复制内容打开和彩云PC客户端，操作更方便哦</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">文件: F:\RESTORE.pmf</span><br><span class="line">大小: 16377489237 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:55:20</span><br><span class="line">MD5: 144AABC2C5817C1D9CA646DF8DE056BB</span><br><span class="line">SHA1: 2F2958CAF3EF7E1BC969D90A39E5EC8980364F02</span><br><span class="line">CRC32: E589B078</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.001</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:06</span><br><span class="line">MD5: E0EE12C4D0F650925E8538DCD74B50FA</span><br><span class="line">SHA1: 7DB386D82D0688C79A65D145CFB2218E8A41C735</span><br><span class="line">CRC32: 6CD0640A</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.002</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:20:54</span><br><span class="line">MD5: 5F458E9AA9F174B5D6A7C908993EB52C</span><br><span class="line">SHA1: 8E38F93D96268FC08F1030B0CE9ED86367914509</span><br><span class="line">CRC32: 2123172B</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.003</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:01</span><br><span class="line">MD5: 1FB65C6625F7C0100816091821D39FE5</span><br><span class="line">SHA1: AF296F9BB6DCCF5A3903FAF518CF8E2CEA8DCFB7</span><br><span class="line">CRC32: 330ECE6C</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.004</span><br><span class="line">大小: 3505170533 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:06</span><br><span class="line">MD5: 17352CBAEA4C2FE9CF5C101AAF08D676</span><br><span class="line">SHA1: 8F95C0E2F6768552B08CCBC9E09310B4D2F69CA6</span><br><span class="line">CRC32: 28DBF528</span><br><span class="line"></span><br><span class="line">文件: L:\systemBackup\part_backup\MYASUS.pmf</span><br><span class="line">大小: 34321259 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:52:21</span><br><span class="line">MD5: 174C93AB86F1ABD548C546B4EBEACE9B</span><br><span class="line">SHA1: 9E1B89A177107E113C720D876221E71C9B530C4A</span><br><span class="line">CRC32: FE4B0F8E</span><br><span class="line"></span><br><span class="line">文件: L:\systemBackup\part_backup\RECOVERY.pmf</span><br><span class="line">大小: 935400245 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:56:32</span><br><span class="line">MD5: 8B43561CED145FC39366A03F56371385</span><br><span class="line">SHA1: AF27CDA6C66CAC4A854C9D51D63BE53BB0EA4163</span><br><span class="line">CRC32: C0C3F6F6</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>csgo游戏中怎么显示现实中的时间</title>
+      <link href="/2021/how-to-display-real-time-in-csgo-game/"/>
+      <url>/2021/how-to-display-real-time-in-csgo-game/</url>
+      
+        <content type="html"><![CDATA[<p>csgo游戏中怎么显示现实中的时间</p><p>xbox game bar下载这个应用就好了</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/842fb7cef3a141c8b552f137ebe37161.png" alt="img"></p><p>这个更好使</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e395dfe3eecc4367b5b0e0d1433b3cac.png" alt="img"></p><p>提供一个浏览器，这样的话想显示什么都可以了。</p><p>按F11全屏 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>jetBrian pycharm试用过期，清除试用，重新试用</title>
+      <link href="/2021/jetbrian-pycharm-trial-expired-clear-the-trial-and-try-again/"/>
+      <url>/2021/jetbrian-pycharm-trial-expired-clear-the-trial-and-try-again/</url>
+      
+        <content type="html"><![CDATA[<p>删除“”C:\Users\TianhaoLTD\AppData\Roaming\JetBrains\PyCharm2021.2\eval\PyCharm212.evaluation.key””即可</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210917082347618.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210917082351244.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>桌面alt+enter按不了，没反应</title>
+      <link href="/2021/can-t-press-alt-enter-on-the-desktop-no-response/"/>
+      <url>/2021/can-t-press-alt-enter-on-the-desktop-no-response/</url>
+      
+        <content type="html"><![CDATA[<p>关闭360桌面助手即可，如果是其它问题按下面的方法排查</p><p><a href="https://blog.csdn.net/m0_37787662/article/details/104038720">https://blog.csdn.net/m0_37787662/article/details/104038720</a></p><p><a href="https://blog.csdn.net/zw521cx/article/details/102665663">https://blog.csdn.net/zw521cx/article/details/102665663</a></p><p>microsoftspy_jb51.rar文件放到蓝奏了，需要的自取吧</p><p><a href="https://yunling.lanzoui.com/iaTVotrmojg">https://yunling.lanzoui.com/iaTVotrmojg</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>npm ERR! code ERR_INVALID_URL,npm err安装报错</title>
+      <link href="/2021/npm-err-code-err-invalid-url-npm-err-installation-error/"/>
+      <url>/2021/npm-err-code-err-invalid-url-npm-err-installation-error/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm i</span><br><span class="line">npm ERR! code ERR_INVALID_URL</span><br><span class="line">npm ERR! Invalid URL</span><br><span class="line"></span><br><span class="line">npm ERR! A complete log of this run can be found in:</span><br><span class="line">npm ERR!     C:\Users\TianhaoLTD\AppData\Local\npm-cache\_logs\2021-09-07T14_35_31_016Z-debug.log</span><br></pre></td></tr></table></figure><p>查了一下发现是代理设置错误了，需要添加协议头</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm config get proxy</span><br><span class="line">127.0.0.1:10809</span><br><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm config delete proxy</span><br><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm config delete https-proxy</span><br><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm config set  proxy http://127.0.0.1:10809</span><br><span class="line">(nodeenv) PS E:\WebstormProjects\node-onebot-1.3-final-2&gt; npm config set  https-proxy http://127.0.0.1:10809</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GTA5前置任务怎么使用差事传送</title>
+      <link href="/2021/how-to-use-errand-delivery-in-gta5-pre-missions/"/>
+      <url>/2021/how-to-use-errand-delivery-in-gta5-pre-missions/</url>
+      
+        <content type="html"><![CDATA[<p>​<br>首先说一下会出的问题</p><p>1、线上等级没有到30级是没有提高产量差事的<br>3、提高产量差事没有出现R星服务器错误直接进去差事的，请把你的游戏语言改成简体中文，其他语言卡不了。有部分人出现了错误也会出现差事<br>4、复仇者的任务不能卡，有bug。</p><p>建议，使用仅邀请战局，加载快些</p><p>差事传送：<a href="https://gl.ali213.net/html/2019-7/346887_3.html">https://gl.ali213.net/html/2019-7/346887_3.html</a></p><p>​</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>GTA5怎么快速吃零食 回血</title>
+      <link href="/2021/how-to-eat-snacks-quickly-in-gta5-to-restore-health/"/>
+      <url>/2021/how-to-eat-snacks-quickly-in-gta5-to-restore-health/</url>
+      
+        <content type="html"><![CDATA[<p>百度下载按键精灵</p><p>新建脚本</p><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">KeyDowns <span class="string">&quot;M&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;M&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Down&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUpS <span class="string">&quot;Enter&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyDowns <span class="string">&quot;M&quot;</span>, <span class="number">1</span></span><br><span class="line">Delay <span class="number">30</span></span><br><span class="line">KeyUps <span class="string">&quot;M&quot;</span>, <span class="number">1</span></span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210823173719741.png" alt="img"></p><p>勾选“有效” ，更改热键就可以了。</p><p>-————————-</p><p>经测试发现在窗口模式下用keypress按下down键无效，date:2021-08-23</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>gta5如何快速吃零食,M键里面没有动作</title>
+      <link href="/2021/how-to-eat-snacks-quickly-in-gta5-there-is-no-action-in-the-m-key/"/>
+      <url>/2021/how-to-eat-snacks-quickly-in-gta5-there-is-no-action-in-the-m-key/</url>
+      
+        <content type="html"><![CDATA[<p>在M菜单的风格里面，把动作改成吃零食</p><p>去商店买好零食，然后按M在动作那里设置成吃零食，之后直接按Caps Lock键就能吃了立马补血。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>win+G没反应，Xbox game bar按不出来</title>
+      <link href="/2021/win-g-does-not-respond-the-xbox-game-bar-cannot-be-pressed/"/>
+      <url>/2021/win-g-does-not-respond-the-xbox-game-bar-cannot-be-pressed/</url>
+      
+        <content type="html"><![CDATA[<p> 按照<a href="https://www.bilibili.com/read/cv7305256/">Xbox Game Bar点击无任何反应的几种解决方案 - 哔哩哔哩</a></p><p>这个方法前三个方案都没得用</p><p>重新设置快捷键也没有用根本就不识别</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210821140241237.png" alt="img"></p><p>win+g就是填不进去，其它快捷键可以，就算填进去了，再按新设置的快捷键也出不来</p><p>按下快捷键之后鼠标边上出了个圈圈转了一下，然后就没有然后了。</p><p>偶然试了下360全面体检，修复了下注册表</p><p>发现就可以用了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VMware 无法安装 VMware Tools， 提示VMCI，内存驱动</title>
+      <link href="/2021/vmware-cannot-install-vmware-tools-prompting-vmci-memory-driver/"/>
+      <url>/2021/vmware-cannot-install-vmware-tools-prompting-vmci-memory-driver/</url>
+      
+        <content type="html"><![CDATA[<p>我是VMware16</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820120717730.png" alt="img"></p><p>镜像为Windows 7 Ultimate with Service Pack 1 (x64) - DVD (Chinese-Simplified)</p><p>最新版7601</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820120832952.png" alt="img"> </p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">文件名：cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso</span><br><span class="line">SHA1：2CE0B2DB34D76ED3F697CE148CB7594432405E23</span><br><span class="line">文件大小：3.19GB</span><br><span class="line">发布时间：2011-05-12</span><br><span class="line">ed2k://|file|cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso|3420557312|B58548681854236C7939003B583A8078|/</span><br></pre></td></tr></table></figure><p> 安装VMware提示这个</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/211be5072aba99fda55111d2c31fcdf9.png" alt="img"></p><p>根据<a href="https://kb.vmware.com/s/article/78708%E6%89%80%E8%BF%B0%EF%BC%8C%E5%BA%94%E8%AF%A5%E6%98%AF%E6%97%A0%E6%B3%95%E9%AA%8C%E8%AF%81%E7%AD%BE%E5%90%8D%EF%BC%9F">https://kb.vmware.com/s/article/78708所述，应该是无法验证签名？</a></p><p>下载这两个，安装到虚拟机里面就好了</p><p><a href="https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419">Microsoft Update Catalog</a></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820121051189.png" alt="img"></p><p><a href="https://www.catalog.update.microsoft.com/search.aspx?q=4490628">Microsoft Update Catalog</a></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820121103198.png" alt="img"></p><p>然后在VMware连接光驱</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820121218761.png" alt="img"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210820121232724.png" alt="img"></p><p>就可以安装成功了 </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>360浏览器用地址栏搜索怎么更改搜索引擎</title>
+      <link href="/2021/how-to-change-the-search-engine-using-the-address-bar-search-in-360-browser/"/>
+      <url>/2021/how-to-change-the-search-engine-using-the-address-bar-search-in-360-browser/</url>
+      
+        <content type="html"><![CDATA[<p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819142052214.png" alt="img"></p><p> 就像这样，如果这时候点击下面的搜索，那么就会自动跳转到360的搜索引擎。</p><p>如此坑，困扰我好久了，我都忍了，今天非搞它一下不可。</p><p>我想到的办法是用hosts把这个域名重定向到本地，再解析到咱们的php，到php里面重定向到百度</p><p>方法有了下面实操</p><p>下载phpstudy，采用php7+nginx</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819142355456.png" alt="img"></p><p> 打开phpStudy\PHPTutorial\nginx\conf\vhosts.conf</p><p>输入下面</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">server &#123;</span><br><span class="line">        listen       80;</span><br><span class="line">        listen       443;</span><br><span class="line">        server_name  www.so.com ;</span><br><span class="line">        root   &quot;E:\PhpstormProjects\one&quot;;</span><br><span class="line">index  index.html index.htm index.php;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        ssl                  on;</span><br><span class="line">        ssl_certificate      &quot;ssl/et.pem&quot;;#注意这里只能用相对路径，绝对路径就算是对的也会报错</span><br><span class="line">        ssl_certificate_key  &quot;ssl/et.key&quot;;</span><br><span class="line"></span><br><span class="line">        ssl_session_timeout  5m;</span><br><span class="line">        ssl_protocols  SSLv2 SSLv3 TLSv1 TLSv1.1 TLSv1.2;</span><br><span class="line">        ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;</span><br><span class="line">        ssl_prefer_server_ciphers   on;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        location ~ \.php(.*)$ &#123;</span><br><span class="line">            fastcgi_pass   127.0.0.1:9000;</span><br><span class="line">            fastcgi_index  index.php;</span><br><span class="line">            fastcgi_split_path_info  ^((?U).+\.php)(/?.+)$;</span><br><span class="line">            fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;</span><br><span class="line">            fastcgi_param  PATH_INFO  $fastcgi_path_info;</span><br><span class="line">            fastcgi_param  PATH_TRANSLATED  $document_root$fastcgi_path_info;</span><br><span class="line">            include        fastcgi_params;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">location / &#123;</span><br><span class="line">if (!-e $request_filename)&#123;</span><br><span class="line">rewrite  ^(.*)$  /index.php?s=$1  last;   break;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>然后创建一个index.php到E:\PhpstormProjects\one</p><p>内容为</p><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="title function_ invoke__">header</span>(<span class="string">&#x27;location: https://www.baidu.com/s?ie=utf-8&amp;f=3&amp;rsv_bp=1&amp;rsv_idx=1&amp;tn=baidu&amp;fenlei=256&amp;oq=dd&amp;rsv_pq=ea431c930002357f&amp;rsv_t=1fe3kF4YRUhLugiJuNRgsrgy%2FUane1loUg%2Bllo7JkiANVk8A%2FjWkRwzseiY&amp;rqlang=cn&amp;rsv_enter=1&amp;rsv_dl=ts_1&amp;rsv_btype=t&amp;inputT=962&amp;rsv_sug3=3&amp;rsv_sug1=3&amp;rsv_sug7=100&amp;rsv_sug2=1&amp;prefixsug=dd&amp;rsp=1&amp;rsv_sug4=1145&amp;wd=&#x27;</span>.<span class="variable">$_GET</span>[<span class="string">&#x27;q&#x27;</span>]);</span><br></pre></td></tr></table></figure><p>最后再设置下hosts</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819143249667.png" alt="img"></p><p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819143304804.png" alt="img"></p><p> 然后设置开机启动（不设置也可以）</p><p>也就是改成服务模式</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2021081914343462.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>主板支持vt但是模拟器显示不支持vt也没有开启vt</title>
+      <link href="/2021/the-motherboard-supports-vt-but-the-emulator-shows-that-it-does-not-support-vt-and-vt-is-not-enabled/"/>
+      <url>/2021/the-motherboard-supports-vt-but-the-emulator-shows-that-it-does-not-support-vt-and-vt-is-not-enabled/</url>
+      
+        <content type="html"><![CDATA[<p>实测去“启用或关闭windows功能”里面，关闭如下东西就OK了，能够和VMware共存</p><p>“Hyper-V”、“Windows 沙盒”、”Windows 虚拟机监控平台“、”虚拟机平台“</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819101236284.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>刷新率调到144hz自动跳回60</title>
+      <link href="/2021/the-refresh-rate-is-adjusted-to-144hz-and-automatically-jumps-back-to-60/"/>
+      <url>/2021/the-refresh-rate-is-adjusted-to-144hz-and-automatically-jumps-back-to-60/</url>
+      
+        <content type="html"><![CDATA[<p>按照这个方法试一下应该可以解决</p><p><a href="https://blog.csdn.net/qq_35485875/article/details/119680804">https://blog.csdn.net/qq_35485875/article/details/119680804</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>DiskGenius无法分区</title>
+      <link href="/2021/diskgenius-cannot-partition/"/>
+      <url>/2021/diskgenius-cannot-partition/</url>
+      
+        <content type="html"><![CDATA[<p>今天新买的笔记本到了，登录了一下Microsoft账号设置了个密码，结果出了个锁</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813174116155.png" alt="img"></p><p>用DG就没法分区了</p><p>解决方法如下，</p><p> 一、按下win+i进入设置，点击账户，左侧账户信息，右侧改用本地账户</p><p>二、按下win+i进入设置，点击更新和安全，左侧设备加密，右侧关闭</p><p>然后就可以分区了</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>显卡GPU copy占用跳来跳去解决办法</title>
+      <link href="/2021/how-to-solve-the-problem-of-graphics-card-gpu-copy-usage-jumping-around/"/>
+      <url>/2021/how-to-solve-the-problem-of-graphics-card-gpu-copy-usage-jumping-around/</url>
+      
+        <content type="html"><![CDATA[<p> 新买的笔记本玩游戏帧数反复横条，与此同时发现任务管理中的GPU Copy也是忽然就1</p><p>如图所示</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173611331.png" alt="img"></p><p>解决方案如下</p><p>按win+i，进入设置，找到游戏</p><p>关闭xbox game bar</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173730779.png" alt="img"></p><p>关闭游戏模式</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173813344.png" alt="img"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>centos7最小安装硬件要求</title>
+      <link href="/2020/centos7-minimum-installation-hardware-requirements/"/>
+      <url>/2020/centos7-minimum-installation-hardware-requirements/</url>
+      
+        <content type="html"><![CDATA[<p>在百度搜了半天都没找到centos7最小安装硬件要求，于是就去官网溜了一圈找到了，见下表</p><p>CentOS至少需要以下RAM数量：</p><p>本地媒体安装（USB，DVD）：768 MiB</p><p>NFS网络安装：768 MiB</p><p>HTTP，HTTPS或FTP网络安装：1.5 GiB</p><p>原文地址：<br><a href="https://docs.centos.org/en-US/centos/install-guide/Steps-x86/#sect-installation-planning-disk-space-memory-x86">https://docs.centos.org/en-US/centos/install-guide/Steps-x86/#sect-installation-planning-disk-space-memory-x86</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>宝塔面板安装memcached失败的解决办法</title>
+      <link href="/2018/solution-to-the-failure-of-memcached-installation-on-pagoda-panel/"/>
+      <url>/2018/solution-to-the-failure-of-memcached-installation-on-pagoda-panel/</url>
+      
+        <content type="html"><![CDATA[<p> 问题描述：<br> 这个贴子<a href="https://www.bt.cn/bbs/forum.php?mod=viewthread&tid=11080&extra=">memcached1.5安装失败 - Linux面板 - 宝塔面板论坛</a></p><blockquote><p>编译安装和极速安装都一样，云锁和阿里云盾都已经关闭，没有任何安全软件，selinux没开。下面是快安装完的日志（编译安装）</p></blockquote><ul><li>&#x2F;bin&#x2F;mkdir -p ‘&#x2F;usr&#x2F;local&#x2F;libmemcached&#x2F;include&#x2F;libmemcached’</li><li>&#x2F;usr&#x2F;bin&#x2F;install -c -m 644 libmemcached&#x2F;memcached.h libmemcached&#x2F;memcached.hpp libmemcached&#x2F;util.h ‘&#x2F;usr&#x2F;local&#x2F;libmemcached&#x2F;include&#x2F;libmemcached’</li><li>&#x2F;bin&#x2F;mkdir -p ‘&#x2F;usr&#x2F;local&#x2F;libmemcached&#x2F;lib&#x2F;pkgconfig’</li><li>&#x2F;usr&#x2F;bin&#x2F;install -c -m 644 support&#x2F;libmemcached.pc ‘&#x2F;usr&#x2F;local&#x2F;libmemcached&#x2F;lib&#x2F;pkgconfig’</li><li>make[2]: Leaving directory &#96;&#x2F;root&#x2F;libmemcached-1.0.18’</li></ul><p> [color&#x3D;rgb(0, 147, 218) !important]复制代码<br> 重复安装了N多遍</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d4efd20a5a074f32abf04190647dc2d9.png" alt="img"></p><p>解决办法：<br>关闭云锁所有功能，</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/76d1a8c0aee09071e12bba486c4d7f84.png" alt="img"></p><p>在远程客户端输入，停止云锁</p><ul><li>service yunsuo stop</li></ul><p> [color&#x3D;rgb(0, 147, 218) !important]复制代码<br> 在宝塔面板首页，点击进程管理</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2b001aa4a8a6faaf0739e461d44a4989.png" alt="img"></p><p>把带有“yunsuo”和“aliyun”字样的进程全部结束</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3f4187e62da8ffb19b6f0c4cef235bf7.png" alt="img"></p><p>然后就可以安装了</p><p>本文转载：<br>宝塔面板安装memcached失败的解决办法<br> <a href="http://www.xhkj5.com/forum.php?mod=viewthread&tid=10528&fromuid=1">http://www.xhkj5.com/forum.php?mod=viewthread&amp;tid=10528&amp;fromuid=1</a><br> (出处: 讯幻网)</p>]]></content>
       
       
       <categories>
