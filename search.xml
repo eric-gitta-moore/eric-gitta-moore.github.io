@@ -210,6 +210,19 @@
     </entry>
     
     
+    
+    <entry>
+      <title>OpenStack各个CLI Client客户端安装</title>
+      <link href="/2023/02/08/OpenStack%E5%90%84%E4%B8%AACLI%20Client%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/"/>
+      <url>/2023/02/08/OpenStack%E5%90%84%E4%B8%AACLI%20Client%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85/</url>
+      
+        <content type="html"><![CDATA[<p>找到官方文档中的“Language Bindings and Python Clients”就可以看到各个cli客户端了。</p><p>这里一次性全部安装完</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">pip install python-muranoclient \</span><br><span class="line">python-ironicclient \</span><br><span class="line">python-cinderclient \</span><br><span class="line">python-brick-cinderclient-ext \</span><br><span class="line">python-senlinclient \</span><br><span class="line">python-magnumclient \</span><br><span class="line">python-zunclient \</span><br><span class="line">python-saharaclient \</span><br><span class="line">python-designateclient \</span><br><span class="line">python-keystoneclient \</span><br><span class="line">python-glanceclient \</span><br><span class="line">python-masakariclient \</span><br><span class="line">python-barbicanclient \</span><br><span class="line">python-octaviaclient \</span><br><span class="line">python-neutronclient \</span><br><span class="line">python-tackerclient \</span><br><span class="line">python-swiftclient \</span><br><span class="line">python-heatclient \</span><br><span class="line">osc-placement \</span><br><span class="line">python-cloudkittyclient \</span><br><span class="line">python-vitrageclient \</span><br><span class="line">python-manilaclient \</span><br><span class="line">aodhclient</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
   
   
 </search>
