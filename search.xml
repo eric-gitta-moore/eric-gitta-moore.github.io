@@ -477,6 +477,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>OpenStack怎么找到官网CLI文档，openstack zone create命令不存在，怎么找到Designate CLI</title>
+      <link href="/2023/openstack-how-to-find-the-official-website-cli-documentation-openstack-zone-create-command-does-not-exist-how-to-find-designate-cli/"/>
+      <url>/2023/openstack-how-to-find-the-official-website-cli-documentation-openstack-zone-create-command-does-not-exist-how-to-find-designate-cli/</url>
+      
+        <content type="html"><![CDATA[<h1 id="1-进入DOC"><a href="#1-进入DOC" class="headerlink" title="1. 进入DOC"></a>1. 进入DOC</h1><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936497175351693649717024.png" alt="16936497175351693649717024.png"></p><h2 id="2-OpenStack-Python绑定和客户端的文档"><a href="#2-OpenStack-Python绑定和客户端的文档" class="headerlink" title="2. OpenStack Python绑定和客户端的文档"></a>2. OpenStack Python绑定和客户端的文档</h2><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936497275351693649727517.png" alt="16936497275351693649727517.png"></p><h1 id="3-找到所需组件的文档"><a href="#3-找到所需组件的文档" class="headerlink" title="3. 找到所需组件的文档"></a>3. 找到所需组件的文档</h1><blockquote><p>Unified OpenStack Client：python-openstackclient 的文档，一个统一的 shell 命令结构。 </p></blockquote><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936497375351693649737231.png" alt="16936497375351693649737231.png"></p><h1 id="4-完整文档"><a href="#4-完整文档" class="headerlink" title="4. 完整文档"></a>4. 完整文档</h1><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936497465351693649746399.png" alt="16936497465351693649746399.png"></p><h1 id="5-安装cli-client"><a href="#5-安装cli-client" class="headerlink" title="5. 安装cli client"></a>5. 安装cli client</h1><blockquote><p>python-designateclient包在 PyPI 上发布，因此可以使用 pip 工具安装，该工具将管理所有 python 依赖项的安装： </p></blockquote><p>可以发现没有 openstack zone create命令的原因是没有安装这个软件包</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install python-designateclient</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
