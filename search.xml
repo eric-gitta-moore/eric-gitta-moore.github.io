@@ -705,6 +705,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>arco design使用vite-plugin-style-import按需加载menu-item 报错 css未找到</title>
+      <link href="/2022/arco-design-uses-vite-plugin-style-import-to-load-menu-item-on-demand-and-reports-an-error-css-not-found/"/>
+      <url>/2022/arco-design-uses-vite-plugin-style-import-to-load-menu-item-on-demand-and-reports-an-error-css-not-found/</url>
+      
+        <content type="html"><![CDATA[<p> 根据官网arco design教程</p><blockquote><p>手动导入的方式按需加载组件</p></blockquote><p>解决方案：</p><p>将官网示例改成如下，exclude数组是没有css的组件名称。如果不清楚组件名称可以在resolveStyle函数中console.log打印一下</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">createStyleImportPlugin</span>(&#123;</span><br><span class="line">      <span class="attr">libs</span>: [</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="attr">libraryName</span>: <span class="string">&#x27;@arco-design/web-vue&#x27;</span>,</span><br><span class="line">          <span class="attr">esModule</span>: <span class="literal">true</span>,</span><br><span class="line">          <span class="attr">resolveStyle</span>: <span class="function">(<span class="params">name</span>) =&gt;</span> &#123;</span><br><span class="line">            <span class="keyword">const</span> exclude = [<span class="string">&#x27;menu-item&#x27;</span>]</span><br><span class="line">            <span class="keyword">if</span> (exclude.<span class="title function_">includes</span>(name)) <span class="keyword">return</span> <span class="string">&#x27;&#x27;</span></span><br><span class="line">            <span class="comment">// css</span></span><br><span class="line">            <span class="keyword">return</span> <span class="string">`@arco-design/web-vue/es/<span class="subst">$&#123;name&#125;</span>/style/css.js`</span></span><br><span class="line">          &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">      ],</span><br><span class="line">    &#125;),</span><br></pre></td></tr></table></figure><p>报错信息</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[vite] Internal server error: Failed to resolve import &quot;D:/Programing/WebstormProjects/cow-Low-code/node_modules/@arco-design/web-vue/es/menu-item/style/css.js&quot; from &quot;src\views\HomeView.vue&quot;. Does the file exist?</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936515375371693651537473.png" alt="16936515375371693651537473.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
