@@ -1,0 +1,181 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>华硕笔记本全硬盘恢复原厂状态 实机操作，MYASUS IN WINRE恢复，ASUS RECOVERY恢复 | James Curtis</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">华硕笔记本全硬盘恢复原厂状态 实机操作，MYASUS IN WINRE恢复，ASUS RECOVERY恢复</h1><a id="logo" href="/.">James Curtis</a><p class="description">大事小事都记下来</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">华硕笔记本全硬盘恢复原厂状态 实机操作，MYASUS IN WINRE恢复，ASUS RECOVERY恢复</h1><div class="post-meta">2021-12-12<span> | </span><span class="category"><a href="/categories/%E9%BB%98%E8%AE%A4/">默认</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 7</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div></div></div><div class="post-content"><p> 本教程的前提的在之前就备份了原厂的RECOVERY分区，RESTORE分区，MYASUS分区</p>
+<p>如果这些分区都没有的话那就只能找同型号笔记本的朋友要一份了，或者去售后，告诉他这三个分区都要恢复。一般售后为了节约硬盘空间，不会给你恢复restore分区，这个分区有将近20G。</p>
+<p>我机器撒天选2 i7-11800H，3060，32G，512GB，型号FX506HM，</p>
+<blockquote>
+<p>附上我的msinfo32，链接：<a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/iJEO5xj1tgd">https://yunling.lanzouo.com/iJEO5xj1tgd</a> </p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/31aee62d00ec4844bf1b76c1e237f9aa.png" alt="img"></p>
+<p>这篇教程先说全格式化怎么做，下次有空再说免格式化怎么弄。下面开始。</p>
+<p>首先首先你的先做给优盘或者移动硬盘做一个PE。网上做PE启动盘的教程很多，这里就不再累述。我用的优启通的PE，感觉东西比WEPE多一点。</p>
+<p>一、先插U盘（我这里插的是移动硬盘），然后开机或者重启一直不断的按F2，进入bios</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ce6bf9931e248378cb00151035f922c.jpg" alt="img"></p>
+<p> 二、按F8进入PE</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dbe67173bf55410b8dcd0362dcd56b57.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/769cd95973dc4efe9069680f285baa5c.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e172f3a3eea642e2ae2234619c4da337.jpg" alt="img"> </p>
+<p>三、分区，分成出厂那个样子</p>
+<p>我备份了出厂的分区表，按照这个来分就好了</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/08e3c070967f4b61adbb5813eec6c9b2.jpg" alt="img"></p>
+<p>本地磁盘D这个就忽略吧合并到os里面去。这个本地磁盘D是我机器到手之后没几天用win自带的磁盘管理工具分的，我不喜欢C盘那么大。</p>
+<p>①先分一个区出来</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e7e11d2ca8834470979b16000ddcad42.jpg" alt="img"> </p>
+<p>然后把这个OS调整一下，缩小为200G，因为后面不知道还要用多少。</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7511ad1b11a94b58a8e0079add049be8.jpg" alt="img"> </p>
+<p>然后我们依次把RECOVERY、restore、MYASUS建立出来</p>
+<p>RECOVERY分区是1000MB</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/00627725fd194e4d9bcae5c8d9c17720.jpg" alt="img"></p>
+<p>RESTORE分区是19.5GB也就是19968MB</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3af4087c2c6148b9a39d2b1268c5b2ad.jpg" alt="img"></p>
+<p>MYASUS是200MB </p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dafa293bf5294ab9afb4b05bb0e48fa8.jpg" alt="img"> </p>
+<p>保存更改，然后把多出的还给OS分区</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/36b45205c70e4c119e596e07b16086e7.jpg" alt="img"> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/76740c9d4dad4f2e96b99cc1d7693e4b.jpg" alt="img"> </p>
+<p>四、恢复各个分区的备份</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7b952aea8a3748049b081b9acafca71f.jpg" alt="img"><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/6315dbc6ac1249e2a136504769f62033.jpg" alt="img"></p>
+<p> 用diskgenius恢复RECOVERY、RESTORE、MYASUS</p>
+<p>然后打开dism++，左上角 文件-释放镜像，这一步恢复出厂系统</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e9045a768b0f45e795d61c9cc756a224.jpg" alt="img"></p>
+<p> 然后现在还是无法开机的，接下来我们重建引导。</p>
+<p>回到diskgenius，我们将esp分区指定一个驱动器号，os分区也指定一个驱动器号。</p>
+<p>（右键某个分区，找到指定驱动器号就可以找到这个功能了 ）</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b486d0c1e63c4d2081f5be1dd89f9faf.jpg" alt="img"></p>
+<p>按win+r输入cmd</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d5879ab87e1544f9a97cb91818e09b49.jpg" alt="img"></p>
+<p>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdboot d:\windows /s c: /f UEFI /l zh-cn</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> 这里d:\windows中的d要看你那边os分区指定的驱动器号</p>
+<p>&#x2F;s c:也是，看你那边esp分区指定的驱动器号</p>
+<p>五、还有点开机前的收尾工作</p>
+<p>然后之前有一步忘记说了。就在这里做是一样的。</p>
+<p><strong>右键esp分区，设置卷标。设置为SYSTEM</strong></p>
+<p> 右键RECOVERY分区，更改分区参数，</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0640ca85d6c94b1fa42a49edc1fee88b.jpg" alt="img"></p>
+<p>文件系统类型改为Microsoft recovery partition其它的不用动</p>
+<p>还有RESTORE分区和MYASUS分区也这样操作一下，修改文件系统类型</p>
+<p>六、重启进入系统配置winre</p>
+<p> 重启，不断的按f2</p>
+<p>进入bios把启动顺序改一下，</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a301e079bcf422a8a001663fb1eb6fd.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a0c40faec38945de9b53f74cfb815a77.jpg" alt="img"></p>
+<p>然后按f10保存并退出，这时候主板会断电一下，这时候把优盘赶紧把下来（不拔问题也不大咯） </p>
+<p> 七、配置当前系统的winre</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/029602c7a48448858b05c9cf6b42c9d3.jpg" alt="img"></p>
+<p>开机又是这个东西</p>
+<p>一顿操作之后总算进来了，按win+s输入cmd以管理员身份运行</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5f29599968824e44a7809a854bb00b6d.png" alt="img">输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagnetc /info</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/636e88b582af4fb0985b324a24d26b5b.jpg" alt="img"></p>
+<p>果然很正常的出现了disabled</p>
+<p>然后修改一下显示隐藏文件和显示拓展名</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/052e1079000e44faa31e3111f5cdd802.png" alt="img"></p>
+<p>接下来给winre指定镜像路径，在刚刚打开的命令提示符里面 照着我这样输入</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/613ce2a05f8b4711aca0812b77f7d548.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ddf4c0be2b445b983d012a8e646543f.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/4e9d23cb716f4e0e9a17e754c1469c83.jpg" alt="img"></p>
+<p>这样就把recovery分区挂载上了</p>
+<p>进入recovery分区所在盘，找到winre，按shift键的同时按下鼠标右键复制为路径</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16b9fff2a8294fee93e388b0f4a7261b.jpg" alt="img"> </p>
+<p>接下来我们另外再用管理员权限打开一个小黑窗</p>
+<p>输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setreimage /path 刚刚复制的路径</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a60a583ab8443c3bcf2643431ec402b.jpg" alt="img"></p>
+<p> 然后修改winre配置文件</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1d654611eff242cd8acf714c68b8bda1.jpg" alt="img"></p>
+<p>把c:\windows\system32\recovery下面的reagentxml删了，从c:\recovery里面的reagentold.xml复制过去，并改名为ReAgent.xml </p>
+<p>下面就是启用winre咯</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/9e1d5300104c4f75999d21e920c5155d.jpg" alt="img"></p>
+<p>在命令行里面输入</p>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /enable</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> 不出意外的话这里会稍微停顿一下再出来操作成功的提示</p>
+<p>然后我们可以输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /info</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> 看一下是否成功启用了</p>
+<p>别急别急，这里才只是进行到三分之二</p>
+<p>还有一步，写入MYASUS in winre的入口</p>
+<p>把这个文件复制到桌面</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e95634d43475492597360d1cb5af1d9e.jpg" alt="img"></p>
+<p>按住shift键的同时按下鼠标右键，复制路径</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/770fb2d4e7c847f7921bba10f6d4faa6.jpg" alt="img"></p>
+<p>然后在命令行里面输入</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setbootshelllink /configfile 刚刚复制的路径</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> 到这里为止，现在用的这个系统的MYASUS in winre就已经配置好了</p>
+<p>我们可以按住shift不放，点击重启，就会出现这个蓝色的界面，然后点击疑难解答就会出现这个界面</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e5a85df5fac141629d4e72bea6412e92.jpg" alt="img"></p>
+<p> 八、配置asus.sum里面的winre</p>
+<p> 点击这个向左的小箭头</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e8ed571a7e0047f986410f6ecf902ca9.png" alt="img"></p>
+<p>然后选择继续使用win10，这里应该会重启一下，我们不断的按f2进入bios，然后进入pe</p>
+<p>打开cmd，</p>
+<p> 然后找个地方，比如OS所在的那个盘，我这是D盘</p>
+<p>创建目录，输入命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">md d:\mount</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p>把asus.sum挂载到这个目录下面</p>
+<p> 输入命令挂载</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /mount-image /imagefile:你的asus.sum路径 /index:1 /MountDir:d:\mount</span><br></pre></td></tr></table></figure>
+
+<p><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p>
+<p> <img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0c52f66dc8384253bfd289bb69120af0.jpg" alt="img"></p>
+<p>接下来将刚刚我们系统弄好的ReAgent.xml复制这个镜像里面对应的位置去</p>
+<p>也就是os所在驱动器下面的Windows\System32\Recovery\ReAgent.xml复制到d:\mount\Windows\System32\Recovery\ReAgent.xml</p>
+<p>复制完成之后就成了，然后我们输入命令取消挂载并保存修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /Unmount-image /MountDir:d:\mount /commit</span><br></pre></td></tr></table></figure>
+
+
+
+<p> 这样我们修改好镜像了。把这个镜像去替换RESTORE分区里面的（我这里是修改的我移动硬盘里面那一个镜像副本，要是你们直接改的是RESTORE分区里面那个就不用替换了）</p>
+<p>至此，修改全部完成。并且用asus recovery重置系统之后，MYASUS in winre的入口也是存在的</p>
+<p>后面的话可以看也可以不看了</p>
+<p>九、重启系统进入MYASUS in winre，并用傲梅全盘备份（这里的傲梅pe版要事先下载好，傲梅国内版的网站里面有提供傲梅轻松备份PE版本）</p>
+<p>重启的时候记得拔掉优盘，开机的时候不断按f12进入winre</p>
+<p>选择MYASUS in winre</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/612ef3aad0454fada0b7eb5d8129b2ff.jpg" alt="img"></p>
+<p>选择asus recovery</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/cf8a257638c74639a99b3095ab2312ed.jpg" alt="img"></p>
+<p>重置 </p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a94a198f08904916a63ddc35f33fa65c.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a17bf8f869a94bd9b87c48e8cbea669c.jpg" alt="img"></p>
+<p>ok搞定，应该会自动重启，这时候要快点操作，插上优盘，重启的时候不断按f2进入bios，然后f8进入pe，</p>
+<p>进去之后第一件事情删除刚刚asus recovery产生的日志文件</p>
+<p>在RESTORE分区下面和asus.sum一起的。删掉那两个log（其实这里可以直接用dism++恢复备份的，我那时候是为了测试一下这个asus recovery是不是能用的才这样） </p>
+<p>之后就可以打开傲梅备份备份全硬盘了</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/8a3e46d919544421a6ff33a29c18fed3.jpg" alt="img"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e44f59cb7f8242018447a44f77bc0de0.jpg" alt="img"></p>
+<p>至此教程全部结束</p>
+<blockquote>
+<p>参考：</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7221452991">https://tieba.baidu.com/p/7221452991</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml">http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml</a></p>
+</blockquote>
+<blockquote>
+<p>资料：</p>
+<p>分区表：<a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/ib7Nuxiyo7g">分区表.zip - 蓝奏云</a></p>
+<p>MYASUS镜像：<a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/iXrLLxiyqqh">MYASUS.zip - 蓝奏云</a></p>
+<p>RECOVERY镜像和RESTORE太大了一个1G一个15G，我慢慢传吧</p>
+</blockquote>
+<p>2022年1月4日 18:07:39</p>
+<blockquote>
+<p>链接:<a target="_blank" rel="noopener" href="https://caiyun.139.com/m/i?005Cj0oBCE8As">https://caiyun.139.com/m/i?005Cj0oBCE8As</a><br> 提取码:bHT7<br> 复制内容打开和彩云PC客户端，操作更方便哦</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">文件: F:\RESTORE.pmf</span><br><span class="line">大小: 16377489237 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:55:20</span><br><span class="line">MD5: 144AABC2C5817C1D9CA646DF8DE056BB</span><br><span class="line">SHA1: 2F2958CAF3EF7E1BC969D90A39E5EC8980364F02</span><br><span class="line">CRC32: E589B078</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.001</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:06</span><br><span class="line">MD5: E0EE12C4D0F650925E8538DCD74B50FA</span><br><span class="line">SHA1: 7DB386D82D0688C79A65D145CFB2218E8A41C735</span><br><span class="line">CRC32: 6CD0640A</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.002</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:20:54</span><br><span class="line">MD5: 5F458E9AA9F174B5D6A7C908993EB52C</span><br><span class="line">SHA1: 8E38F93D96268FC08F1030B0CE9ED86367914509</span><br><span class="line">CRC32: 2123172B</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.003</span><br><span class="line">大小: 4290772992 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:01</span><br><span class="line">MD5: 1FB65C6625F7C0100816091821D39FE5</span><br><span class="line">SHA1: AF296F9BB6DCCF5A3903FAF518CF8E2CEA8DCFB7</span><br><span class="line">CRC32: 330ECE6C</span><br><span class="line"></span><br><span class="line">文件: F:\RESTORE.zip.004</span><br><span class="line">大小: 3505170533 字节</span><br><span class="line">修改时间: 2022年1月4日, 星期二, 上午 11:21:06</span><br><span class="line">MD5: 17352CBAEA4C2FE9CF5C101AAF08D676</span><br><span class="line">SHA1: 8F95C0E2F6768552B08CCBC9E09310B4D2F69CA6</span><br><span class="line">CRC32: 28DBF528</span><br><span class="line"></span><br><span class="line">文件: L:\systemBackup\part_backup\MYASUS.pmf</span><br><span class="line">大小: 34321259 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:52:21</span><br><span class="line">MD5: 174C93AB86F1ABD548C546B4EBEACE9B</span><br><span class="line">SHA1: 9E1B89A177107E113C720D876221E71C9B530C4A</span><br><span class="line">CRC32: FE4B0F8E</span><br><span class="line"></span><br><span class="line">文件: L:\systemBackup\part_backup\RECOVERY.pmf</span><br><span class="line">大小: 935400245 字节</span><br><span class="line">修改时间: 2021年11月14日, 星期日, 下午 02:56:32</span><br><span class="line">MD5: 8B43561CED145FC39366A03F56371385</span><br><span class="line">SHA1: AF27CDA6C66CAC4A854C9D51D63BE53BB0EA4163</span><br><span class="line">CRC32: C0C3F6F6</span><br></pre></td></tr></table></figure>
+
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2021/how-to-convert-numbers-in-word-to-ordinary-words-how-to-convert-word-numbers-to-ordinary-text/">word中编号怎么转成普通的字，如何把WORD编号转为普通文本</a></div><script src="https://utteranc.es/client.js" repo="james-curtis/james-curtis.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="https://avatars.githubusercontent.com/james-curtis"/></a><p>To be a better man.</p><a class="info-icon" href="https://twitter.com/james_curtis_oh" title="Twitter" target="_blank" style="margin-inline:5px"> <i class="fa fa-twitter-square" style="margin-inline:5px"></i></a><a class="info-icon" href="mailto:jamescurtis@foxmail.com" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="https://github.com/james-curtis" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/">默认</a><span class="category-list-count">57</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2023/windows-remaps-capslock-to-ctrl/">Windows 重新映射 CapsLock 大写锁定到 Ctrl</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-can-non-root-ordinary-users-directly-execute-docker-commands-in-wsl-ubuntu/">WSL Ubuntu 中非 root 的普通用户怎么直接执行 Docker 命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/full-stack-development-and-deep-learning-tensorflow-pytorch-gpu-acceleration-using-nvidia-docker-in-wsl2/">在 WSL2 中使用 NVIDIA Docker 进行全栈开发和深度学习 TensorFlow pytorch GPU 加速</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-to-change-man-help-to-chinese-in-debian-how-to-change-the-display-language-of-wsl-to-chinese/">debian 怎么修改 man help 为中文，wsl 怎么修改显示语言为中文</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-to-use-vim-vim-usage-tutorial-how-to-switch-vimtutor-to-chinese-and-chinese/">vim怎么使用，vim使用教程，vimtutor怎么切换中文 汉化</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/replace-the-linux-wenquanyi-zhenghei-fonts-wqy-zenhei-font-and-replace-the-linux-default-chinese-font/">替换linux的文泉驿正黑fonts-wqy-zenhei字体 替换linux默认中文字体</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/2023-frequency-of-use-of-various-diagrams-in-software-engineering-in-modern-enterprise-level-development/">2023软件工程中各种图在现代企业级开发中的使用频率</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/the-educoder-touge-is-forced-to-display-the-directory-button-on-the-right-which-is-convenient-for-viewing-the-test-code-and-how-to-test-the-touge-code-locally/">educoder头歌强制显示右侧目录按钮，方便查看测试代码，便于怎么在本地自测头歌代码？</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/after-the-rke2-cluster-is-installed-kubectl-responds-very-slowly/">rke2集群安装完成之后使用kubectl反应很慢</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="//james-curtis.github.io" title="Blog" target="_blank">Blog</a><ul></ul><a href="https://github.com/james-curtis" title="GitHub" target="_blank">GitHub</a><ul></ul><a href="https://james-curtis.github.io/css-handbook/" title="CSS 参考手册" target="_blank">CSS 参考手册</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">James Curtis.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/external.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
