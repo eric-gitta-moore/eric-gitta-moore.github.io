@@ -743,6 +743,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>NVIDIA broadcast App点击选择麦克源时候闪退 崩溃怎么解决</title>
+      <link href="/2022/nvidia-broadcast-app-crashes-when-clicking-to-select-microphone-source-how-to-solve-the-crash/"/>
+      <url>/2022/nvidia-broadcast-app-crashes-when-clicking-to-select-microphone-source-how-to-solve-the-crash/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936522995391693652298666.png" alt="16936522995391693652298666.png"> </p><p> 一点击麦克风源就会崩溃的解决办法</p><p> 进入声音设置，把不需要的麦克风和虚拟麦克风全部禁用了，只留物理麦克风，然后在一个个打开排查一下是哪个麦克风的问题即刻</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936523065391693652306277.png" alt="16936523065391693652306277.png"></p><p>禁用之后</p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936523145351693652313727.png" alt="16936523145351693652313727.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
