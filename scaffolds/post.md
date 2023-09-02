@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
-subtitle: {{ title }}
-permalink: {{ title }}
+subtitle: 
+permalink: 
 date: {{ date }}
 toc: true
 tags: 
