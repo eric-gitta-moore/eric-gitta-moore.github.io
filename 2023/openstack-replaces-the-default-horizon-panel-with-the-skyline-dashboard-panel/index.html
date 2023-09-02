@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>OpenStack使用Skyline Dashboard面板替换默认Horizon面板 | James Curtis</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">OpenStack使用Skyline Dashboard面板替换默认Horizon面板</h1><a id="logo" href="/.">James Curtis</a><p class="description">大事小事都记下来</p></div><div id="nav-menu"><a class="current" href="/."><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">OpenStack使用Skyline Dashboard面板替换默认Horizon面板</h1><div class="post-meta">2023-02-03<span> | </span><span class="category"><a href="/categories/%E9%BB%98%E8%AE%A4/">默认</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 848</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 4</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%98%E6%96%B9%E6%96%87%E6%A1%A3"><span class="toc-text">官方文档</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%88%E5%86%B3%E6%9D%A1%E4%BB%B6"><span class="toc-text">先决条件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-%E9%95%9C%E5%83%8F%E6%BA%90"><span class="toc-text">1. 镜像源</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-%E4%B8%8B%E8%BD%BDskyline-yaml"><span class="toc-text">2. 下载skyline.yaml</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-%E7%BC%96%E8%BE%91%E9%85%8D%E7%BD%AEskyline-yaml"><span class="toc-text">3. 编辑配置skyline.yaml</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-%E9%85%8D%E7%BD%AE%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">4. 配置数据库</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#4-1-%E5%88%9B%E5%BB%BA-skyline-%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-text">4.1 创建 skyline 数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-2-%E6%8E%88%E4%BA%88%E5%AF%B9%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%80%82%E5%BD%93%E8%AE%BF%E9%97%AE%E6%9D%83%E9%99%90"><span class="toc-text">4.2 授予对数据库的适当访问权限</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E5%88%9B%E5%BB%BA-skyline-%E6%9C%8D%E5%8A%A1%E5%87%AD%E8%AF%81"><span class="toc-text">5. 创建 skyline 服务凭证</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#6-%E8%BF%90%E8%A1%8C-skyline-bootstrap-%E5%AE%B9%E5%99%A8%E8%BF%9B%E8%A1%8C%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BC%95%E5%AF%BC"><span class="toc-text">6. 运行 skyline_bootstrap 容器进行初始化引导</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#7-%E5%88%9D%E5%A7%8B%E5%8C%96%E5%BC%95%E5%AF%BC%E5%AE%8C%E6%88%90%E5%90%8E%E8%BF%90%E8%A1%8C-skyline-%E6%9C%8D%E5%8A%A1"><span class="toc-text">7. 初始化引导完成后运行 skyline 服务</span></a></li></ol></div></div><div class="post-content"><p> 书接上回 <a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35485875/article/details/128868634">OpenStack Yoga安装使用kolla-ansible</a> </p>
+<blockquote>
+<p>忘记提示了。如果截止发稿今天，使用最新zed版本，在最后一步部署阶段会报错，好像是rabbitMQ重启失败。所以建议使用最新版再退一个版本</p>
+</blockquote>
+<hr>
+<h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p><a target="_blank" rel="noopener" href="https://opendev.org/openstack/skyline-apiserver/src/branch/master/kolla/README-zh_CN.md">skyline-apiserver&#x2F;README-zh_CN.md at master - skyline-apiserver - OpenDev: Free Software Needs Free Tools</a></p>
+<h1 id="先决条件"><a href="#先决条件" class="headerlink" title="先决条件"></a>先决条件</h1><ul>
+<li>一个至少运行核心组件的 OpenStack 环境, 并能通过 Keystone endpoint 访问 OpenStack 组件</li>
+<li>一个安装有容器引擎的 (docker 或 podman) 的 Linux 服务器</li>
+</ul>
+<h1 id="1-镜像源"><a href="#1-镜像源" class="headerlink" title="1. 镜像源"></a>1. 镜像源</h1><p>找到github中OpenStack对应与openstack&#x2F;skyline-apiserver的镜像，即</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 官方https://opendev.org/openstack/skyline-apiserver</span><br><span class="line"># github 如下</span><br><span class="line">https://github.com/openstack/skyline-apiserver</span><br></pre></td></tr></table></figure>
+
+
+
+<p>任意找一个国内git平台克隆一份。我这里使用jihulab.com</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936505705351693650569618.png" alt="16936505705351693650569618.png"></p>
+<h1 id="2-下载skyline-yaml"><a href="#2-下载skyline-yaml" class="headerlink" title="2. 下载skyline.yaml"></a>2. 下载skyline.yaml</h1><p>找到etc&#x2F;skyline.yaml.sample，这个文件</p>
+<p>打开这个文件原始链接，下载到服务器去</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936505805351693650580144.png" alt="16936505805351693650580144.png"></p>
+<p>得到如下链接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://jihulab.com/james-curtis/skyline-apiserver/-/raw/master/etc/skyline.yaml.sample</span><br></pre></td></tr></table></figure>
+
+
+
+<p> 然后输入下面命令，下载到本地</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /etc/skyline &amp;&amp; wget https://jihulab.com/james-curtis/skyline-apiserver/-/raw/master/etc/skyline.yaml.sample  -O /etc/skyline/skyline.yaml</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="3-编辑配置skyline-yaml"><a href="#3-编辑配置skyline-yaml" class="headerlink" title="3. 编辑配置skyline.yaml"></a>3. 编辑配置skyline.yaml</h1><p>根据实际的环境修改以下参数</p>
+<ul>
+<li>database_url</li>
+</ul>
+<p> 修改为如下，注意：ip是浮动IP，SKYLINE_DBPASS这个是数据库用户密码 可以自定义</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">database_url: mysql://skyline:SKYLINE_DBPASS@10.10.1.250:3306/skyline</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>keystone_url</li>
+</ul>
+<p>将 127.0.0.1 修改为浮动IP</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keystone_url: http://10.10.1.250:35357/v3/</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>prometheus_endpoint</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">prometheus_endpoint: http://10.10.1.250:9091</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>system_user_password</li>
+</ul>
+<p>设置你的skyline密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">system_user_password: &#x27;SKYLINE_PASS&#x27;</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="4-配置数据库"><a href="#4-配置数据库" class="headerlink" title="4. 配置数据库"></a>4. 配置数据库</h1><h2 id="4-1-创建-skyline-数据库"><a href="#4-1-创建-skyline-数据库" class="headerlink" title="4.1 创建 skyline 数据库"></a>4.1 创建 skyline 数据库</h2><p>进入docker环境，命令：docker exec -it mariadb bash</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">root@ubuntu:~# docker exec -it mariadb bash</span><br><span class="line">(mariadb)[mysql@ubuntu /]$ </span><br></pre></td></tr></table></figure>
+
+
+
+<p>获取mariadb密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/kolla/passwords.yml | grep ^database_password</span><br></pre></td></tr></table></figure>
+
+
+
+<p>连接mariadb，命令：mysql -u root -p</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">(mariadb)[mysql@ubuntu /]$ mysql -u root -p</span><br><span class="line">Enter password: </span><br><span class="line">Welcome to the MariaDB monitor.  Commands end with ; or \g.</span><br><span class="line">Your MariaDB connection id is 6407</span><br><span class="line">Server version: 10.6.11-MariaDB-1:10.6.11+maria~ubu2004-log mariadb.org binary distribution</span><br><span class="line"></span><br><span class="line">Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.</span><br><span class="line"></span><br><span class="line">Type &#x27;help;&#x27; or &#x27;\h&#x27; for help. Type &#x27;\c&#x27; to clear the current input statement.</span><br><span class="line"></span><br><span class="line">MariaDB [(none)]&gt; </span><br></pre></td></tr></table></figure>
+
+
+
+<p>创建数据库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE DATABASE IF NOT EXISTS skyline DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-2-授予对数据库的适当访问权限"><a href="#4-2-授予对数据库的适当访问权限" class="headerlink" title="4.2 授予对数据库的适当访问权限"></a>4.2 授予对数据库的适当访问权限</h2><p>SKYLINE_DBPASS是数据库用户密码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">GRANT ALL PRIVILEGES ON skyline.* TO &#x27;skyline&#x27;@&#x27;localhost&#x27; IDENTIFIED BY &#x27;SKYLINE_DBPASS&#x27;;</span><br><span class="line">GRANT ALL PRIVILEGES ON skyline.* TO &#x27;skyline&#x27;@&#x27;%&#x27;  IDENTIFIED BY &#x27;SKYLINE_DBPASS&#x27;;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>之后推出MariaDB环境，输入exit</p>
+<p>再退出docker环境，输入exit</p>
+<h2 id="5-创建-skyline-服务凭证"><a href="#5-创建-skyline-服务凭证" class="headerlink" title="5. 创建 skyline 服务凭证"></a>5. 创建 skyline 服务凭证</h2><p>如果没有进入python虚拟环境，先激活</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /path/to/venv/bin/activate</span><br></pre></td></tr></table></figure>
+
+
+
+<p> 然后创建服务凭证</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">(venv) root@ubuntu:~# . /etc/kolla/admin-openrc.sh</span><br><span class="line">(venv) root@ubuntu:~# openstack user create --domain default --password SKYLINE_PASS skyline</span><br><span class="line">+---------------------+----------------------------------+</span><br><span class="line">| Field               | Value                            |</span><br><span class="line">+---------------------+----------------------------------+</span><br><span class="line">| domain_id           | default                          |</span><br><span class="line">| enabled             | True                             |</span><br><span class="line">| id                  | cef488018dd542d9b12a6260f1413194 |</span><br><span class="line">| name                | skyline                          |</span><br><span class="line">| options             | &#123;&#125;                               |</span><br><span class="line">| password_expires_at | None                             |</span><br><span class="line">+---------------------+----------------------------------+</span><br><span class="line">(venv) root@ubuntu:~# openstack role add --project service --user skyline admin</span><br><span class="line">(venv) root@ubuntu:~# </span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="6-运行-skyline-bootstrap-容器进行初始化引导"><a href="#6-运行-skyline-bootstrap-容器进行初始化引导" class="headerlink" title="6. 运行 skyline_bootstrap 容器进行初始化引导"></a>6. 运行 skyline_bootstrap 容器进行初始化引导</h1><p>这里注意使用源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 官网命令</span><br><span class="line"># docker run -d --name skyline_bootstrap -e KOLLA_BOOTSTRAP=&quot;&quot; -v /etc/skyline/skyline.yaml:/etc/skyline/skyline.yaml --net=host 99cloud/skyline:latest</span><br></pre></td></tr></table></figure>
+
+
+
+<p>这里我使用南京大学的docker hub源</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name skyline_bootstrap -e KOLLA_BOOTSTRAP=&quot;&quot; -v /etc/skyline/skyline.yaml:/etc/skyline/skyline.yaml --net=host docker.nju.edu.cn/99cloud/skyline:latest</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="7-初始化引导完成后运行-skyline-服务"><a href="#7-初始化引导完成后运行-skyline-服务" class="headerlink" title="7. 初始化引导完成后运行 skyline 服务"></a>7. 初始化引导完成后运行 skyline 服务</h1><p> 删除引导容器</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker rm -f skyline_bootstrap</span><br></pre></td></tr></table></figure>
+
+
+
+<p>运行 skyline 服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name skyline --restart=always -v /etc/skyline/skyline.yaml:/etc/skyline/skyline.yaml --net=host docker.nju.edu.cn/99cloud/skyline:latest</span><br></pre></td></tr></table></figure>
+
+
+
+<hr>
+<p>完成。</p>
+<p>现在你可以访问仪表盘: https:&#x2F;&#x2F;&lt;浮动ip&gt;:9999</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936505995351693650598690.png" alt="16936505995351693650598690.png"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936506075361693650606920.png" alt="16936506075361693650606920.png"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936506155351693650614565.png" alt="16936506155351693650614565.png"></p>
+</div><div class="tags"></div><div class="post-nav"><a class="pre" href="/2023/openstack-landscape-cloud-native-landscape-openstack-map/">OPENSTACK LANDSCAPE云原生景观 | OpenStack地图</a></div><script src="https://utteranc.es/client.js" repo="james-curtis/james-curtis.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="关于"><img class="nofancybox" src="https://avatars.githubusercontent.com/james-curtis"/></a><p>To be a better man.</p><a class="info-icon" href="https://twitter.com/james_curtis_oh" title="Twitter" target="_blank" style="margin-inline:5px"> <i class="fa fa-twitter-square" style="margin-inline:5px"></i></a><a class="info-icon" href="mailto:jamescurtis@foxmail.com" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="https://github.com/james-curtis" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%BB%98%E8%AE%A4/">默认</a><span class="category-list-count">32</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> 标签</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2023/windows-remaps-capslock-to-ctrl/">Windows 重新映射 CapsLock 大写锁定到 Ctrl</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-can-non-root-ordinary-users-directly-execute-docker-commands-in-wsl-ubuntu/">WSL Ubuntu 中非 root 的普通用户怎么直接执行 Docker 命令</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/full-stack-development-and-deep-learning-tensorflow-pytorch-gpu-acceleration-using-nvidia-docker-in-wsl2/">在 WSL2 中使用 NVIDIA Docker 进行全栈开发和深度学习 TensorFlow pytorch GPU 加速</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-to-change-man-help-to-chinese-in-debian-how-to-change-the-display-language-of-wsl-to-chinese/">debian 怎么修改 man help 为中文，wsl 怎么修改显示语言为中文</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/how-to-use-vim-vim-usage-tutorial-how-to-switch-vimtutor-to-chinese-and-chinese/">vim怎么使用，vim使用教程，vimtutor怎么切换中文 汉化</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/replace-the-linux-wenquanyi-zhenghei-fonts-wqy-zenhei-font-and-replace-the-linux-default-chinese-font/">替换linux的文泉驿正黑fonts-wqy-zenhei字体 替换linux默认中文字体</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/2023-frequency-of-use-of-various-diagrams-in-software-engineering-in-modern-enterprise-level-development/">2023软件工程中各种图在现代企业级开发中的使用频率</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/the-educoder-touge-is-forced-to-display-the-directory-button-on-the-right-which-is-convenient-for-viewing-the-test-code-and-how-to-test-the-touge-code-locally/">educoder头歌强制显示右侧目录按钮，方便查看测试代码，便于怎么在本地自测头歌代码？</a></li><li class="post-list-item"><a class="post-list-link" href="/2023/after-the-rke2-cluster-is-installed-kubectl-responds-very-slowly/">rke2集群安装完成之后使用kubectl反应很慢</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> 友情链接</i></div><ul></ul><a href="//james-curtis.github.io" title="Blog" target="_blank">Blog</a><ul></ul><a href="https://github.com/james-curtis" title="GitHub" target="_blank">GitHub</a><ul></ul><a href="https://james-curtis.github.io/css-handbook/" title="CSS 参考手册" target="_blank">CSS 参考手册</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/." rel="nofollow">James Curtis.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/css/search.css?v=1.0.0"><script type="text/javascript" src="/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/js/copycode.js?v=1.0.0" successtext="复制成功！"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/css/external.css?v=1.0.0"><script type="text/javascript" src="/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=1.0.0"></script></div></body></html>
