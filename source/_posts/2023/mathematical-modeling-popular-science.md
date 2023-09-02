@@ -1,7 +1,6 @@
 ---
 title: 数学建模科普
-subtitle: Mathematical modeling popular science
-permalink: Mathematical modeling popular science
+subtitle: mathematical-modeling-popular-science
 date: 2023-02-14 14:26:39
 toc: true
 categories: 

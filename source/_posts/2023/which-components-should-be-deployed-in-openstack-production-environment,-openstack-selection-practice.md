@@ -1,7 +1,6 @@
 ---
 title: OpenStack生产环境应该部署哪些组件，OpenStack选型实践
 subtitle: Which components should be deployed in OpenStack production environment, OpenStack selection practice
-permalink: Which components should be deployed in OpenStack production environment, OpenStack selection practice
 date: 2023-02-10 17:42:28
 toc: true
 categories: 

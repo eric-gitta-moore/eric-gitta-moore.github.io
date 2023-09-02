@@ -1,7 +1,6 @@
 ---
 title: Windows 重新映射 CapsLock 大写锁定到 Ctrl
 subtitle: Windows remaps CapsLock to Ctrl
-permalink: Windows remaps CapsLock to Ctrl
 date: 2023-9-2 13:16:43
 toc: true
 categories: 

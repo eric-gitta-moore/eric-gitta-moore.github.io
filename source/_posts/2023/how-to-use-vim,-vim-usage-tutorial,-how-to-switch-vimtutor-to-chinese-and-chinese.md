@@ -1,7 +1,6 @@
 ---
 title: vim怎么使用，vim使用教程，vimtutor怎么切换中文 汉化
 subtitle: How to use vim, vim usage tutorial, how to switch vimtutor to Chinese and Chinese
-permalink: How to use vim, vim usage tutorial, how to switch vimtutor to Chinese and Chinese
 date: 2023-08-02 19:26:52
 toc: true
 categories: 

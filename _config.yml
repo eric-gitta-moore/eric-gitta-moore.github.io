@@ -4,6 +4,6 @@ language: zh-CN
 timezone: Asia/Shanghai
 
 url: https://james-curtis.github.io
-permalink: :year/:month/:day/:title/
+permalink: :title/
 
 theme: maupassant

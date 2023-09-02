@@ -1,7 +1,6 @@
 ---
 title: OpenStack各个CLI Client客户端安装
 subtitle: Client installation of each CLI Client of OpenStack
-permalink: Client installation of each CLI Client of OpenStack
 date: 2023-02-08 22:24:41
 toc: true
 categories: 
