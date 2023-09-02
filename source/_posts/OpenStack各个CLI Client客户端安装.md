@@ -3,6 +3,8 @@ title: OpenStack各个CLI Client客户端安装
 subtitle: Client installation of each CLI Client of OpenStack
 date: 2023-02-08 22:24:41
 toc: true
+categories: 
+    - 默认
 ---
 
 找到官方文档中的“Language Bindings and Python Clients”就可以看到各个cli客户端了。

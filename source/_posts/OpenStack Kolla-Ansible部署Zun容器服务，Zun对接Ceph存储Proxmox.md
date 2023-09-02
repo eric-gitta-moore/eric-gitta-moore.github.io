@@ -3,6 +3,8 @@ title: OpenStack Kolla-Ansible部署Zun容器服务，Zun对接Ceph存储Proxmox
 subtitle: OpenStack Kolla-Ansible deploys Zun container service, and Zun connects to Ceph storage Proxmox
 date: 2023-02-09 19:28:26
 toc: true
+categories: 
+    - 默认
 ---
 
  书接上回 [OpenStack Kolla-Ansible部署Designate域名解析服务DNS服务DNSaas](https://blog.csdn.net/qq_35485875/article/details/128921256)

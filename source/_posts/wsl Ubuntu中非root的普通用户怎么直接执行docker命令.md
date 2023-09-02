@@ -3,6 +3,8 @@ title: WSL Ubuntu 中非 root 的普通用户怎么直接执行 Docker 命令
 subtitle: How can non-root ordinary users directly execute Docker commands in WSL Ubuntu?
 date: 2023-09-01 23:19:01
 toc: true
+categories: 
+    - 默认
 ---
 
 
