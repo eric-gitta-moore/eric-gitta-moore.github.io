@@ -458,6 +458,25 @@
     </entry>
     
     
+    
+    <entry>
+      <title>OpenStack haproxy Statistics Report统计报告怎么在哪里，haproxy Dashboard怎么打开</title>
+      <link href="/2023/where-is-the-openstack-haproxy-statistics-report-statistics-report-and-how-to-open-the-haproxy-dashboard/"/>
+      <url>/2023/where-is-the-openstack-haproxy-statistics-report-statistics-report-and-how-to-open-the-haproxy-dashboard/</url>
+      
+        <content type="html"><![CDATA[<p>haproxystats是HAProxy负载均衡器的统计数据收集器，它处理各种统计数据并将它们推送到图形系统（Graphite）。它旨在满足以下要求：</p><ol><li>快速且可配置的 HAProxy 统计数据处理</li><li>HAProxy 在多进程运行时执行聚合（nbproc &gt; 1）</li><li>以非常低的间隔（10 秒）提取统计信息</li><li>灵活地将统计信息分发到不同的系统（Graphite、kafka）</li></ol><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936495295341693649528613.png" alt="16936495295341693649528613.png"></p><hr><p>在任意计算节点上，找到</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/etc/kolla/haproxy/haproxy.cfg</span><br></pre></td></tr></table></figure><p>就可以看到设置了</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">global</span><br><span class="line">    chroot /var/lib/haproxy</span><br><span class="line">    user haproxy</span><br><span class="line">    group haproxy</span><br><span class="line">    daemon</span><br><span class="line">    log 10.10.1.81:5140 local1</span><br><span class="line">    maxconn 40000</span><br><span class="line">    nbproc 1</span><br><span class="line">    stats socket /var/lib/kolla/haproxy/haproxy.sock group kolla mode 660</span><br><span class="line"></span><br><span class="line">defaults</span><br><span class="line">    log global</span><br><span class="line">    option redispatch</span><br><span class="line">    retries 3</span><br><span class="line">    timeout http-request 10s</span><br><span class="line">    timeout http-keep-alive 10s</span><br><span class="line">    timeout queue 1m</span><br><span class="line">    timeout connect 10s</span><br><span class="line">    timeout client 1m</span><br><span class="line">    timeout server 1m</span><br><span class="line">    timeout check 10s</span><br><span class="line">    balance roundrobin</span><br><span class="line">    maxconn 10000</span><br><span class="line"></span><br><span class="line">listen stats</span><br><span class="line">   bind 10.10.1.81:1984</span><br><span class="line">   mode http</span><br><span class="line">   stats enable</span><br><span class="line">   stats uri /</span><br><span class="line">   stats refresh 15s</span><br><span class="line">   stats realm Haproxy\ Stats</span><br><span class="line">   stats auth openstack:E9wg1JFttdHVKtHNyAPomDDSYdnNsFKbLwkUh9W1</span><br><span class="line"></span><br><span class="line">frontend status</span><br><span class="line">    bind 10.10.1.81:61313</span><br><span class="line">    bind 10.10.1.250:61313</span><br><span class="line">    mode http</span><br><span class="line">    monitor-uri /</span><br></pre></td></tr></table></figure><p>可以看到listen stats绑定的是10.10.1.81:1984</p><p>打开访问就行，用户密码是stats auth那一行</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
   
   
 </search>
