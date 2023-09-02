@@ -1,7 +1,6 @@
 ---
 title: windows server禁止返回ipv6的dns解析
 subtitle: windows server prohibits returning ipv6 dns resolution
-permalink: windows server prohibits returning ipv6 dns resolution
 date: 2023-03-16 18:39:13
 toc: true
 categories: 

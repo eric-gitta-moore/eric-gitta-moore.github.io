@@ -1,7 +1,6 @@
 ---
 title: VMware NSX-T网络不稳定，ssh自动断开，iperf3测速没有速度
 subtitle: The VMware NSX-T network is unstable, ssh automatically disconnects, and the iperf3 speed test has no speed.
-permalink: The VMware NSX-T network is unstable, ssh automatically disconnects, and the iperf3 speed test has no speed.
 date: 2023-02-12 20:17:42
 toc: true
 categories: 
