@@ -1,6 +1,6 @@
 ---
-title: nvm-windows切换node版本提示exit status 1: The system cannot find the path specified.
-subtitle: When nvm-windows switches node version, it prompts exit status 1: The system cannot find the path specified.
+title: nvm-windows切换node版本提示exit status 1 The system cannot find the path specified.
+subtitle: When nvm-windows switches node version, it prompts exit status 1 The system cannot find the path specified.
 date: 2022-04-01 16:53:03
 toc: true
 tags: 
