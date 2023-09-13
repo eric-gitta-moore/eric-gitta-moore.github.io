@@ -1,9 +1,9 @@
 title: James Curtis
-subtitle: 学海无涯，共同进步！
-language: zh-CN
+subtitle: Endless learning, progress together!
+language: en
 timezone: Asia/Shanghai
 
-url: https://james-curtis.github.io
+url: https://james-curtis.github.io/en
 permalink: :title/
 
 archive_generator:
