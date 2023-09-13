@@ -2,8 +2,10 @@ themes
 package.json
 package-lock.json
 _config.maupassant.yml
+scaffolds
 source/apple-touch-icon.png
 source/favicon.ico
 source/categories
 source/css
 source/tags
+source/_drafts
