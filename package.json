@@ -3,10 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "hexo generate",
-    "clean": "hexo clean",
-    "deploy": "hexo deploy",
-    "server": "hexo server"
+    "clean": "npx ts-node bin/build.ts --mode clean",
+    "g": "npx ts-node bin/build.ts --mode g"
   },
   "hexo": {
     "version": "6.3.0"
