@@ -1,0 +1,26 @@
+.post-content blockquote {
+    padding: 1em 25px 1em 50px;
+    border-left: 4px solid #cbcbcb;
+    background-color: #f8f8f84d;
+}
+
+.post .post-content blockquote p {
+    margin: 0;
+}
+
+
+@media print,
+screen and (min-width: 1700px) {
+    #toc {
+        position: fixed;
+        top: 20vh;
+        max-height: 60vh;
+        word-break: break-all;
+        max-width: 300px;
+        overflow: auto;
+        white-space: nowrap;
+        transform: translateX(calc(-100% - 60px));
+        min-width: 200px;
+        min-height: 40px;
+    }
+}
