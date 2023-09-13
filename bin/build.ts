@@ -28,7 +28,6 @@ const needCopy = [
       genMap("package.json", lan),
       genMap("package-lock.json", lan),
       genMap("node_modules/", lan),
-      genMap("_config.maupassant.yml", lan),
     ])
     .flat(),
 ];
@@ -44,26 +43,14 @@ const functions = {
       });
     }
   },
-  async clean() {
-    languages.map((e) => execSync(`cd ./${e} && npx hexo clean`));
-    for (const [src, dest] of needCopy) {
-      console.log(`cleaning... ${dest}`);
-      await fs.rm(resolve(__dirname, dest), {
-        force: true,
-        recursive: true,
-      });
-    }
-  },
   g() {
     functions.generate();
   },
   async generate() {
-    await functions.clean();
     await functions.copy();
     languages.map((e) => console.log(execSync(`cd ./${e} && npx hexo clean`)));
   },
   async serve() {
-    await functions.clean();
     await functions.copy();
     const portStart = 4000;
     languages.map((e, i) => {
