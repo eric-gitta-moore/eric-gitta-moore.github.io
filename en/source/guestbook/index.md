@@ -1,5 +1,5 @@
 ---
-title: 留言
+title: GuestBook
 ---
 
-欢迎大家给我留言，一起交流！
+Welcome everyone to leave me a message and communicate together!
