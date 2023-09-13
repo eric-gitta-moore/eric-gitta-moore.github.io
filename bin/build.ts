@@ -27,7 +27,6 @@ const needCopy = [
       ["../common/", `../${lan}/`],
       genMap("package.json", lan),
       genMap("package-lock.json", lan),
-      genMap("node_modules/", lan),
     ])
     .flat(),
 ];
@@ -43,19 +42,26 @@ const functions = {
       });
     }
   },
+  async clean() {
+    languages.map((e) => execSync(`cd ./${e} && npx hexo clean`));
+  },
   g() {
     functions.generate();
   },
   async generate() {
+    await functions.clean();
     await functions.copy();
-    languages.map((e) => console.log(execSync(`cd ./${e} && npx hexo clean`)));
+    languages.map((e) =>
+      console.log(execSync(`cd ./${e} && npm i && npx hexo g`).toString())
+    );
   },
   async serve() {
+    await functions.clean();
     await functions.copy();
     const portStart = 4000;
     languages.map((e, i) => {
       console.log(`${e} site: http://localhost:${portStart + i}`);
-      exec(`cd ./${e} && npx hexo server --watch -p ${portStart + i}`);
+      exec(`cd ./${e} && npm i && npx hexo server --watch -p ${portStart + i}`);
     });
   },
   s() {
