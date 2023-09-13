@@ -16,20 +16,21 @@ const cliArgs = Object.assign(
 
 console.log(`cliArgs`, cliArgs);
 
-function genMap(path) {
-  return [`../${path}`, `../en/${path}`];
+const languages = ["cn", "en"];
+
+function genMap(path, lan) {
+  return [`../${path}`, `../${lan}/${path}`];
 }
 const needCopy = [
-  genMap("themes/"),
-  genMap("package.json"),
-  genMap("package-lock.json"),
-  genMap("node_modules/"),
-  genMap("_config.maupassant.yml"),
-  genMap("source/apple-touch-icon.png"),
-  genMap("source/favicon.ico"),
-  genMap("source/categories/"),
-  genMap("source/css/"),
-  genMap("source/tags/"),
+  ...Array.from(languages)
+    .map((lan) => [
+      ["../common/", `../${lan}/`],
+      genMap("package.json", lan),
+      genMap("package-lock.json", lan),
+      genMap("node_modules/", lan),
+      genMap("_config.maupassant.yml", lan),
+    ])
+    .flat(),
 ];
 
 const functions = {
@@ -44,8 +45,7 @@ const functions = {
     }
   },
   async clean() {
-    execSync("npx hexo clean");
-    execSync("cd ./en && npx hexo clean");
+    languages.map((e) => execSync(`cd ./${e} && npx hexo clean`));
     for (const [src, dest] of needCopy) {
       console.log(`cleaning... ${dest}`);
       await fs.rm(resolve(__dirname, dest), {
@@ -60,16 +60,16 @@ const functions = {
   async generate() {
     await functions.clean();
     await functions.copy();
-    console.log(execSync("npx hexo g").toString());
-    console.log(execSync("cd ./en && npx hexo g").toString());
+    languages.map((e) => console.log(execSync(`cd ./${e} && npx hexo clean`)));
   },
   async serve() {
     await functions.clean();
     await functions.copy();
-    exec("npx hexo server --watch");
-    console.log(`zh site: http://localhost:4000`);
-    exec("cd ./en && npx hexo server --watch -p 4001");
-    console.log(`en site: http://localhost:4001`);
+    const portStart = 4000;
+    languages.map((e, i) => {
+      console.log(`${e} site: http://localhost:${portStart + i}`);
+      exec(`cd ./${e} && npx hexo server --watch -p ${portStart + i}`);
+    });
   },
   s() {
     functions.serve();
