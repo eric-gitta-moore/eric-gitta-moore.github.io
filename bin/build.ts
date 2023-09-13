@@ -44,6 +44,7 @@ const functions = {
   },
   async clean() {
     languages.map((e) => execSync(`cd ./${e} && npx hexo clean`));
+    languages.map((e) => execSync(`cd ./${e} && git clean -fdx`));
   },
   g() {
     functions.generate();
