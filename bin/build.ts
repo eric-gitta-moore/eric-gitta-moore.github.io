@@ -41,8 +41,8 @@ const functions = {
     }
   },
   async clean() {
-    exec("npx hexo clean");
-    exec("cd ./en && npx hexo clean");
+    execSync("npx hexo clean");
+    execSync("cd ./en && npx hexo clean");
     for (const [src, dest] of needCopy) {
       console.log(`cleaning... ${dest}`);
       await fs.rm(resolve(__dirname, dest), {
@@ -60,8 +60,13 @@ const functions = {
     console.log(execSync("npx hexo g").toString());
     console.log(execSync("cd ./en && npx hexo g").toString());
   },
-  serve() {
-    execSync("npx hexo server");
+  async serve() {
+    await functions.clean();
+    await functions.copy();
+    exec("npx hexo server --watch");
+    console.log(`zh site: http://localhost:4000`);
+    exec("cd ./en && npx hexo server --watch -p 4001");
+    console.log(`en site: http://localhost:4001`);
   },
   s() {
     functions.serve();
