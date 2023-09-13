@@ -49,10 +49,14 @@ info:
       message: RSS
 
 links:
-  - title: Blog
-    desc: Blog
-    url: //james-curtis.github.io
-    src: //james-curtis.github.io
+  - title: zh Blog
+    desc: zh Blog
+    url: /
+    src: /
+  - title: en Blog
+    desc: en Blog
+    url: /en
+    src: /en
   - title: GitHub
     desc: GitHub
     url: https://github.com/james-curtis

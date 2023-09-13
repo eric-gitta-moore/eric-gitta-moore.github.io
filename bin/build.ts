@@ -1,16 +1,24 @@
 #!/usr/bin/env ts-node
-import * as fs from "node:fs/promises";
+import fs from "node:fs/promises";
 import { resolve } from "node:path";
-import { argv } from "node:process";
+import process from "node:process";
+import { execSync, exec } from 'node:child_process'
 import minimist from "minimist";
+import Hexo from 'hexo'
 
 const defaultCliArgs = {
-    mode: "copy", // copy | clean
+    mode: "copy",
 };
-const cliArgs = Object.assign({}, defaultCliArgs, minimist(argv.slice(2)));
+const cliArgs = Object.assign({}, defaultCliArgs, minimist(process.argv.slice(2)));
+
+console.log(`cliArgs`, cliArgs);
 
 const needCopy = [
     ["../themes/", "../en/themes/"],
+    ["../package.json", "../en/package.json"],
+    ["../package-lock.json", "../en/package-lock.json"],
+    ["../node_modules", "../en/node_modules"],
+    ["../_config.maupassant.yml", "../en/_config.maupassant.yml"],
     ["../source/apple-touch-icon.png", "../en/source/apple-touch-icon.png"],
     ["../source/favicon.ico", "../en/source/favicon.ico"],
     ["../source/categories/", "../en/categories/"],
@@ -18,17 +26,39 @@ const needCopy = [
     ["../source/tags/", "../en/tags/"],
 ]
 
-if (cliArgs.mode === 'copy') {
-    for (const [src, dest,] of needCopy) {
-        fs.cp(resolve(__dirname, src), resolve(__dirname, dest), {
-            recursive: true,
-        });
+const functions = {
+    copy() {
+        for (const [src, dest,] of needCopy) {
+            fs.cp(resolve(__dirname, src), resolve(__dirname, dest), {
+                recursive: true,
+            });
+        }
+    },
+    clean() {
+        exec('npx hexo clean')
+        exec('cd ./en && npx hexo clean')
+        for (const [src, dest,] of needCopy) {
+            fs.rm(resolve(__dirname, dest), {
+                force: true,
+                recursive: true
+            });
+        }
+    },
+    g() {
+        functions.generate()
+    },
+    generate() {
+        exec('npx hexo g')
+        exec('cd ./en && npx hexo g')
+    },
+    serve() {
+        execSync('npx hexo server')
+    },
+    s() {
+        functions.serve()
     }
-} else if (cliArgs.mode === 'clean') {
-    for (const [src, dest,] of needCopy) {
-        fs.rm(resolve(__dirname, dest), {
-            force: true,
-            recursive: true
-        });
-    }
+}
+
+if (cliArgs.mode in functions) {
+    functions[cliArgs.mode]()
 }
