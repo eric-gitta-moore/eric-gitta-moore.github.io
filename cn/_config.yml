@@ -10,3 +10,5 @@ archive_generator:
   per_page: 25
 
 theme: maupassant
+
+public_dir: ../public

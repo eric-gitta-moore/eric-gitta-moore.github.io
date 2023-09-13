@@ -16,17 +16,20 @@ const cliArgs = Object.assign(
 
 console.log(`cliArgs`, cliArgs);
 
+function genMap(path) {
+  return [`../${path}`, `../en/${path}`];
+}
 const needCopy = [
-  ["../themes/", "../en/themes/"],
-  ["../package.json", "../en/package.json"],
-  ["../package-lock.json", "../en/package-lock.json"],
-  ["../node_modules", "../en/node_modules"],
-  ["../_config.maupassant.yml", "../en/_config.maupassant.yml"],
-  ["../source/apple-touch-icon.png", "../en/source/apple-touch-icon.png"],
-  ["../source/favicon.ico", "../en/source/favicon.ico"],
-  ["../source/categories/", "../en/categories/"],
-  ["../source/css/", "../en/css/"],
-  ["../source/tags/", "../en/tags/"],
+  genMap("themes/"),
+  genMap("package.json"),
+  genMap("package-lock.json"),
+  genMap("node_modules/"),
+  genMap("_config.maupassant.yml"),
+  genMap("source/apple-touch-icon.png"),
+  genMap("source/favicon.ico"),
+  genMap("source/categories/"),
+  genMap("source/css/"),
+  genMap("source/tags/"),
 ];
 
 const functions = {

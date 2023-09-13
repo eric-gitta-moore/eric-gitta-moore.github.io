@@ -49,12 +49,12 @@ info:
       message: RSS
 
 links:
-  - title: zh Blog
-    desc: zh Blog
+  - title: 中文博客
+    desc: 中文博客
     url: /
     src: /
-  - title: en Blog
-    desc: en Blog
+  - title: EN Blog
+    desc: EN Blog
     url: /en
     src: /en
   - title: GitHub
