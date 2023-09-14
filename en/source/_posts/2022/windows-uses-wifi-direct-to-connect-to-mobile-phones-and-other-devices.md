@@ -8,79 +8,77 @@ categories:
     - Default
 ---
 
+Translation of the provided Markdown text into English:
 
- 在网上搜了蛮久，都是叫你下visual studio然后再加载“Wi-Fi Direct sample”这个实例项目调试运行。微软在这里提供了一个例子，不过没有打包好。我就直接打包一下用了
+---
+
+I searched online for a while, and they all tell you to download Visual Studio and then load the "Wi-Fi Direct sample" project to debug and run it. Microsoft provides an example here, but it's not packaged. So, I'll directly package it for you.
 
 ```
-https://docs.microsoft.com/zh-cn/windows/iot-core/connect-your-device/setupwifidirect
+https://docs.microsoft.com/en-us/windows/iot-core/connect-your-device/setupwifidirect
 https://github.com/Microsoft/Windows-universal-samples/tree/main/Samples/WiFiDirect
 ```
 
-
-
- 我打包好的地址：
+Here's the link to my packaged version:
 
 ```
 https://yunling.lanzout.com/isiNb01788pa
 ```
 
+> To reach the word count, you don't need to read this.
+>
+> WiFi Direct is supported on Windows 10 IoT Core devices when using a USB WiFi adapter that is WiFi Direct enabled. To ensure WiFi Direct is enabled, make sure the following requirements are met:
+>
+> - The hardware of the USB WiFi adapter must support WiFi Direct.
+> - The corresponding driver for the USB WiFi adapter must support WiFi Direct.
+>
+> WiFi Direct provides a solution for establishing device-to-device connections using WiFi without the need for a wireless access point (wireless AP) to set up the connection. To see what you can do with WiFiDirect, check out the UWP API provided in the Windows.Devices.WiFiDirect namespace.
+>
+> Supported Adapters
+> For a list of WiFi adapters tested on Windows 10 IoT Core, you can refer to the supported hardware page.
+>
+> Basic WiFi Direct Example
+> You can easily test WiFi Direct functionality using the WiFi Direct UWP sample. We'll use the C# version and run the example on two devices.
+>
+> Setting up Two Devices
+> - Run MinnowBoardMax (MBM) with Windows 10 IoT Core (see instructions here) with a CanaKit WiFi adapter.
+> - Connect a monitor, keyboard, and mouse to MBM.
+> - Run the latest Windows 10 Anniversary Update on a Windows 10 computer (or laptop) with WiFi Direct support (e.g., Microsoft Surface).
+> - Install Visual Studio 2017 on the Windows 10 computer.
+> - Clone or download the WiFi Direct UWP sample (here's the GitHub repository's root directory).
+> - Load the C# version of the WiFi Direct UWP sample in Visual Studio 2017.
+> - Run the sample on both devices.
+>
+> Building the Sample and Deploying/Running It on MBM:
+> - Set the "Solution Platform" combo box to "x86".
+> - Select "Remote Machine" from the "Run" dropdown list.
+> - Start the sample on MBM without debugging (press Ctrl-F5 or select "Start without Debugging" from the "Debug" menu).
+> - You should see the WiFi Direct sample running on the monitor connected to MBM.
+>
+> Building the Sample and Deploying/Running It on the Windows 10 Computer:
+> - Set the "Solution Platform" combo box to "x86".
+> - Select "Local" from the "Run" dropdown list.
+> - Start the sample (press F5 or Ctrl-F5).
+> - You should see the WiFi Direct sample running on the Windows 10 computer.
 
+---
 
->  凑字数，不用看
->
->  通过使用已启用 WiFi Direct 的 USB WiFi 适配器，Windows 10 IoT 核心版设备上支持 WiFi Direct。 若要确保 WiFi Direct 已启用，需要确保符合下面两项要求：
->
->  USB WiFi 适配器的硬件需要支持 WiFi Direct，
->  USB WiFi 适配器的相应驱动程序需要支持 WiFi Direct。
->  WiFi Direct 提供一个解决方案来实现 WiFi 设备到设备连接，无需使用无线接入点（无线 AP）来设置连接。 如要查看可使用 WiFiDirect 执行哪些操作，请查看 Windows。Devices.WiFiDirect 命名空间中提供的 UWP API。
->
->  支持的适配器
->  如需已在 Windows 10 IoT 核心版上进行测试的 WiFi 适配器的列表，可查看支持的硬件页面。
->
->  WiFi Direct 的基本示例
->  可使用 WiFi Direct UWP 示例轻松测试 WiFi Direct 功能。 我们将使用 C# 版本并运行两台设备的示例。
->
->  设置两台设备
->  运行 Windows 10 IoT 核心版的 MinnowBoardMax (MBM)（请参阅此处的说明），带有 CanaKit WiFi 适配器
->  将显示器、键盘和鼠标连接到 MBM
->  运行最新的 Windows 10 周年最新的 Windows 10 电脑。 电脑（或笔记本电脑）需要具有 WiFi Direct 支持（例如 Microsoft Surface）
->  在 Windows 10 电脑上安装 Visual Studio 2017
->  克隆或下载 WiFi Direct UWP 示例（此处是 GitHub 存储库的根目录）。
->  在 Visual Studio 2017 中加载 WiFi Direct UWP 示例的 C# 版本
->  在两台设备上运行示例
->  编译示例，在 MBM 上部署/运行它：
->
->  将“解决方案平台”组合框设置为“x86”
->  从“运行”下拉列表中选择“远程计算机”
->  在 MBM 上启动示例但不调试（按 Ctrl-F5，或者从“调试”菜单中选择“启动(不调试)”）
->  应该会看到 WiFi Direct 示例在连接到 MBM 的显示器上运行
->  编译示例，并在 Windows 10 电脑上部署/运行它：
->
->  将“解决方案平台”组合框设置为“x86”
->  从“运行”下拉列表中选择“本地”
->  启动示例（按 F5 或 Ctrl-F5）
->  应该会看到 WiFi Direct 示例在 Windows 10 电脑上运行
+Usage Instructions:
 
-------
-
- 使用方法：
-
-一、安装证书
+1. Install the certificate.
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/fbcf9e8fd26e4fcf8c6eeb53aa379751.png)
 
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/941f29f3e0d3428e89bc60962ee66af1.png)
-
-
+![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/941f29f3e0d3428e89bc60962ee66af1.png)
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/c0547c790b554a8a998a9bf415cf0383.png)
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b613d304b85445e4bd14cf400a0e705a.png)
 
- 二、安装.msixbundle
+2. Install .msixbundle.
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d49cccc7a5d14fe8be3cf2cf238a073a.png)
 
- 三、enjoy
+3. Enjoy!
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0ce46f9f23364b92bb1384bf9a4c717f.png)
