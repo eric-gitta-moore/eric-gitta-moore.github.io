@@ -1,21 +1,22 @@
 ---
-title: NVIDIA broadcast App点击选择麦克源时候闪退 崩溃怎么解决
+title: NVIDIA broadcast app crashes when clicking to select microphone source. How to solve the crash?
 subtitle: NVIDIA broadcast app crashes when clicking to select microphone source. How to solve the crash?
 date: 2022-07-25 18:55:32
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
 ![16936522995391693652298666.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936522995391693652298666.png) 
 
- 一点击麦克风源就会崩溃的解决办法
+A solution to the problem of crashing when you click on the microphone source
 
- 进入声音设置，把不需要的麦克风和虚拟麦克风全部禁用了，只留物理麦克风，然后在一个个打开排查一下是哪个麦克风的问题即刻
+Enter the sound settings, disable all unnecessary microphones and virtual microphones, leave only physical microphones, and then open them one by one to investigate which microphone is causing the problem immediately
+
 
 ![16936523065391693652306277.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936523065391693652306277.png)
 
-禁用之后
+After
 
 ![16936523145351693652313727.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936523145351693652313727.png)

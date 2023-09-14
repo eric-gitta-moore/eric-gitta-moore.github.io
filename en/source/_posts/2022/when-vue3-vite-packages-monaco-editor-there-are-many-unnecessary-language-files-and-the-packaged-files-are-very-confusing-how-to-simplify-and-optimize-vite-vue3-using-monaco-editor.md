@@ -1,49 +1,47 @@
 ---
-title: vue3 vite打包monaco-editor出现很多不需要的语言文件，打包文件很混乱。vite vue3使用monaco-editor怎么精简优化
+title: When vue3 vite packages monaco-editor, there are many unnecessary language files, and the packaged files are very confusing. How to simplify and optimize vite vue3 using monaco-editor
 subtitle: When vue3 vite packages monaco-editor, there are many unnecessary language files, and the packaged files are very confusing. How to simplify and optimize vite vue3 using monaco-editor
 date: 2022-08-15 12:28:08
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
-#  优化方法
+# Optimization Method
 
-```
+```javascript
 import * as monaco from 'monaco-editor';
 // or import * as monaco from 'monaco-editor/esm/vs/editor/editor.api';
 // if shipping only a subset of the features & languages is desired
 
 monaco.editor.create(document.getElementById('container'), {
-	value: 'console.log("Hello, world")',
-	language: 'javascript'
+    value: 'console.log("Hello, world")',
+    language: 'javascript'
 });
 ```
 
-
-
-.只需要把
+Simply replace
 
 > import * as Monaco from 'monaco-editor'
 
-换成
+with
 
 > import * as Monaco from 'monaco-editor/esm/vs/editor/editor.api'
 
-即可
+to achieve this.
 
-方法出处：[https://github.com/microsoft/monaco-editor/tree/main/webpack-plugin#:~:text=if%20shipping%20only%20a%20subset%20of%20the%20features%20%26%20languages%20is%20desired](https://github.com/microsoft/monaco-editor/tree/main/webpack-plugin#:~:text=if shipping only a subset of the features %26 languages is desired) 
+Method Source: [https://github.com/microsoft/monaco-editor/tree/main/webpack-plugin#:~:text=if%20shipping%20only%20a%20subset%20of%20the%20features%20%26%20languages%20is%20desired](https://github.com/microsoft/monaco-editor/tree/main/webpack-plugin#:~:text=if%20shipping%20only%20a%20subset%20of%20the%20features%20%26%20languages%20is%20desired)
 
-# 原因
+# Reason
 
-> 根据官方文档描述
+> According to the official documentation,
 >
 > By default, all languages shipped with the monaco-editor will be included.
 >
-> 默认情况下monaco-editor会包含所有的语言文件
+> By default, monaco editor will include all language files
 
-# 优化前效果
+# Before Optimization Result
 
 ```
 > vite build --config ./config/vite.config.prod.ts
@@ -153,12 +151,12 @@ dist/assets/monaco.5273bca9.js             2600.87 KiB / gzip: 659.07 KiB       
 
 
 
-可以看到一坨的语言都被打包进去了，不管有没有用到都在里面
+You can see that a bunch of languages have been packaged inside, whether they are used or not
 
 ![16936514285391693651428183.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936514285391693651428183.png)
 
 
-# 优化后效果
+# Effect after optimization
 
 ```
 > vite build --config ./config/vite.config.prod.ts

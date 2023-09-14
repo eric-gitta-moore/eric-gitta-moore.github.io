@@ -1,67 +1,65 @@
 ---
-title: Nahimic应用程序初始化失败
+title: Nahimic application failed to initialize
 subtitle: Nahimic application failed to initialize
 date: 2022-07-25 20:25:17
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
-
 
 ![16936520965351693652095528.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936520965351693652095528.png)
 
-
-故障显示如上：
+The fault is displayed as follows:
 
 ![16936521305381693652129574.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521305381693652129574.png)
 
-联想服务那边找到 “Realtek Audio driver 声卡驱动”
+Over at Lenovo Services, find the "Realtek Audio driver" for the sound card driver.
 
-下载之后打开，不用安装直接解压就好了
+After downloading, open it, and there's no need to install; just unzip it.
 
 ![16936521385351693652138042.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521385351693652138042.png)
 
-找到解压目录下面的
+Locate the following directory within the unzipped folder:
 
-“Source\Thirdparty\Nahamic_831w”
+"Source\Thirdparty\Nahamic_831w"
 
-在我这里我的完整路径是
+In my case, the complete path is:
 
-“C:\Drivers\Realtek Audio Driver\20222507.19325299\Source\Thirdparty\Nahamic_831w”
+"C:\Drivers\Realtek Audio Driver\20222507.19325299\Source\Thirdparty\Nahamic_831w"
 
 ![16936521465351693652145762.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521465351693652145762.png)
 
- 运行一下这个修复程序
+Run this repair program:
 
-“Lenovo-NahimicRestoreTool-APO4-SWCv4.5.0.0-EXTv1.1.7.0.exe”
+"Lenovo-NahimicRestoreTool-APO4-SWCv4.5.0.0-EXTv1.1.7.0.exe"
 
-运行完成之后会提示重启，选择不重启。
+After it finishes running, it will prompt for a restart; choose not to restart.
 
-此时可以正常打开Nahimic并使用，且有效果。但是重启之后又出现故障了
+Now, you should be able to open and use Nahimic normally, and it should be effective. However, after a restart, the fault may reoccur.
 
-这个时候看一下Nahimic的服务启动了没有
+At this point, check if the Nahimic service has started.
 
-打开任务管理器，切换到服务选项卡，按一下键盘的N会自动跳到N开头的服务上面，找到“NahimicService”
+Open Task Manager, switch to the "Services" tab, and press the "N" key on your keyboard to automatically scroll to services starting with "N." Find "NahimicService."
 
-发现并没有启动服务
+If you see that the service isn't running:
 
 ![16936521565351693652155665.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521565351693652155665.png)
 
- 那么就找到原因了。现在右键这个服务，选择打开服务
+You've identified the issue. Now, right-click on this service and choose "Open Services."
 
 ![16936521665351693652165846.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521665351693652165846.png)
 
-在弹出的窗口中找到同名的服务 
+In the popup window, locate the service with the same name:
 
 ![16936521765351693652176279.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521765351693652176279.png)
 
- 把原本的禁用改成“自动(延迟启动)”
+Change the original setting from "Disabled" to "Automatic (Delayed Start)."
 
 ![16936521845391693652183779.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521845391693652183779.png)
 
- 然后再右键点击启动就完成了
+Then, right-click to start it, and you're done.
 
 ![16936521995341693652199139.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936521995341693652199139.png)
 
-此时重启电脑也是一样可以用的 
+Now, even after restarting your computer, it should work the same way.

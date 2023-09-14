@@ -1,11 +1,11 @@
 ---
-title: windows使用WiFi-direct连接手机等设备
+title: Windows uses WiFi-direct to connect to mobile phones and other devices
 subtitle: Windows uses WiFi-direct to connect to mobile phones and other devices
 date: 2022-03-09 00:03:56
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
 

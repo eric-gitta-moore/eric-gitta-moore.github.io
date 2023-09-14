@@ -1,53 +1,52 @@
 ---
-title: 超星学习通怎么一台设备签多个号码？二维码签到怎么解除十秒限制？
+title: How can I sign multiple numbers with one device on Chaoxing Xuedu Tong? How to remove the ten-second limit for QR code check-in?
 subtitle: How can I sign multiple numbers with one device on Chaoxing Xuedu Tong? How to remove the ten-second limit for QR code check-in?
 date: 2022-06-03 23:06:36
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
+> Here's a solution from the GitHub project https://github.com/james-curtis/chaoxing-sign-app.
 
-> 这里给出一个解决，出自github项目https://github.com/james-curtis/chaoxing-sign-app
+## Introduction
 
-## 介绍
-
-先简单介绍一下，这款app。不仅支持，普通签到、拍照签到（任选照片）、手势签到（不需要知道手势）、位置签到（任选位置）、二维码签到（无视十秒）、签到码签到（不需要知道签到码） 。也支持多账号签到，解除超星限制一设备一账号限制。
-这里是演示截图：
+Let's start with a brief introduction to this app. It not only supports regular check-ins but also photo check-ins (you can choose a photo), gesture check-ins (no need to know specific gestures), location-based check-ins (choose any location), QR code check-ins (ignoring the ten-second rule), and sign-in code check-ins (no need to know the sign-in code). It also supports multiple account check-ins and removes the Chaoxing restriction of one device per account. Here are some demo screenshots:
 
 ![16936529099921693652909036.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936529099921693652909036.png)
 
 ![16936529199911693652919179.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936529199911693652919179.png)
 
+## Location-based Check-in Method
 
-## 位置签到的方法
+Let's briefly explain the method for location-based check-ins:
 
-下面简单说一下位置签到的方法：
-
-1. 点击“我的”选项卡
+1. Click on the "My" tab.
 
 ![16936529279921693652927367.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936529279921693652927367.png)
 
-2. 点击“添加账号”，或者主页面上底部的“登录/重新登录”按钮
-3. 登录完成之后，切回到“活动”选项卡，再选择对应的课程。如果找不到课程的话，可以回到“课程”选项卡，找到对应的课程，并点击课程标题，或者课程头像，就会跳转到对应的活动页面
-4. 此时应该会出现该课程下面所有的签到活动。如果没有出现蓝色图标可签到的活动，可以尝试下拉刷新，会重新获取到最新的课程。（注意：这里是获取不到自建群聊中的签到活动，群聊中的签到活动后面会提到）
-5. 点击签到活动的标题，或者该签到活动的图片，即可进行签到
-6. 此时会弹出选择位置的窗口
-7. 这里如果定位信号不好的话，定位可能会停滞在天安门那一块一小会儿。耐心等待一会即可，大概十秒钟就好了
-8. 然后手动拖拽红色图钉到所需要签到的位置
-9. 点击右上角“完成” 按钮，即可进行签到
-10. 签到结果会在页面中进行提示
- 
- ## 关于自动签到和群聊中的签到
- 
-#### 关于自动签到
-1. 由于这个是app，在后台执行定时任务的时候，如果没有很高的系统权限，是很容易被系统杀后台的。
-2. 再者，位置签到、图片签到和二维码签到，这三者都需要人工干预。所以我感觉没有很必要全自动签到。
-3. 但是自动签到这方面又比较需要，所以考虑开发跑在server端这块的会比较好，但是又会提升使用门槛。
+2. Click on "Add Account" or the "Login/Re-login" button at the bottom of the main page.
+3. After logging in, switch back to the "Activities" tab and select the corresponding course. If you can't find the course, go back to the "Courses" tab, find the course you want, and click on the course title or course avatar to navigate to the activity page.
+4. You should now see all the sign-in activities for that course. If you don't see any sign-in activities with blue icons, try pulling down to refresh, and it will retrieve the latest courses (Note: sign-in activities in self-created group chats cannot be retrieved here, but we will mention group chat sign-ins later).
+5. Click on the title of the sign-in activity or the image of the sign-in activity to proceed with the check-in.
+6. A window for selecting your location will appear at this point.
+7. If the location signal is weak, the location may initially be stuck around Tiananmen Square for a brief moment. Please be patient; it will resolve in about ten seconds.
+8. Manually drag the red pin to the location where you need to check in.
+9. Click the "Finish" button in the upper right corner to complete the check-in.
+10. The check-in result will be displayed on the page.
 
-#### 关于群聊中的签到
-1. 截止发文时候，最新版学习通是邦邦加密。
-2. 从libcheck中可以看到，学习通的群聊中使用到了环信IM的SDK。
-3. 直接逆向解除DEX之后东西很杂乱，逆向难度比较大。
-4. 故从老板学习通入手，这里使用到的是于 `2017-04-11` 日发布 `v2.0.1` 版本学习通。该版本没有加密，并且群聊功能可以正常使用。故决定从该版本入手。相关进展于github发布。目前也只是画一个 ***大饼***
+## About Automatic Check-ins and Group Chat Check-ins
+
+#### About Automatic Check-ins
+1. Since this is an app, when executing scheduled tasks in the background, it is easy for the system to kill it if it doesn't have high system permissions.
+2. Furthermore, location-based check-ins, photo check-ins, and QR code check-ins all require manual intervention. Therefore, I feel that fully automatic check-ins are not very necessary.
+3. However, there is a need for automatic check-ins in this regard, so considering developing this on the server-side might be a better option, but it would also raise the usage threshold.
+
+#### About Group Chat Check-ins
+1. As of the time of writing, the latest version of Study in China is encrypted.
+2. From libcheck, you can see that Study in China's group chats use the Easemob IM SDK.
+3. Decompiling and reverse engineering after removing DEX is complicated and challenging due to the complexity of the contents.
+4. Therefore, starting from the older version of Study in China, specifically version `v2.0.1` released on April 11, 2017, which is not encrypted and has functional group chat capabilities. So, I decided to start with that version. Progress related to this is published on GitHub. Currently, it's just a *big pie* being drawn.
+
+(Note: Some terms and references have been retained in the translation for context.)
