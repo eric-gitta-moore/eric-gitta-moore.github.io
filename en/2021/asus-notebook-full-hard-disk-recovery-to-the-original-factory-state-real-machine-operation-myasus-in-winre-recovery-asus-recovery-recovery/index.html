@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content=""><title>ASUS notebook full hard disk recovery to the original factory state real machine operation, MYASUS IN WINRE recovery, ASUS RECOVERY recovery | James Curtis</title><link rel="stylesheet" type="text/css" href="/en/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/normalize/latest/normalize.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/pure-min.min.css"><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/pure/latest/grids-responsive-min.min.css"><link rel="stylesheet" href="//lib.baomitu.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//lib.baomitu.com/jquery/latest/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/en/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/en/favicon.ico"><link rel="apple-touch-icon" href="/en/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/en/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/en/atom.xml"><script type="text/javascript" src="//lib.baomitu.com/clipboard.js/latest/clipboard.min.js"></script><script type="text/javascript" src="//lib.baomitu.com/toastr.js/latest/toastr.min.js"></script><link rel="stylesheet" href="//lib.baomitu.com/toastr.js/latest/toastr.min.css"><meta name="generator" content="Hexo 6.3.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">ASUS notebook full hard disk recovery to the original factory state real machine operation, MYASUS IN WINRE recovery, ASUS RECOVERY recovery</h1><a id="logo" href="/en/.">James Curtis</a><p class="description">Endless learning, progress together!</p></div><div id="nav-menu"><a class="current" href="/en/."><i class="fa fa-home"> Home</i></a><a href="/en/archives/"><i class="fa fa-archive"> Archive</i></a><a href="/en/about/"><i class="fa fa-user"> About</i></a><a href="/en/atom.xml"><i class="fa fa-rss"> RSS</i></a><a href="/en/guestbook/"><i class="fa fa-comments"> Guestbook</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">ASUS notebook full hard disk recovery to the original factory state real machine operation, MYASUS IN WINRE recovery, ASUS RECOVERY recovery</h1><div class="post-meta">2021-12-12<span> | </span><span class="category"><a href="/en/categories/Default/">Default</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> Hits</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 1.3k</span><span class="post-meta-item-text"> Words</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 8</span><span class="post-meta-item-text"> Minutes</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">Contents</div></div></div><div class="post-content"><p>Prerequisites for this tutorial: You should have previously backed up the original factory RECOVERY partition, RESTORE partition, and MYASUS partition.</p>
+<p>If you don’t have these partitions, you’ll need to either get a copy from a friend with the same laptop model or contact customer support and request restoration of these three partitions. Typically, customer support may skip restoring the restore partition to save disk space, which is nearly 20GB.</p>
+<p>My machine is ASUS TUF Gaming A17 with i7-11800H, RTX 3060, 32GB RAM, and 512GB SSD, model FX506HM.</p>
+<blockquote>
+<p>Here’s my msinfo32: <a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/iJEO5xj1tgd">Link</a></p>
+</blockquote>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/31aee62d00ec4844bf1b76c1e237f9aa.png" alt="Image"></p>
+<p>This tutorial will first explain how to perform a full format, and I’ll cover how to do it without formatting next time. Let’s get started.</p>
+<p>First, prepare a bootable USB drive or external hard drive with a PE (Preinstallation Environment). There are many tutorials online on creating a PE bootable drive; I won’t go into details here. I used “优启通” for creating my PE, as I found it more feature-rich than “WEPE.”</p>
+<ol>
+<li>Insert the USB drive (or external hard drive), then boot or restart your computer and repeatedly press F2 to enter the BIOS.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ce6bf9931e248378cb00151035f922c.jpg" alt="Image"></p>
+<ol start="2">
+<li>Press F8 to enter the PE environment.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dbe67173bf55410b8dcd0362dcd56b57.jpg" alt="Image"></p>
+<ol start="3">
+<li>Partition your drive to match the factory configuration.</li>
+</ol>
+<p>I have backed up the factory partition table, so you can follow it for partitioning.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/08e3c070967f4b61adbb5813eec6c9b2.jpg" alt="Image"></p>
+<p>You can ignore the “Local Disk D” and merge it into the OS. I created this local disk D shortly after getting my machine using Windows’ built-in disk management tool because I prefer not to have such a large C drive.</p>
+<p>① Start by creating a partition.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e7e11d2ca8834470979b16000ddcad42.jpg" alt="Image"></p>
+<p>Then adjust the OS partition to shrink it to 200GB because we don’t know how much space we’ll need later.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7511ad1b11a94b58a8e0079add049be8.jpg" alt="Image"></p>
+<p>Next, create the RECOVERY, RESTORE, and MYASUS partitions.</p>
+<ul>
+<li>RECOVERY partition is 1000MB.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/00627725fd194e4d9bcae5c8d9c17720.jpg" alt="Image"></p>
+<ul>
+<li>RESTORE partition is 19.5GB (approximately 19968MB).</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3af4087c2c6148b9a39d2b1268c5b2ad.jpg" alt="Image"></p>
+<ul>
+<li>MYASUS partition is 200MB.</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dafa293bf5294ab9afb4b05bb0e48fa8.jpg" alt="Image"></p>
+<p>Save the changes and allocate the remaining space back to the OS partition.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/36b45205c70e4c119e596e07b16086e7.jpg" alt="Image"></p>
+<ol start="4">
+<li>Restore backups for each partition.</li>
+</ol>
+<p>Use DiskGenius to restore the RECOVERY, RESTORE, and MYASUS partitions.</p>
+<p>Then open DISM++, go to “File” &gt; “Release Image,” and this step will restore the factory system.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e9045a768b0f45e795d61c9cc756a224.jpg" alt="Image"></p>
+<p>At this point, your computer may not be able to boot. Next, we will rebuild the bootloader.</p>
+<p>Go back to DiskGenius and assign a drive letter to the ESP partition and the OS partition.</p>
+<p>(Right-click on a partition, and you will find the option to assign a drive letter.)</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b486d0c1e63c4d2081f5be1dd89f9faf.jpg" alt="Image"></p>
+<p>Type “cmd” into the Run dialog (Win+R).</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d5879ab87e1544f9a97cb91818e09b49.jpg" alt="Image"></p>
+<p>Enter the following command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bcdboot d:\windows /s c: /f UEFI /l zh-cn</span><br></pre></td></tr></table></figure>
+
+<p>Here, “d:\windows” should match the drive letter assigned to your OS partition, and “c:” should match the drive letter assigned to your ESP partition.</p>
+<ol start="5">
+<li>Some finishing touches before booting up.</li>
+</ol>
+<p>I forgot to mention a step earlier, but you can do it here.</p>
+<ul>
+<li><p>Right-click on the ESP partition and set the label to “SYSTEM.”</p>
+</li>
+<li><p>Right-click on the RECOVERY partition and change the partition parameters.</p>
+</li>
+</ul>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0640ca85d6c94b1fa42a49edc1fee88b.jpg" alt="Image"></p>
+<p>Change the file system type to “Microsoft recovery partition,” and leave the other settings unchanged.</p>
+<p>Repeat the same operation for the RESTORE and MYASUS partitions, modifying their file system types.</p>
+<ol start="6">
+<li>Restart to configure WinRE for the current system.</li>
+</ol>
+<p>Restart your computer and continuously press F2 to enter the BIOS.</p>
+<p>Adjust the boot order in BIOS.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a301e079bcf422a8a001663fb1eb6fd.jpg" alt="Image"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a0c40faec38945de9b53f74cfb815a77.jpg" alt="Image"></p>
+<p>Save and exit by pressing F10. Your motherboard may power off briefly at this point; you can remove the USB drive quickly (it’s not necessary to unplug it).</p>
+<ol start="7">
+<li>Configure WinRE for the current system.</li>
+</ol>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/029602c7a48448858b05c9cf6b42c9d3.jpg" alt="Image"></p>
+<p>After restarting, you’ll see this screen.</p>
+<p>After performing some operations, you should be able to enter. Open “cmd” as an administrator:</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5f29599968824e44a7809a854bb00b6d.png" alt="Image"></p>
+<p>Enter the command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /info</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/636e88b582af4fb0985b324a24d26b5b.jpg" alt="Image"></p>
+<p>You should see “disabled,” indicating that it’s normal.</p>
+<p>Then, modify your file explorer settings to show hidden files and file extensions:</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/052e1079000e44faa31e3111f5cdd802.png" alt="Image"></p>
+<p>Next, specify the image path for WinRE. In the command prompt, enter:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setreimage /path [the path you copied earlier]</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/613ce2a05f8b4711aca0812b77f7d548.jpg" alt="Image"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ddf4c0be2b445b983d012a8e646543f.jpg" alt="Image"></p>
+<p>Now, WinRE is configured for your current system. You can enable it by entering:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /enable</span><br></pre></td></tr></table></figure>
+
+<p>If everything goes well, you’ll see a brief pause followed by a successful operation message. You can verify the status with:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /info</span><br></pre></td></tr></table></figure>
+
+<p>Don’t worry; we’re almost there. There’s one more step to write the MYASUS entry into WinRE.</p>
+<p>Copy this file to your desktop:</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e95634d43475492597360d1cb5af1d9e.jpg" alt="Image"></p>
+<p>While holding Shift, right-click to copy the file path:</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/770fb2d4e7c847f7921bba10f6d4faa6.jpg" alt="Image"></p>
+<p>Now, in the command prompt, enter:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">reagentc /setbootshelllink /configfile [the path you copied earlier]</span><br></pre></td></tr></table></figure>
+
+<p>With this, you’ve configured MYASUS in WinRE. Now, when you restart your system and enter WinRE, you’ll find the MYASUS entry.</p>
+<ol start="8">
+<li>Configure WinRE in asus.sum.</li>
+</ol>
+<p>Click the left-pointing arrow:</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e8ed571a7e0047f986410f6ecf902ca9.png" alt="Image"></p>
+<p>Choose “Continue with Windows 10.” Your computer will probably restart; enter BIOS by pressing F2 and then enter PE.</p>
+<p>Open cmd, navigate to the drive where your OS is located (e.g., D drive), and create a directory:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">md d:\mount</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0c52f66dc8384253bfd289bb69120af0.jpg" alt="Image"></p>
+<p>Mount asus.sum to this directory with the following command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /mount-image /imagefile:[your asus.sum path] /index:1 /MountDir:d:\mount</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0c52f66dc8384253bfd289bb69120af0.jpg" alt="Image"></p>
+<p>Next, copy the ReAgent.xml you configured for your current system into the corresponding location in this mounted image. The path should be like this: d:\mount\Windows\System32\Recovery\ReAgent.xml.</p>
+<p>After copying, unmount and save the changes with this command:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dism /Unmount-image /MountDir:d:\mount /commit</span><br></pre></td></tr></table></figure>
+
+<p>Now, you’ve modified the image. Replace the RESTORE partition’s image with this one (I used a copy of the image on my external hard drive; if you modified the image directly in the RESTORE partition, you don’t need to replace it).</p>
+<p>That’s it! The modifications are complete. After resetting your system with ASUS recovery, the MYASUS entry in WinRE should be present.</p>
+<p>The rest of the steps are optional and involve configuring backups using a third-party tool.</p>
+<ol start="9">
+<li>Restart your system and enter MYASUS in WinRE, then use AoMei Backupper to back up your entire hard drive.</li>
+</ol>
+<p>Make sure to remove the USB drive when restarting and press F12 to enter WinRE.</p>
+<p>Select MYASUS in WinRE.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/612ef3aad0454fada0b7eb5d8129b2ff.jpg" alt="Image"></p>
+<p>Choose ASUS recovery.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/cf8a257638c74639a99b3095ab2312ed.jpg" alt="Image"></p>
+<p>Reset your system.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a94a198f08904916a63ddc35f33fa65c.jpg" alt="Image"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a17bf8f869a94bd9b87c48e8cbea669c.jpg" alt="Image"></p>
+<p>Your system should automatically restart, and at this point, quickly insert your USB drive. While restarting, continuously press F2 to enter BIOS, and then press F8 to enter PE.</p>
+<p>Once in PE, delete the logs generated by ASUS recovery in the RESTORE partition. These logs are located alongside asus.sum. Delete the two log files (you can also use DISM++ to restore from backups; I deleted them for testing ASUS recovery).</p>
+<p>Now, you can use AoMei Backupper to back up your entire hard drive.</p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/8a3e46d919544421a6ff33a29c18fed3.jpg" alt="Image"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e44f59cb7f8242018447a44f77bc0de0.jpg" alt="Image"></p>
+<p>That concludes the tutorial.</p>
+<blockquote>
+<p>References:</p>
+<p><a target="_blank" rel="noopener" href="https://tieba.baidu.com/p/7221452991">https://tieba.baidu.com/p/7221452991</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml">http://www.360doc.com/content/20/1010/01/70092632_939674035.shtml</a></p>
+</blockquote>
+<blockquote>
+<p>Materials:</p>
+<p>Partition Table: <a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/ib7Nuxiyo7g">Partition Table.zip - Lanzou Cloud</a></p>
+<p>MYASUS Image: <a target="_blank" rel="noopener" href="https://yunling.lanzouo.com/iXrLLxiyqqh">MYASUS.zip - Lanzou Cloud</a></p>
+<p>The RECOVERY image and RESTORE are too large, one is 1G, and the other is 15G. I will upload them slowly.</p>
+</blockquote>
+<p>January 4, 2022, 18:07:39</p>
+<blockquote>
+<p>Link: <a target="_blank" rel="noopener" href="https://caiyun.139.com/m/i?005Cj0oBCE8As">https://caiyun.139.com/m/i?005Cj0oBCE8As</a><br> Extraction Code: bHT7<br> Copy the content, open it with the Caiyun PC client for easier operation.</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">File: F:\RESTORE.pmf</span><br><span class="line">Size: 16,377,489,237 bytes</span><br><span class="line">Modified: November 14, 2021, Sunday, 02:55:20 PM</span><br><span class="line">MD5: 144AABC2C5817C1D9CA646DF8DE056BB</span><br><span class="line">SHA1: 2F2958CAF3EF7E1BC969D90A39E5EC8980364F02</span><br><span class="line">CRC32: E589B078</span><br><span class="line"></span><br><span class="line">File: F:\RESTORE.zip.001</span><br><span class="line">Size: 4,290,772,992 bytes</span><br><span class="line">Modified: January 4, 2022, Tuesday, 11:21:06 AM</span><br><span class="line">MD5: E0EE12C4D0F650925E8538DCD74B50FA</span><br><span class="line">SHA1: 7DB386D82D0688C79A65D145CFB2218E8A41C735</span><br><span class="line">CRC32: 6CD0640A</span><br><span class="line"></span><br><span class="line">File: F:\RESTORE.zip.002</span><br><span class="line">Size: 4,290,772,992 bytes</span><br><span class="line">Modified: January 4, 2022, Tuesday, 11:20:54 AM</span><br><span class="line">MD5: 5F458E9AA9F174B5D6A7C908993EB52C</span><br><span class="line">SHA1: 8E38F93D96268FC08F1030B0CE9ED86367914509</span><br><span class="line">CRC32: 2123172B</span><br><span class="line"></span><br><span class="line">File: F:\RESTORE.zip.003</span><br><span class="line">Size: 4,290,772,992 bytes</span><br><span class="line">Modified: January 4, 2022, Tuesday, 11:21:01 AM</span><br><span class="line">MD5: 1FB65C6625F7C0100816091821D39FE5</span><br><span class="line">SHA1: AF296F9BB6DCCF5A3903FAF518CF8E2CEA8DCFB7</span><br><span class="line">CRC32: 330ECE6C</span><br><span class="line"></span><br><span class="line">File: F:\RESTORE.zip.004</span><br><span class="line">Size: 3,505,170,533 bytes</span><br><span class="line">Modified: January 4, 2022, Tuesday, 11:21:06 AM</span><br><span class="line">MD5: 17352CBAEA4C2FE9CF5C101AAF08D676</span><br><span class="line">SHA1: 8F95C0E2F6768552B08CCBC9E09310B4D2F69CA6</span><br><span class="line">CRC32: 28DBF528</span><br><span class="line"></span><br><span class="line">File: L:\systemBackup\part_backup\MYASUS.pmf</span><br><span class="line">Size: 34,321,259 bytes</span><br><span class="line">Modified: November 14, 2021, Sunday, 02:52:21 PM</span><br><span class="line">MD5: 174C93AB86F1ABD548C546B4EBEACE9B</span><br><span class="line">SHA1: 9E1B89A177107E113C720D876221E71C9B530C4A</span><br><span class="line">CRC32: FE4B0F8E</span><br><span class="line"></span><br><span class="line">File: L:\systemBackup\part_backup\RECOVERY.pmf</span><br><span class="line">Size: 935,400,245 bytes</span><br><span class="line">Modified: November 14, 2021, Sunday, 02:56:32 PM</span><br><span class="line">MD5: 8B43561CED145FC39366A03F56371385</span><br><span class="line">SHA1: AF27CDA6C66CAC4A854C9D51D63BE53BB0EA4163</span><br><span class="line">CRC32: C0C3F6F6</span><br></pre></td></tr></table></figure></div><div class="tags"></div><div class="post-nav"><a class="pre" href="/en/2021/how-to-convert-numbers-in-word-to-ordinary-words-how-to-convert-word-numbers-to-ordinary-text/">How to convert numbers in word to ordinary words, how to convert WORD numbers to ordinary text</a><a class="next" href="/en/2021/how-to-display-real-time-in-csgo-game/">How to display real time in csgo game</a></div><script src="https://utteranc.es/client.js" repo="james-curtis/james-curtis.github.io" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script></div></div></div><div class="pure-u-1 pure-u-md-1-4"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="Search" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="author-info"><a class="info-avatar" href="/about/" title="About"><img class="nofancybox" src="https://avatars.githubusercontent.com/james-curtis"/></a><p>To be a better man.</p><a class="info-icon" href="https://twitter.com/james_curtis_oh" title="Twitter" target="_blank" style="margin-inline:5px"> <i class="fa fa-twitter-square" style="margin-inline:5px"></i></a><a class="info-icon" href="mailto:jamescurtis@foxmail.com" title="Email" target="_blank" style="margin-inline:5px"> <i class="fa fa-envelope-square" style="margin-inline:5px"></i></a><a class="info-icon" href="https://github.com/james-curtis" title="Github" target="_blank" style="margin-inline:5px"> <i class="fa fa-github-square" style="margin-inline:5px"></i></a><a class="info-icon" href="/atom.xml" title="RSS" target="_blank" style="margin-inline:5px"> <i class="fa fa-rss-square" style="margin-inline:5px"></i></a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder-o"> Categories</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/en/categories/Default/">Default</a><span class="category-list-count">22</span></li><li class="category-list-item"><a class="category-list-link" href="/en/categories/%E9%BB%98%E8%AE%A4/">默认</a><span class="category-list-count">54</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-star-o"> Tags</i></div><div class="tagcloud"></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-o"> Recent</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/en/2023/windows-remaps-capslock-to-ctrl/">Windows 重新映射 CapsLock 大写锁定到 Ctrl</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/how-can-non-root-ordinary-users-directly-execute-docker-commands-in-wsl-ubuntu/">WSL Ubuntu 中非 root 的普通用户怎么直接执行 Docker 命令</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/full-stack-development-and-deep-learning-tensorflow-pytorch-gpu-acceleration-using-nvidia-docker-in-wsl2/">在 WSL2 中使用 NVIDIA Docker 进行全栈开发和深度学习 TensorFlow pytorch GPU 加速</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/how-to-change-man-help-to-chinese-in-debian-how-to-change-the-display-language-of-wsl-to-chinese/">debian 怎么修改 man help 为中文，wsl 怎么修改显示语言为中文</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/how-to-use-vim-vim-usage-tutorial-how-to-switch-vimtutor-to-chinese-and-chinese/">vim怎么使用，vim使用教程，vimtutor怎么切换中文 汉化</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/wsl2-error-cannot-execute-binary-file-exec-format-error/">WSL2 Error “cannot execute binary file Exec format error“</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/replace-the-linux-wenquanyi-zhenghei-fonts-wqy-zenhei-font-and-replace-the-linux-default-chinese-font/">替换linux的文泉驿正黑fonts-wqy-zenhei字体 替换linux默认中文字体</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/2023-frequency-of-use-of-various-diagrams-in-software-engineering-in-modern-enterprise-level-development/">2023软件工程中各种图在现代企业级开发中的使用频率</a></li><li class="post-list-item"><a class="post-list-link" href="/en/2023/the-educoder-touge-is-forced-to-display-the-directory-button-on-the-right-which-is-convenient-for-viewing-the-test-code-and-how-to-test-the-touge-code-locally/">educoder头歌强制显示右侧目录按钮，方便查看测试代码，便于怎么在本地自测头歌代码？</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link"> Links</i></div><ul></ul><a href="/" title="中文博客" target="_blank">中文博客</a><ul></ul><a href="/en" title="EN Blog" target="_blank">EN Blog</a><ul></ul><a href="https://github.com/james-curtis" title="GitHub" target="_blank">GitHub</a><ul></ul><a href="https://james-curtis.github.io/css-handbook/" title="CSS 参考手册" target="_blank">CSS 参考手册</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"><div id="footer">Copyright © 2023 <a href="/en/." rel="nofollow">James Curtis.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/en/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.js"></script><script type="text/javascript" src="/en/js/fancybox.js?v=1.0.0"></script><link rel="stylesheet" type="text/css" href="//lib.baomitu.com/fancybox/latest/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/en/css/search.css?v=1.0.0"><script type="text/javascript" src="/en/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+  search_path = 'search.xml';
+}
+var path = '/en/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" src="/en/js/copycode.js?v=1.0.0" successtext="Copy Successed!"></script><link rel="stylesheet" type="text/css" href="/en/css/copycode.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/en/css/external.css?v=1.0.0"><script type="text/javascript" src="/en/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/en/js/smartresize.js?v=1.0.0"></script></div></body></html>
