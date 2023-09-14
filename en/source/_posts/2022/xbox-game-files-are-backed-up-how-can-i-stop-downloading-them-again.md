@@ -1,31 +1,31 @@
 ---
-title: xbox游戏文件备份了，怎么才能不重新下载
+title: Xbox game files are backed up, how can I stop downloading them again?
 subtitle: Xbox game files are backed up, how can I stop downloading them again?
 date: 2022-01-01 14:19:21
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
- 今天我也是试了很久才找到的办法。因为之前我重装过，有一次直接在xbox上下载地平线5，结果秒安装好。我想应该可以用复制出来的文件直接安装。今天来试一下，不想重新下载了。才一百兆的宽带。
+# Installing Horizon 5 on Xbox without Redownloading
 
-其他游戏一样的操作
+Today, I finally found a method after trying for a long time. Since I reinstalled my Xbox previously, I once downloaded Horizon 5 directly, and it installed instantly. I thought I should be able to install it directly using the copied files. Today, I'm going to give it a try and avoid redownloading. It's just a hundred-megabit broadband.
 
-打开xbox，下载地平线5，等它下载开始有速度的时候，暂停全部下载。
+The same process works for other games.
 
-找到下载的目录，默认一般是，C:\Program Files\WindowsApps\MSIXVC或者C:\WindowsApps\MSIXVC
+1. Open Xbox and start downloading Horizon 5. Pause all downloads once it begins to download at a good speed.
 
-把里面的东西都删了（我这里就一个游戏，要是你有其他游戏看清楚再删除，我这边地平线一共有四个文件）
+2. Locate the download directory, which is usually either "C:\Program Files\WindowsApps\MSIXVC" or "C:\WindowsApps\MSIXVC."
+
+3. Delete everything inside it. (In my case, there's only one game, so make sure to check if you have other games before deleting. In my case, Horizon has a total of four files.)
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0f496d6f4ebf4ef5b2d4a5005d71d8e5.png)
 
-然后把自己的备份复制过去。
+4. Then copy your backup files into this directory.
 
-再回到xbox，点击全部恢复，过一下地平线5就直接安装好了
+5. Return to Xbox, click "Resume All," and after a while, Horizon 5 will be installed directly.
 
-\---------------------------------------------------------------------------
-
-可以看到这种app就是那一个文件，挂载了一个文件夹。那其他三个应该是下载进度啥的文件，我试过只复制那个最大的文件没有用还是要从头开始下载。
+You can see that this app consists of one main file, which is mounted as a folder. The other three files are probably related to download progress or similar. I tried copying only the largest file, but it didn't work; it still required downloading from the beginning.
 
 ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/eaad09ef7ccc49b2a2bc511de52cde0e.png)
