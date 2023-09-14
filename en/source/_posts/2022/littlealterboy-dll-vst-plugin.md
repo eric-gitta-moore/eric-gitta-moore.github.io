@@ -1,15 +1,15 @@
 ---
-title: LittleAlterBoy.dll VST插件
+title: LittleAlterBoy.dll VST plugin
 subtitle: LittleAlterBoy.dll VST plugin
 date: 2022-01-07 22:08:40
 toc: true
 tags: 
 categories: 
-    - 默认
+    - Default
 ---
 
 
-谷歌了很久都没有找到破解版的，最后在一个群里面，一位好心的老哥分享给我了。我也分享出来。
+Google hasn't found a cracked version for a long time, but in the end, a kind-hearted guy shared it with me in a group. I also share it.
 
 ```
 https://yunling.lanzout.com/ic3Tpyhz0cd
