@@ -27,6 +27,10 @@ categories:
 
    在选择界面中，选中`zh_CN.UTF-8`（中文简体）和其他你希望支持的语言设置。然后按空格键选中，使用方向键移动到"OK"并按下回车键。
 
+> 命令配置方式：
+>  
+>  `locale-gen --purge en_US.UTF-8 zh_CN.UTF-8`
+
 3. 设置系统默认语言：
    在终端中编辑你的bash配置文件（如`.bashrc`或`.bash_profile`）：
 
