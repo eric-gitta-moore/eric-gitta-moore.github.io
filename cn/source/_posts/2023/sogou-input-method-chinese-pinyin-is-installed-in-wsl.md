@@ -64,6 +64,7 @@ sudo apt install libgsettings-qt1
 ```
 
 ## 启用输入法
+重启 wsl，然后
 ```sh
 fcitx-config-gtk3
 ```
