@@ -38,10 +38,8 @@ sudo fc-cache -f -v
 ```sh
 sudo apt install fcitx
 
-# 开机自启动
-sudo ln -fs /lib/systemd/system/rc-local.service /etc/systemd/system/rc-local.service
-cat <<'EOF' | sudo tee /etc/rc.local
-#!/bin/bash
+cat <<'EOF' | sudo tee -a /etc/profile
+
 fcitx-autostart &>/dev/null
 EOF
 ```
@@ -49,7 +47,7 @@ EOF
 ## 配置搜狗输入法
 下载搜狗输入法
 ```sh
-wget 搜狗输入法下载地址 -O /tmp/so.deb
+wget  -O /tmp/so.deb 搜狗输入法下载地址
 
 sudo dpkg -i /tmp/so.deb
 ```
