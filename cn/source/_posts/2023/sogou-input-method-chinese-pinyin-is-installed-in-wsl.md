@@ -30,6 +30,7 @@ cat <<'EOF' | sudo tee /etc/fonts/local.conf
 </fontconfig>
 EOF
 
+sudo apt install fontconfig
 sudo fc-cache -f -v
 ```
 
