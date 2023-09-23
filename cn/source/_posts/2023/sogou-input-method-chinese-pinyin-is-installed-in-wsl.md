@@ -69,6 +69,12 @@ fcitx-config-gtk3
 
 ![2](https://shurufa.sogou.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhelp16.e32b0f4a.png&w=1080&q=75)
 
+## 试用
+```sh
+sudo apt install gedit
+gedit
+```
+
 ## 参考资料
 - https://monkeywie.cn/2021/09/26/wsl2-gui-idea-config/
 - https://shurufa.sogou.com/linux/guide--
