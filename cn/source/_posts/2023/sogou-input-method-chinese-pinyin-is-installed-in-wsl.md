@@ -40,6 +40,10 @@ sudo apt install fcitx
 
 cat <<'EOF' | sudo tee -a /etc/profile
 
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export DefaultIMModule=fcitx
 fcitx-autostart &>/dev/null
 EOF
 ```
