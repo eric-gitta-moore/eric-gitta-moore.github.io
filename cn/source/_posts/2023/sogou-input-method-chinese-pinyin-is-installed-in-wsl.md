@@ -21,6 +21,16 @@ export LANGUAGE=en_US.UTF-8
 EOF
 
 echo 'source /etc/profile' >> ~/.zshrc
+
+# 添加 MesloLGS 字体
+sudo mkdir /usr/share/fonts/myfont
+cd /usr/share/fonts/myfont
+sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
+sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
+sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
+sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
+
+sudo fc-cache -fv
 ```
 
 ## 配置字体
