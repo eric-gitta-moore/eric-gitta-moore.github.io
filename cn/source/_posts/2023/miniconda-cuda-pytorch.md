@@ -43,11 +43,13 @@ sudo sh cuda_12.2.2_535.104.05_linux.run
 Reference:
 - https://pdm.fming.dev/latest/#installation
 
+确保 conda 已经激活
 ```sh
-curl -sSL https://pdm.fming.dev/install-pdm.py | python3 -
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
+echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
 
-echo 'epoxrt PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
-echo 'epoxrt PATH=$PATH:$HOME/.local/bin' >> ~/.bashrc
+python3 -m pip install --user pipx
+pipx install pdm[all]
 ```
 
 ## pytorch
