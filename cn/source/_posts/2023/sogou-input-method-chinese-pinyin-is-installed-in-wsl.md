@@ -65,7 +65,7 @@ sudo fc-cache -f -v
 ```sh
 sudo apt install fcitx
 
-cat <<'EOF' | sudo tee -a /etc/profile
+cat <<'EOF' | sudo tee -a ~/.profile
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
@@ -80,7 +80,7 @@ EOF
 ```sh
 wget  -O /tmp/so.deb 搜狗输入法下载地址
 
-sudo dpkg -i /tmp/so.deb
+sudo apt install /tmp/so.deb
 ```
 
 下载依赖
