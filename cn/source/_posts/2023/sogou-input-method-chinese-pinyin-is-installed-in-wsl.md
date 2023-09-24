@@ -29,13 +29,13 @@ sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20N
 sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
 sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
 sudo wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-
-sudo fc-cache -fv
 ```
 
 ## 配置字体
 添加 Windows 字体，并设置微软雅黑字体优先级
 ```sh
+sudo apt install fontconfig
+
 cat <<'EOF' | sudo tee /etc/fonts/local.conf
 <?xml version="1.0"?>
 <!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
@@ -67,10 +67,8 @@ cat <<'EOF' | sudo tee /etc/fonts/local.conf
 	</alias>
 
 </fontconfig>
-
 EOF
 
-sudo apt install fontconfig
 sudo fc-cache -f -v
 ```
 
