@@ -24,14 +24,15 @@ wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
 7. java & jenv
 Reference:
-- https://mirror.nju.edu.cn/Adoptium/
+- https://mirror.nju.edu.cn/mirrorz-help/Adoptium/
 - https://github.com/jenv/jenv#1-getting-started
 
 ```sh
 # java
 sudo apt-get update && sudo apt-get install -y wget apt-transport-https
-wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo tee /etc/apt/keyrings/adoptium.asc
-echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://mirrors.cernet.edu.cn/Adoptium/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+sudo mkdir /etc/apt/keyrings/
+sudo wget -O /etc/apt/keyrings/adoptium.asc https://packages.adoptium.net/artifactory/api/gpg/key/public
+echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://mirrors.tuna.tsinghua.edu.cn/Adoptium/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | sudo tee /etc/apt/sources.list.d/adoptium.list
 sudo apt-get update
 sudo apt-get install temurin-8-jdk temurin-11-jdk temurin-17-jdk
 
@@ -44,5 +45,11 @@ echo 'eval "$(jenv init -)"' >> ~/.bash_profile
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(jenv init -)"' >> ~/.zshrc
 
-jenv add "$(which java)"
+# 重启 shell & 添加 java 版本
+dirname $(dirname $(readlink -f $(which java)))
+jenv add "$(dirname $(dirname $(readlink -f $(which java))))"
+
+jenv versions
+
+jenv global 11
 ```
