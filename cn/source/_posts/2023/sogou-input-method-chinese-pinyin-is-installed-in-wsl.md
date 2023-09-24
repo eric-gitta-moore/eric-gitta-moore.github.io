@@ -106,6 +106,14 @@ sudo apt install gedit
 gedit
 ```
 
+## 测试微软雅黑是否生效
+```sh
+wget https://github.com/oldj/SwitchHosts/releases/download/v4.1.2/SwitchHosts_linux_x86_64_4.1.2.6086.AppImage -O /tmp/switch.AppImage
+sudo chmod +x /tmp/switch.AppImage
+/tmp/switch.AppImage
+```
+打开切换中文，打开开发者工具，切换到 `computed style` 观察使用的字体是否为微软雅黑
+
 ## 参考资料
 - https://monkeywie.cn/2021/09/26/wsl2-gui-idea-config/
 - https://shurufa.sogou.com/linux/guide--
