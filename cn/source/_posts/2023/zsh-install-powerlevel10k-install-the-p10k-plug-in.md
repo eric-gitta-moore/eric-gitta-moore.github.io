@@ -24,7 +24,7 @@ echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> ~/.zshrc
 
 # plugin
 cat <<'EOF' | tee -a ~/.zshrc
-plugin=(
+plugins=(
   git
   command-not-found
   colored-man-pages

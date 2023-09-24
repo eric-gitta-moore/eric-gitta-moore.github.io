@@ -12,6 +12,7 @@ categories:
 ```sh
 sudo sed -i.bak 's/archive.ubuntu.com/mirrors.cernet.edu.cn/g' /etc/apt/sources.list
 sudo sed -i 's/security.ubuntu.com/mirrors.cernet.edu.cn/g' /etc/apt/sources.list
+sudo apt update
 ```
 
 ## pdm
