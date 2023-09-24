@@ -18,6 +18,8 @@ cat <<'EOF' | sudo tee -a /etc/profile
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8:zh_CN.UTF-8
 EOF
+
+echo 'source /etc/profile' >> ~/.zshrc
 ```
 
 ## 配置字体
@@ -64,15 +66,6 @@ sudo fc-cache -f -v
 ## 配置 fcitx
 ```sh
 sudo apt install fcitx
-
-cat <<'EOF' | sudo tee -a ~/.zshrc
-
-export GTK_IM_MODULE=fcitx
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-export DefaultIMModule=fcitx
-fcitx-autostart &>/dev/null
-EOF
 
 cat <<'EOF' | sudo tee -a /etc/profile
 
