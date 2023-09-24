@@ -21,13 +21,40 @@ EOF
 ```
 
 ## 配置字体
+添加 Windows 字体，并设置微软雅黑字体优先级
 ```sh
 cat <<'EOF' | sudo tee /etc/fonts/local.conf
 <?xml version="1.0"?>
-<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<!DOCTYPE fontconfig SYSTEM "urn:fontconfig:fonts.dtd">
 <fontconfig>
-    <dir>/mnt/c/Windows/Fonts</dir>
+  	<dir>/mnt/c/Windows/Fonts</dir>
+	<alias>
+		<family>serif</family>
+		<prefer>
+			<family>Microsoft YaHei UI</family><!-- han (zh-cn) -->
+		</prefer>
+	</alias>
+	<alias>
+		<family>sans-serif</family>
+		<prefer>
+			<family>Microsoft YaHei UI</family><!-- han (zh-cn) -->
+		</prefer>
+	</alias>
+	<alias>
+		<family>monospace</family>
+		<prefer>
+			<family>Microsoft YaHei UI</family><!-- han (zh-cn) -->
+		</prefer>
+	</alias>
+	<alias>
+		<family>system-ui</family>
+		<prefer>
+			<family>Microsoft YaHei UI</family><!-- han (zh-cn) -->
+		</prefer>
+	</alias>
+
 </fontconfig>
+
 EOF
 
 sudo apt install fontconfig
