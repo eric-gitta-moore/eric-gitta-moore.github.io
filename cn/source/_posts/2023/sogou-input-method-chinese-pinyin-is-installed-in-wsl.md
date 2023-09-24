@@ -16,7 +16,8 @@ sudo locale-gen en_US.UTF-8 zh_CN.UTF-8
 cat <<'EOF' | sudo tee -a /etc/profile
 
 export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8:zh_CN.UTF-8
+export LANGUAGE=en_US.UTF-8
+# export LANGUAGE=en_US.UTF-8:zh_CN.UTF-8
 EOF
 
 echo 'source /etc/profile' >> ~/.zshrc
