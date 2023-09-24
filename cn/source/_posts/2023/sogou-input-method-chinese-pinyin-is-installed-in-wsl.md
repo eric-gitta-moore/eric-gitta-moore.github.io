@@ -65,7 +65,16 @@ sudo fc-cache -f -v
 ```sh
 sudo apt install fcitx
 
-cat <<'EOF' | sudo tee -a ~/.profile
+cat <<'EOF' | sudo tee -a ~/.zshrc
+
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export DefaultIMModule=fcitx
+fcitx-autostart &>/dev/null
+EOF
+
+cat <<'EOF' | sudo tee -a /etc/profile
 
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
