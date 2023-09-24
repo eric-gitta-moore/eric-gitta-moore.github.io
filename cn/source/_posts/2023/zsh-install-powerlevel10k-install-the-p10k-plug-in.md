@@ -20,9 +20,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 # p10k
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
-echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> ~/.zshrc
+sed -i 's#robbyrussell#powerlevel10k/powerlevel10k#' ~/.zshrc
 
 # plugin
+sed -i 's/plugins=(git)//' ~/.zshrc
 cat <<'EOF' | tee -a ~/.zshrc
 plugins=(
   git
@@ -40,9 +41,9 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # z.lua
 sudo apt install -y lua5.2
 git clone https://github.com/skywind3000/z.lua.git ~/.z.lua
-echo 'eval "$(lua /path/to/z.lua  --init zsh once enhanced)"' >> ~/.zshrc
+echo 'eval "$(lua ~/.z.lua/z.lua  --init zsh once enhanced)"' >> ~/.zshrc
 
-# 重启 zsh
+# 重启 zsh 并配置 p10k
 exec zsh
 ```
 
