@@ -58,3 +58,16 @@ Reference:
 ```sh
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
+
+## kaggle cli
+Reference:
+- https://www.kaggle.com/docs/api
+
+```sh
+pip install kaggle
+
+# 打开 https://www.kaggle.com/settings
+# 下载 kaggle.json，上传到 ~/.kaggle/kaggle.json
+
+chmod 0644 ~/.kaggle/kaggle.json
+```
