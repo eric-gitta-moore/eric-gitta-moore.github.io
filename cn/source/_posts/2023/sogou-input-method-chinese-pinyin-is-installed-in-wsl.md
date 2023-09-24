@@ -107,6 +107,7 @@ fcitx-config-gtk3
 sudo apt install gedit
 gedit
 ```
+ctrl + space 切换输入法，这里和 Windows 的冲突了，记得关掉 Windows 的，也最好换掉 WSL 的输入法切换，因为这个快捷键和 idea 的自动补全快捷键冲突了
 
 ## 测试微软雅黑是否生效
 ```sh
