@@ -23,17 +23,15 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 sed -i 's#robbyrussell#powerlevel10k/powerlevel10k#' ~/.zshrc
 
 # plugin
-sed -i 's/plugins=(git)//' ~/.zshrc
-cat <<'EOF' | tee -a ~/.zshrc
-plugins=(
-  git
-  command-not-found
-  colored-man-pages
-  vi-mode
-  zsh-autosuggestions
-  zsh-syntax-highlighting
-)
-EOF
+sed -i 's/plugins=(git)/\
+plugins=( \
+  git \
+  command-not-found \
+  colored-man-pages \
+  vi-mode \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+)/' ~/.zshrc
 
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
