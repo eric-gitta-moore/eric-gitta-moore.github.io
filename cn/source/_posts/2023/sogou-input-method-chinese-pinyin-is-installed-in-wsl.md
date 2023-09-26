@@ -107,7 +107,7 @@ sudo apt install libgsettings-qt1
 fcitx-config-gtk3
 ```
 
-![1](https://shurufa.sogou.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhelp15.c14aafcd.png&w=1080&q=75)
+![1.jpeg](https://shurufa.sogou.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhelp15.c14aafcd.png&w=1080&q=75)
 
 ![2](https://shurufa.sogou.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhelp16.e32b0f4a.png&w=1080&q=75)
 
