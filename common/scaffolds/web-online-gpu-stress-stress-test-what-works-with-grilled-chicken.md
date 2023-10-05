@@ -85,3 +85,14 @@ onmessage = function() {
 
 
 
+kernel 中有 headless-gl 可选，这个是什么
+
+## headless-gl
+
+这个是给 node 用的
+
+具体怎么实现的呢
+
+## ndoe-gyp
+
+具体怎么实现的呢
