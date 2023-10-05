@@ -100,3 +100,13 @@ kernel 中有 headless-gl 可选，这个是什么
 ## ndoe-gyp
 
 具体怎么实现的呢
+
+## 参考文章
+- https://sq.sf.163.com/blog/article/173592945449734144
+- https://developer.mozilla.org/zh-CN/docs/Web/API/Worker/Worker
+- https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API/Tutorial/Creating_3D_objects_using_WebGL
+- https://blog.csdn.net/z591102/article/details/117473968
+- https://github.com/gpujs/gpu.js
+- https://github.com/stackgl/headless-gl
+- https://www.zhihu.com/question/36291768/answer/3041010590
+- https://github.com/nodejs/node-gyp
