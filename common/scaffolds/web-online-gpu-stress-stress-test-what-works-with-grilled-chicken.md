@@ -93,6 +93,10 @@ kernel 中有 headless-gl 可选，这个是什么
 
 具体怎么实现的呢
 
+其中用到了 `node-bindings`，这个是啥，又是怎么实现的呢
+
+解释一下 `require.resolve`
+
 ## ndoe-gyp
 
 具体怎么实现的呢
