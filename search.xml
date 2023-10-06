@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>macOS 14 不插电实现合盖外接显示器</title>
+      <link href="/2023/macos-14-achieves-closed-external-display-without-plugging-in/"/>
+      <url>/2023/macos-14-achieves-closed-external-display-without-plugging-in/</url>
+      
+        <content type="html"><![CDATA[<p>mac 默认拔掉电源线后，系统进入休眠，不能正常使用外接显示器。</p><p>系统设置中不提供解决方案，直接终端输入如下：</p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 启用拔线不休眠</span></span><br><span class="line">sudo pmset -a <span class="built_in">sleep</span> 0</span><br><span class="line">sudo pmset -a hibernatemode 0</span><br><span class="line">sudo pmset -a disablesleep 1</span><br></pre></td></tr></table></figure><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 还原</span></span><br><span class="line">sudo pmset -a <span class="built_in">sleep</span> 1</span><br><span class="line">sudo pmset -a hibernatemode 3</span><br><span class="line">sudo pmset -a disablesleep 0</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>NDI HX Camera apk | NewTek NDI apk</title>
       <link href="/2023/ndi-hx-camera-apk-newtek-ndi-apk/"/>
       <url>/2023/ndi-hx-camera-apk-newtek-ndi-apk/</url>
