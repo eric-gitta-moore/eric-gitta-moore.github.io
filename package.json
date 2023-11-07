@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/hexo": "^3.8.9",
-    "@types/minimist": "^1.2.2",
+    "@types/minimist": "^1.2.5",
     "hexo-cli": "^4.3.1",
     "minimist": "^1.2.8"
   }
