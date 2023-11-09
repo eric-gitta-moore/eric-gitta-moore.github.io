@@ -15,10 +15,8 @@ categories:
 function pLimit(concurrency) {
     let task = [], cnt = 0;
     return (fn) => new Promise(async resolve => {
-        task.push(async () => {
-            cnt++, resolve(await fn()), cnt--;
-            task.length > 0 && task.pop()();
-        });
+        task.push(async () => (cnt++, resolve(await fn()), cnt--, task.pop()?.()));
+        // 感觉可以去掉，一样可以同步 cnt++ 和 concurrency
         await Promise.resolve();
         cnt < concurrency && task.pop()?.();
     });
