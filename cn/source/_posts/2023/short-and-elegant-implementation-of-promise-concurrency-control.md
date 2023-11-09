@@ -13,16 +13,16 @@ categories:
 
 ```js
 function pLimit(concurrency) {
-    let queue = [], activeCount = 0;
+    let task = [], cnt = 0;
     return (fn) => new Promise(async resolve => {
-        queue.push(async () => {
-            activeCount++;
+        task.push(async () => {
+            cnt++;
             resolve(await fn());
-            activeCount--;
-            queue.size > 0 && queue.pop()();
+            cnt--;
+            task.length > 0 && task.pop()();
         });
         await Promise.resolve();
-        activeCount < concurrency && queue.pop()?.();
+        cnt < concurrency && task.pop()?.();
     });
 }
 ```
