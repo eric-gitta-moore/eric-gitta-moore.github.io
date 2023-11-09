@@ -12,13 +12,13 @@ categories:
 参考 `p-limit`
 
 ```js
-function pLimit(concurrency) {
-    let task = [], cnt = 0;
-    return (fn) => new Promise(async resolve => {
-        task.push(async () => (cnt++, resolve(await fn()), cnt--, task.pop()?.()));
+function pLimit(concurrent) {
+    let task = [], active = 0;
+    return (fn) => new Promise(async res => {
+        task.push(async () => (active++, res(await fn()), active--, task.pop()?.()));
         // 感觉可以去掉，一样可以同步 cnt++ 和 concurrency
         await Promise.resolve();
-        cnt < concurrency && task.pop()?.();
+        active < concurrent && task.pop()?.();
     });
 }
 ```
