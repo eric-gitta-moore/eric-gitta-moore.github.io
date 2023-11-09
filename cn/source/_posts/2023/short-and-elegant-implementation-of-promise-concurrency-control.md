@@ -16,9 +16,7 @@ function pLimit(concurrency) {
     let task = [], cnt = 0;
     return (fn) => new Promise(async resolve => {
         task.push(async () => {
-            cnt++;
-            resolve(await fn());
-            cnt--;
+            cnt++, resolve(await fn()), cnt--;
             task.length > 0 && task.pop()();
         });
         await Promise.resolve();
