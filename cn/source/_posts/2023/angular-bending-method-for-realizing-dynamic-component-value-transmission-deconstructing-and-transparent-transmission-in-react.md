@@ -27,14 +27,13 @@ export class HocComponent implements AfterViewInit {
   options: unknown;
 
   ngAfterViewInit(): void {
-    setTimeout(() => {
-      if (this.component === undefined) {
-        throw new Error('this.component can not be undefined');
-      }
-      const ref = this.container.createComponent(this.component);
-      if (!this.options) return;
-      Object.assign(ref.instance, this.options);
-    });
+    if (this.component === undefined) {
+      throw new Error('this.component can not be undefined');
+    }
+    const ref = this.container.createComponent(this.component);
+    if (!this.options) return;
+    Object.assign(ref.instance, this.options);
+    ref.changeDetectorRef.detectChanges();
   }
 }
 ```
