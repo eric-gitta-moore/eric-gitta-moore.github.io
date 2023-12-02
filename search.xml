@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>浪潮M2220主板加NVME BIOS</title>
+      <link href="/2023/inspur-m2220-motherboard-with-nvme-bios/"/>
+      <url>/2023/inspur-m2220-motherboard-with-nvme-bios/</url>
+      
+        <content type="html"><![CDATA[<p>浪潮M2220主板加NVME BIOS</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── 111.mp4</span><br><span class="line">├── 222.mp4</span><br><span class="line">├── LICENSE</span><br><span class="line">├── README.md</span><br><span class="line">├── 刷机前先看视频.txt</span><br><span class="line">├── 微信图片_20230910154327.jpg</span><br><span class="line">├── 微信图片_20230910154335.jpg</span><br><span class="line">├── 微信图片_20230910154341.jpg</span><br><span class="line">├── 微信图片_20231014083224.jpg</span><br><span class="line">├── 微信图片_20231014083235.jpg</span><br><span class="line">├── 浪潮NF5270M3 主板BIOS 原版提取无修改</span><br><span class="line">│   └── AmericanMegatrendsInc.-2.1.11.rom</span><br><span class="line">├── 浪潮nf5270m3带nvme</span><br><span class="line">│   ├── 1.rom</span><br><span class="line">│   ├── AFUWINGUIx64.EXE</span><br><span class="line">│   ├── AFUWINx64.EXE</span><br><span class="line">│   ├── AMI_Aptio_AFU_User_Guide_NDA.pdf</span><br><span class="line">│   ├── amifldrv64.sys</span><br><span class="line">│   ├── readme.txt</span><br><span class="line">│   └── win.bat</span><br><span class="line">└── 浪潮nf5270m3带nvme.7z</span><br><span class="line"></span><br><span class="line">2 directories, 19 files</span><br></pre></td></tr></table></figure><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/17014912290411701491228172.png" alt="17014912290411701491228172.png"></p><p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/17014912430411701491242486.png" alt="17014912430411701491242486.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mac font pingfang download</title>
       <link href="/2023/mac-font-pingfang/"/>
       <url>/2023/mac-font-pingfang/</url>
