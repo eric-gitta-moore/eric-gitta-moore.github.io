@@ -23,6 +23,7 @@ Reference:
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
 ```
 7. java & jenv
+
 Reference:
 - https://mirror.nju.edu.cn/mirrorz-help/Adoptium/
 - https://github.com/jenv/jenv#1-getting-started
@@ -53,12 +54,15 @@ jenv versions
 
 jenv global 11
 ```
+
 8、PHP & phpenv
+
 Reference:
 - https://github.com/phpbrew/phpbrew/blob/master/README.cn.md
 - https://blog.csdn.net/Annlix/article/details/119759752
 - https://github.com/phpbrew/phpbrew/wiki/Variant-Dependencies
-```
+
+```shell
 # phpenv Requirement
 sudo apt-get install \
   build-essential \
@@ -94,5 +98,5 @@ sudo apt-get install libjpeg8-dev libpng-dev libfreetype6-dev
 sudo apt install libpq-dev
 
 # build php
-phpbrew install -j $(nproc) 7.3 +default +dbs +mb
+phpbrew install -j $(nproc) 7.3 +default +dbs +mb +fpm
 ```
