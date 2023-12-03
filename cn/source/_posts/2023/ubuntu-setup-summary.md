@@ -57,6 +57,4 @@ jenv global 11
 
 8、PHP & phpenv
 
-用 `phpstudy` 吧，编译要搞死人
-
-https://www.xp.cn/linux.html
+用 `phpstudy` 或者 `宝塔` 吧，编译要搞死人
