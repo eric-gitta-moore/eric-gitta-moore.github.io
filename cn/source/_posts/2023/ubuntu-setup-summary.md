@@ -99,7 +99,7 @@ sudo apt-get install libjpeg8-dev libpng-dev libfreetype6-dev
 sudo apt install libpq-dev
 
 # build php
-phpbrew install -j $(nproc) 7.3 +default +dbs +mb +fpm
+phpbrew install -j $(nproc) 7.3 +default +dbs +mb +fpm +gd
 
 # phpbrew switch 7.3.xx
 
