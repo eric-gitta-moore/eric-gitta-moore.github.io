@@ -53,3 +53,46 @@ jenv versions
 
 jenv global 11
 ```
+8、PHP & phpenv
+Reference:
+- https://github.com/phpbrew/phpbrew/blob/master/README.cn.md
+- https://blog.csdn.net/Annlix/article/details/119759752
+- https://github.com/phpbrew/phpbrew/wiki/Variant-Dependencies
+```
+# phpenv Requirement
+sudo apt-get install \
+  build-essential \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  libcurl4-gnutls-dev \
+  libzip-dev \
+  libssl-dev \
+  libxml2-dev \
+  libxslt-dev \
+  libonig-dev \
+  php7.4-cli \
+  php7.4-bz2 \
+  php7.4-xml \
+  pkg-config
+
+# install phpenv
+curl -L -O https://github.com/phpbrew/phpbrew/releases/latest/download/phpbrew.phar
+chmod +x phpbrew.phar
+sudo mv phpbrew.phar /usr/local/bin/phpbrew
+phpbrew init
+echo "[[ -e ~/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc" >> ~/.zshrc
+source ~/.phpbrew/bashrc
+
+phpbrew update
+
+# Requirement for phpbrew everything variant，reference：https://blog.csdn.net/Annlix/article/details/119759752
+sudo apt install libsystemd-dev libacl1-dev libapparmor-dev valgrind libdmalloc-dev systemtap-sdt-dev krb5-multidev libkrb5-dev libssl-dev libsqlite3-dev libbz2-dev libcurl4-openssl-dev libenchant-2-dev libgmp-dev libc-client2007e-dev libldap2-dev libsasl2-dev libonig-dev unixodbc-dev libpspell-dev libedit-dev libsnmp-dev libsodium-dev libargon2-dev libtidy-dev libzip-dev libwebp-dev
+# gd
+sudo apt-get install libjpeg8-dev libpng-dev libfreetype6-dev
+# pgsql
+sudo apt install libpq-dev
+
+# build php
+phpbrew install -j $(nproc) 7.3 +default +dbs +mb
+```
