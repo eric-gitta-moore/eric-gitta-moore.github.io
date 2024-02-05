@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>10 行实现简单 Promise</title>
+      <link href="/2024/10-lines-implement-a-simple-promise/"/>
+      <url>/2024/10-lines-implement-a-simple-promise/</url>
+      
+        <content type="html"><![CDATA[<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyPromise</span> &#123;</span><br><span class="line">    <span class="title function_">constructor</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">        <span class="title function_">fn</span>(<span class="function"><span class="params">value</span>=&gt;</span><span class="variable language_">this</span>.<span class="property">cb</span>?.(value))</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="title function_">then</span>(<span class="params">fn</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function"><span class="params">res</span>=&gt;</span><span class="variable language_">this</span>.<span class="property">cb</span> = <span class="function"><span class="params">val</span>=&gt;</span>&#123;</span><br><span class="line">            <span class="keyword">const</span> thenCb = <span class="title function_">fn</span>(val)</span><br><span class="line">            thenCb <span class="keyword">instanceof</span> <span class="title class_">MyPromise</span> ? thenCb.<span class="title function_">then</span>(res) : <span class="title function_">res</span>(thenCb)</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">        <span class="title function_">resolve</span>(<span class="number">1</span>)</span><br><span class="line">    &#125;, <span class="number">1000</span>)</span><br><span class="line">&#125;</span><br><span class="line">).<span class="title function_">then</span>(<span class="function">(<span class="params">res</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">MyPromise</span>(<span class="function">(<span class="params">resolve</span>)=&gt;</span>&#123;</span><br><span class="line">        <span class="built_in">setTimeout</span>(<span class="function">()=&gt;</span>&#123;</span><br><span class="line">            <span class="title function_">resolve</span>(<span class="number">2</span>)</span><br><span class="line">        &#125;, <span class="number">1000</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line">).<span class="title function_">then</span>(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(res)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PHP &amp; phpenv</title>
       <link href="/2023/php-phpenv/"/>
       <url>/2023/php-phpenv/</url>
