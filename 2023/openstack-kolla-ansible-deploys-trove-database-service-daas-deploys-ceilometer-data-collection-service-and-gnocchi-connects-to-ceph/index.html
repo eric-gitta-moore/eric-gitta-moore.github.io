@@ -12,7 +12,7 @@
 
 
 <h1 id="2-配置ceph"><a href="#2-配置ceph" class="headerlink" title="2. 配置ceph"></a>2. 配置ceph</h1><h2 id="2-1-添加存储池"><a href="#2-1-添加存储池" class="headerlink" title="2.1 添加存储池"></a>2.1 添加存储池</h2><p>回到Proxmox GUI，创建一个名为gnocchi的存储池，用于保存与资源使用量相关的计量数据 </p>
-<p><img src="https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936491315381693649131336.png" alt="16936491315381693649131336.png"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936491315381693649131336.png" alt="16936491315381693649131336.png"></p>
 <h2 id="2-2-创建身份"><a href="#2-2-创建身份" class="headerlink" title="2.2 创建身份"></a>2.2 创建身份</h2><p>在Proxmox shell </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ceph auth get-or-create client.gnocchi mon &#x27;profile rbd&#x27; osd &#x27;profile rbd pool=gnocchi&#x27; mgr &#x27;profile rbd pool=gnocchi&#x27;</span><br></pre></td></tr></table></figure>
 
@@ -35,7 +35,7 @@
 
 
 
-<h1 id="4-完成"><a href="#4-完成" class="headerlink" title="4. 完成"></a>4. 完成</h1><p><img src="https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936491485361693649147609.png" alt="16936491485361693649147609.png"></p>
+<h1 id="4-完成"><a href="#4-完成" class="headerlink" title="4. 完成"></a>4. 完成</h1><p><img src="https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936491485361693649147609.png" alt="16936491485361693649147609.png"></p>
 <hr>
 <p>至此， OpenStack示例配置组件之Web Application（Cinder（块存储）、Glance（镜像服务）、Keystone（身份认证）、Horizon（仪表盘）、Neutron（网络服务）、Nova（计算服务）、Trove（数据库服务）、Swift（对象存储）、Ceilometer（数据收集）、Heat（编排服务））中的所有组件安装完毕</p>
 <ul>
