@@ -8,7 +8,7 @@
 <p>Configuration file reference:<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv15814739">https://www.bilibili.com/read/cv15814739</a></p>
 </blockquote>
 <p>Note that in YunXiao DevStudio, it seems different from regular VSCode, and <code>&quot;type&quot;: &quot;cppdbg&quot;</code> might result in an error. You should change it to <code>&quot;type&quot;: &quot;lldb&quot;</code> to resolve the error: “The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.”</p>
-<p><img src="https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936528309911693652830852.png" alt="16936528309911693652830852.png"></p>
+<p><img src="https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936528309911693652830852.png" alt="16936528309911693652830852.png"></p>
 <p>At this point, you should be able to debug. Using “Start Without Debugging” may not produce the expected result in Aliyun DevStudio. Coding works fine, but you need to remove breakpoints to run it; otherwise, it will still pause at the breakpoints.</p>
 <h4 id="Common-Issues"><a href="#Common-Issues" class="headerlink" title="Common Issues"></a>Common Issues</h4><ol>
 <li>If <code>launch.json</code> shows the error <code>Matches multiple schemas when only one must validate</code>, try refreshing your browser to resolve it.<br>Reference: <a target="_blank" rel="noopener" href="https://blog.csdn.net/oh_futrue/article/details/104771914/">https://blog.csdn.net/oh_futrue/article/details/104771914/</a></li>
