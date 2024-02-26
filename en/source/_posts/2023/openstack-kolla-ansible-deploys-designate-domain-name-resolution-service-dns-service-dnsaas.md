@@ -14,7 +14,7 @@ categories:
 
 > Designate 是 OpenStack 的多租户 DNSaaS 服务。它提供了一个带有集成 Keystone 身份验证的 REST API。它可以配置为根据 Nova 和 Neutron 操作自动生成记录。Designate 支持多种 DNS 服务器，包括 Bind9 和 PowerDNS 4。
 
-![16936487215361693648721484.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936487215361693648721484.png)
+![16936487215361693648721484.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936487215361693648721484.png)
 
 
 # 1. 启用 Designate 服务

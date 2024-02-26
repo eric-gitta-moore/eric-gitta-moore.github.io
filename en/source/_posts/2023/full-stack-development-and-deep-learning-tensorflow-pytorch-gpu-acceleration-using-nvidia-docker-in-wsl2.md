@@ -207,7 +207,7 @@ sudo nano /etc/docker/daemon.json
 
 正常走到这一步应该是这样的
 
-![16934842593104adf16cae3f4c17cb676b650e7ab189a.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934842593104adf16cae3f4c17cb676b650e7ab189a.png)
+![16934842593104adf16cae3f4c17cb676b650e7ab189a.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934842593104adf16cae3f4c17cb676b650e7ab189a.png)
 
 <br/>
 
@@ -219,7 +219,7 @@ sudo nano /etc/docker/daemon.json
 
 <br/>
 
-![169348443613133713cbe8c88e63ec50c28abeb2a443e.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348443613133713cbe8c88e63ec50c28abeb2a443e.png)
+![169348443613133713cbe8c88e63ec50c28abeb2a443e.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348443613133713cbe8c88e63ec50c28abeb2a443e.png)
 
 <br/>
 
@@ -231,7 +231,7 @@ sudo nano /etc/docker/daemon.json
 
 <br/>
 
-![1693484492129119f80574646149e30461fa3f60246fc.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484492129119f80574646149e30461fa3f60246fc.png)
+![1693484492129119f80574646149e30461fa3f60246fc.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484492129119f80574646149e30461fa3f60246fc.png)
 
 <br/>
 
@@ -293,7 +293,7 @@ bash run-gpu.sh
 ```
 
 可以看到已经启动成功了
-![1693484526128a07ecfed1340e7d02b919f23da9378c3.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484526128a07ecfed1340e7d02b919f23da9378c3.png)
+![1693484526128a07ecfed1340e7d02b919f23da9378c3.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484526128a07ecfed1340e7d02b919f23da9378c3.png)
 
 ## 5. 检验成果
 
@@ -304,17 +304,17 @@ source .gpu-envrc
 docker compose exec os zsh
 ```
 
-![1693484539128fb39edd4cc37214c59b3cfd33a419119.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484539128fb39edd4cc37214c59b3cfd33a419119.png)
+![1693484539128fb39edd4cc37214c59b3cfd33a419119.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484539128fb39edd4cc37214c59b3cfd33a419119.png)
 
 > 如果字体乱码，应该是没有配置 powerlevel10k 的 `MesloLGS NF` 字体支持。
 > 
 > 我使用的终端是 `tabby` 全平台支持    
 > 
->  ![169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png)
+>  ![169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348454912865a864d5c148fa2d05c1ef3a0f4cd041.png)
 > 
 > 在项目中有这几个字体，复制到 `c:\windows\fonts` 中即可
 > 
-> ![1693484558129f5fa68a6adf756a7251eddb9cf098e08.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484558129f5fa68a6adf756a7251eddb9cf098e08.png)
+> ![1693484558129f5fa68a6adf756a7251eddb9cf098e08.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484558129f5fa68a6adf756a7251eddb9cf098e08.png)
 
 ### 5.1. 检测 wslg 支持
 
@@ -324,7 +324,7 @@ docker compose exec os zsh
 
 <br/>
 
-![16934845681289dc2fb94f291f99e9c92fb8286d1299e.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934845681289dc2fb94f291f99e9c92fb8286d1299e.png)
+![16934845681289dc2fb94f291f99e9c92fb8286d1299e.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934845681289dc2fb94f291f99e9c92fb8286d1299e.png)
 
 ### 5.2. 检测 NVIDIA 支持
 
@@ -332,7 +332,7 @@ docker compose exec os zsh
 nvidia-smi
 ```
 
-![16934845861283b76e4afea48293b2be2659a6259389e.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934845861283b76e4afea48293b2be2659a6259389e.png)
+![16934845861283b76e4afea48293b2be2659a6259389e.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934845861283b76e4afea48293b2be2659a6259389e.png)
 我这里显示出了母机的 3060，说明 Docker 已经检测到这张显卡
 
 ### 5.3. 检测 TensorFlow支持
@@ -343,7 +343,7 @@ nvidia-smi
 python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000, 1000])))"
 ```
 
-![1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png)
+![1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484594155ce96a3ea90d8dd75ead62cb469ca6561.png)
 
 打印出了张量
 
@@ -353,7 +353,7 @@ python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000,
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
-![1693484602126dce0e8a22b6a116b0332392835e9010e.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484602126dce0e8a22b6a116b0332392835e9010e.png)
+![1693484602126dce0e8a22b6a116b0332392835e9010e.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484602126dce0e8a22b6a116b0332392835e9010e.png)
 
 可以看到 TensorFlow 也检测到了显卡
 
@@ -373,16 +373,16 @@ pip install kaggle
 chmod 600 ~/.kaggle/kaggle.json
 ```
 
-![1693484611126002ed3169310ad3a2442ea36491ac828.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484611126002ed3169310ad3a2442ea36491ac828.png)
+![1693484611126002ed3169310ad3a2442ea36491ac828.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484611126002ed3169310ad3a2442ea36491ac828.png)
 
 #### 5.3.4 检测 TensorFlow GPU 负载支持
 
 这里我们使用 kaggle cli 下载比赛中别人提交的代码进行测试，https://www.kaggle.com/code/hassanamin/tensorflow-mnist-gpu-tutorial
 
-![16934846191270cd4adf205ebd8790e2b4bde76166a2b.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934846191270cd4adf205ebd8790e2b4bde76166a2b.png)
+![16934846191270cd4adf205ebd8790e2b4bde76166a2b.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934846191270cd4adf205ebd8790e2b4bde76166a2b.png)
 复制下载命令
 
-![1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png)
+![1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484626126a7990a1e7044a3bb5a2054ec07eb7c8a.png)
 
 **启动 openssh-server**
 
@@ -396,18 +396,18 @@ sudo service ssh start
 > 
 > `root` 用户名也是 `linux`
 
-![16934846331264737dece647d08f3fd827674cb12bd7b.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934846331264737dece647d08f3fd827674cb12bd7b.png)
+![16934846331264737dece647d08f3fd827674cb12bd7b.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934846331264737dece647d08f3fd827674cb12bd7b.png)
 
 **打开 vscode 进行远程连接**
 需要先下载远程开发插件 `ms-vscode-remote.vscode-remote-extensionpack`
 
-![16934846411276154d21eb0a904f597d3fcb891ce5345.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934846411276154d21eb0a904f597d3fcb891ce5345.png)
+![16934846411276154d21eb0a904f597d3fcb891ce5345.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934846411276154d21eb0a904f597d3fcb891ce5345.png)
 
 点击左下角的蓝标，会弹出命令列表，选择 `Connect to host`
 
 <br/>
 
-![1693484662126f34f5829cb9c8ae47ed3eba65b933212.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484662126f34f5829cb9c8ae47ed3eba65b933212.png)
+![1693484662126f34f5829cb9c8ae47ed3eba65b933212.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484662126f34f5829cb9c8ae47ed3eba65b933212.png)
 
 <br/>
 
@@ -420,11 +420,11 @@ sudo service ssh start
 > 1. 微软支持宿主机直接访问 WSL 的监听端口
 > 2. docker compose 中设置的 `network` 类型是 `host`，也就是和 WSL 公用一个网络
 
-![1693484685126844afa00df2604630c9f9dc7df47533a.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484685126844afa00df2604630c9f9dc7df47533a.png)
+![1693484685126844afa00df2604630c9f9dc7df47533a.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484685126844afa00df2604630c9f9dc7df47533a.png)
 
 点击右侧的 `Connect` 
 
-![16934846901241578876302c28e81b0e1922330432b6f.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934846901241578876302c28e81b0e1922330432b6f.png)
+![16934846901241578876302c28e81b0e1922330432b6f.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934846901241578876302c28e81b0e1922330432b6f.png)
 会提示选择平台和输入密码
 
 完成之后即可进行远程开发
@@ -433,7 +433,7 @@ sudo service ssh start
 
 这里由于的刚刚我下载的目录是 `/tmp/kaggle/tf` 所以这里我需要打开这个目录
 
-![1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png)
+![1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484697124b68c65ea075ddb3ca0f4bae8f94dfaa2.png)
 **安装插件**
 需要安装的插件有
 
@@ -444,13 +444,13 @@ sudo service ssh start
 
 **选择运行环境**
 选择 conda Python3.9 作为运行环境
-![16934847051258ce5bc169a1945be5f4a05805a73f026.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934847051258ce5bc169a1945be5f4a05805a73f026.png)
+![16934847051258ce5bc169a1945be5f4a05805a73f026.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934847051258ce5bc169a1945be5f4a05805a73f026.png)
 逐个单元格运行试试效果
 
 可以看到检测到 GPU 了
-![1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png)
+![1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484713124268cedbf858fe22cf23a9d8a0a0b15c6.png)
 可以看到成功调用宿主机显卡
-![16934847201250b779cecd0e73850fd2689ddf9d169cc.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934847201250b779cecd0e73850fd2689ddf9d169cc.png)
+![16934847201250b779cecd0e73850fd2689ddf9d169cc.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934847201250b779cecd0e73850fd2689ddf9d169cc.png)
 不过似乎没有使得显卡满载
 
 ### 5.4. 检测 pytorch cuda 支持
@@ -461,7 +461,7 @@ sudo service ssh start
 python3 -c "import torch;print(torch.cuda.is_available());"
 ```
 
-![169348472712535ea23e934d88048e2c6c8dab35c3aea.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348472712535ea23e934d88048e2c6c8dab35c3aea.png)
+![169348472712535ea23e934d88048e2c6c8dab35c3aea.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348472712535ea23e934d88048e2c6c8dab35c3aea.png)
 
 > 这里我还没有换 vscode 的终端字体，所以乱码了，忽略即可
 
@@ -469,13 +469,13 @@ python3 -c "import torch;print(torch.cuda.is_available());"
 
 对于 pytorch，这里使用 https://www.kaggle.com/code/lyhue1991/pytorch-gpu-examples，作为测试 demo
 
-![1693484734124b153e92b893a5c208c7eb054b3154899.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484734124b153e92b893a5c208c7eb054b3154899.png)
+![1693484734124b153e92b893a5c208c7eb054b3154899.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484734124b153e92b893a5c208c7eb054b3154899.png)
 
-![1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png)
+![1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484743125e0d3a43375a635fe2a488d29b8a0c0ea.png)
 
-![169348475112489327abd58292ac9fc75036ecd4b132e.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348475112489327abd58292ac9fc75036ecd4b132e.png)
+![169348475112489327abd58292ac9fc75036ecd4b132e.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348475112489327abd58292ac9fc75036ecd4b132e.png)
 
-![169348476212373dcb403f84c118c1e16e48e6bf352ad.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348476212373dcb403f84c118c1e16e48e6bf352ad.png)
+![169348476212373dcb403f84c118c1e16e48e6bf352ad.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348476212373dcb403f84c118c1e16e48e6bf352ad.png)
 可以看到成功调度 GPU
 
 ### 6. 检查 nodejs
@@ -485,7 +485,7 @@ node -v
 nvm list
 ```
 
-![16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png)
+![16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16934847731247a5f0ca36fe146f3fa6985adb40d9a4c.png)
 
 ### 7. 检查 java
 
@@ -495,7 +495,7 @@ javac -version
 jenv versions
 ```
 
-![1693484779123aaba208a8173522f6b82e93ac2a64cb9.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1693484779123aaba208a8173522f6b82e93ac2a64cb9.png)
+![1693484779123aaba208a8173522f6b82e93ac2a64cb9.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1693484779123aaba208a8173522f6b82e93ac2a64cb9.png)
 
 ### 8. 检查 c++
 
@@ -504,7 +504,7 @@ g++ -v
 gcc -v
 ```
 
-![169348478612341eb734dbd75537dc43fba98abb4c225.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/169348478612341eb734dbd75537dc43fba98abb4c225.png)
+![169348478612341eb734dbd75537dc43fba98abb4c225.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/169348478612341eb734dbd75537dc43fba98abb4c225.png)
 
 ### 9. 容器卷
 

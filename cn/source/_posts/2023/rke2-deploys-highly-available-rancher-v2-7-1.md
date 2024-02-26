@@ -18,7 +18,7 @@ categories:
 
 > 这里有个坑，80端口的响应代码，需要把307,308,303标记为健康的状态码
 
-![16936369265351693636925856.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936369265351693636925856.png)
+![16936369265351693636925856.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936369265351693636925856.png)
 
 ## 第一个server节点安装
 
@@ -200,8 +200,8 @@ helm install rancher rancher-latest/rancher \
 或者直接用链接（其实就是跳过输入上面随机密码的阶段，直接到下一步设置admin密码）
 `echo https://rancher01.ent.top/dashboard/?setup=$(kubectl get secret --namespace cattle-system bootstrap-secret -o go-template='{{.data.bootstrapPassword|base64decode}}')`
 
-![16936369605351693636960184.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936369605351693636960184.png)
+![16936369605351693636960184.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936369605351693636960184.png)
 
-![16936369695351693636969075.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936369695351693636969075.png)
+![16936369695351693636969075.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936369695351693636969075.png)
 
-![16936369815351693636980799.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936369815351693636980799.png)
+![16936369815351693636980799.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936369815351693636980799.png)

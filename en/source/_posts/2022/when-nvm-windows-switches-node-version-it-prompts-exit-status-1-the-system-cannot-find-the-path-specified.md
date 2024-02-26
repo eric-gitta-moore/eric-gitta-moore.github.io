@@ -8,7 +8,7 @@ categories:
     - Default
 ---
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/85e161a177b14afa9db0fa69c5d15509.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/85e161a177b14afa9db0fa69c5d15509.png)
 
 ```bash
 D:\Users\th>nvm uninstall 16.14.2
@@ -37,4 +37,4 @@ Solution:
 
 The reason is that the directory selected during installation does not exist. So we need to manually establish an NVM here to provide a soft connection
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2cdb465df81044a99da3f5504e7c4eaa.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2cdb465df81044a99da3f5504e7c4eaa.png)

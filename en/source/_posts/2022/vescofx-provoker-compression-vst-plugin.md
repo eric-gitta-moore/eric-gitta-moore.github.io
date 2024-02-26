@@ -14,7 +14,7 @@ Translate the Markdown to English:
 
 This plugin took me a long time to find!
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/ce6f6e732fb0408a93de635f5ba12312.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/ce6f6e732fb0408a93de635f5ba12312.png)
 
 Source:
 

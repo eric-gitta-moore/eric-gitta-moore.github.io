@@ -11,42 +11,42 @@ categories:
 # 2023软件工程中各种图在现代企业级开发中的使用频率
 
 ## 概览
-![16936351800641693635179264.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936351800641693635179264.png)
+![16936351800641693635179264.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936351800641693635179264.png)
 
 ## 系统流程图 ✔
-![16936351990621693635198471.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936351990621693635198471.png)
+![16936351990621693635198471.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936351990621693635198471.png)
 
 ## 数据流图  ×不常用
 
-![16936352180661693635217853.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352180661693635217853.png)
+![16936352180661693635217853.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352180661693635217853.png)
 
 ## ER图 ✔
 
-![16936352380641693635237871.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352380641693635237871.png)
+![16936352380641693635237871.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352380641693635237871.png)
 
 ## 状态转换图 ✔
 
-![16936352480751693635247278.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352480751693635247278.png)
+![16936352480751693635247278.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352480751693635247278.png)
 
 ## Warnier图 ×不常用
 
-![16936352590741693635258629.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352590741693635258629.png)
+![16936352590741693635258629.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352590741693635258629.png)
 
 ## IPO图 ×不常用
 
-![16936352820601693635281639.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352820601693635281639.png)
+![16936352820601693635281639.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352820601693635281639.png)
 
 ## Petri网 ×不常用
 
-![16936352920661693635291966.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936352920661693635291966.png)
+![16936352920661693635291966.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936352920661693635291966.png)
 
 ## 层次方框图 ×不常用
 
-![16936353020611693635301590.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936353020611693635301590.png)
+![16936353020611693635301590.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936353020611693635301590.png)
 
 ## 层次图 a.k.a. H图 ✔
 
-![16936353250741693635324362.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936353250741693635324362.png)
+![16936353250741693635324362.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936353250741693635324362.png)
 
 > 1,层次图描绘软件的层次结构.层层次方框图描绘的是数据结构。
 > 
@@ -57,11 +57,11 @@ categories:
 
 ## 结构图 ×不常用
 
-![16936353450681693635344883.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936353450681693635344883.png)
+![16936353450681693635344883.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936353450681693635344883.png)
 
 ## HIPO图 ×不常用
 
-![16936353875351693635386586.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936353875351693635386586.png)
+![16936353875351693635386586.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936353875351693635386586.png)
 
 > HIPO图是美国IBM公司发明的“层次图加输入/处理/输出图”的英文缩写。为了能使HIPO图具有可追踪性，在H图（层次图）里除了最顶层的方框之外，每个方框都加了编号。编号规则和第2.4节中介绍的数据流图的编号规则相同，例如，图5.3加了编号后得到图5,4。
 >
@@ -69,15 +69,15 @@ categories:
 
 ## 盒图 a.k.a. N-S图 ×不常用
 
-![16936354075351693635406755.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936354075351693635406755.png)
+![16936354075351693635406755.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936354075351693635406755.png)
 
 ## PAD图 ×不常用
 
-![16936354215431693635421533.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936354215431693635421533.png)
+![16936354215431693635421533.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936354215431693635421533.png)
 
 ## Jackson图 ×不常用
 
-![16936354365351693635436128.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936354365351693635436128.png)
+![16936354365351693635436128.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936354365351693635436128.png)
 
 
 ## 参考资料

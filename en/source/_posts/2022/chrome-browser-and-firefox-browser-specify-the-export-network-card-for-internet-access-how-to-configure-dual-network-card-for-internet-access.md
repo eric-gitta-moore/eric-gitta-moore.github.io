@@ -26,14 +26,14 @@ According to the readme, it seems that this method only works with older version
 
 For Firefox, you need to set the preference `about:config?filter=browser.launcherProcess.enabled` to false; otherwise, ForceBindIP will attach to the launcher rather than the actual program.
 
-![16936512345391693651233887.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936512345391693651233887.png)
+![16936512345391693651233887.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512345391693651233887.png)
 
 Select the outbound network card and specify the program, then click "Run Application."
 
-![16936512455351693651245225.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936512455351693651245225.png)
+![16936512455351693651245225.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512455351693651245225.png)
 
 Effect:
 
-![16936512565411693651256481.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936512565411693651256481.png)
+![16936512565411693651256481.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512565411693651256481.png)
 
-![16936512665391693651266038.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936512665391693651266038.png)
+![16936512665391693651266038.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512665391693651266038.png)

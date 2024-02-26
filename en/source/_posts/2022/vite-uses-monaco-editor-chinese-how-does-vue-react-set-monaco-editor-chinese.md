@@ -14,7 +14,7 @@ However, when I used it, I didn't succeed in localizing it, as I found that this
 
 So, I fixed it myself and submitted a pull request to the author.
 
-![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936513475351693651346745.png)
+![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936513475351693651346745.png)
 
 # Usage
 

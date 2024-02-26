@@ -155,7 +155,7 @@ dist/assets/monaco.5273bca9.js             2600.87 KiB / gzip: 659.07 KiB       
 
 可以看到一坨的语言都被打包进去了，不管有没有用到都在里面
 
-![16936514285391693651428183.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936514285391693651428183.png)
+![16936514285391693651428183.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936514285391693651428183.png)
 
 
 # 优化后效果
@@ -187,4 +187,4 @@ dist/assets/monaco.5c75dc57.js          1730.89 KiB / gzip: 440.94 KiB          
 
 
 
-![16936514445371693651443998.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936514445371693651443998.png)
+![16936514445371693651443998.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936514445371693651443998.png)

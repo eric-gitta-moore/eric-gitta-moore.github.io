@@ -16,7 +16,7 @@ categories:
 
 > 附上我的msinfo32，链接：https://yunling.lanzouo.com/iJEO5xj1tgd 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/31aee62d00ec4844bf1b76c1e237f9aa.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/31aee62d00ec4844bf1b76c1e237f9aa.png)
 
 这篇教程先说全格式化怎么做，下次有空再说免格式化怎么弄。下面开始。
 
@@ -24,23 +24,23 @@ categories:
 
 一、先插U盘（我这里插的是移动硬盘），然后开机或者重启一直不断的按F2，进入bios
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ce6bf9931e248378cb00151035f922c.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2ce6bf9931e248378cb00151035f922c.jpg)
 
  二、按F8进入PE
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dbe67173bf55410b8dcd0362dcd56b57.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/dbe67173bf55410b8dcd0362dcd56b57.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/769cd95973dc4efe9069680f285baa5c.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/769cd95973dc4efe9069680f285baa5c.jpg)
 
 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e172f3a3eea642e2ae2234619c4da337.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e172f3a3eea642e2ae2234619c4da337.jpg) 
 
 三、分区，分成出厂那个样子
 
 我备份了出厂的分区表，按照这个来分就好了
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/08e3c070967f4b61adbb5813eec6c9b2.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/08e3c070967f4b61adbb5813eec6c9b2.jpg)
 
 
 
@@ -48,41 +48,41 @@ categories:
 
 ①先分一个区出来
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e7e11d2ca8834470979b16000ddcad42.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e7e11d2ca8834470979b16000ddcad42.jpg) 
 
 然后把这个OS调整一下，缩小为200G，因为后面不知道还要用多少。
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7511ad1b11a94b58a8e0079add049be8.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/7511ad1b11a94b58a8e0079add049be8.jpg) 
 
 然后我们依次把RECOVERY、restore、MYASUS建立出来
 
 RECOVERY分区是1000MB
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/00627725fd194e4d9bcae5c8d9c17720.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/00627725fd194e4d9bcae5c8d9c17720.jpg)
 
 RESTORE分区是19.5GB也就是19968MB
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3af4087c2c6148b9a39d2b1268c5b2ad.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/3af4087c2c6148b9a39d2b1268c5b2ad.jpg)
 
 MYASUS是200MB 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/dafa293bf5294ab9afb4b05bb0e48fa8.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/dafa293bf5294ab9afb4b05bb0e48fa8.jpg) 
 
 保存更改，然后把多出的还给OS分区
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/36b45205c70e4c119e596e07b16086e7.jpg) ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/76740c9d4dad4f2e96b99cc1d7693e4b.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/36b45205c70e4c119e596e07b16086e7.jpg) ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/76740c9d4dad4f2e96b99cc1d7693e4b.jpg) 
 
 
 
 四、恢复各个分区的备份
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/7b952aea8a3748049b081b9acafca71f.jpg)![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/6315dbc6ac1249e2a136504769f62033.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/7b952aea8a3748049b081b9acafca71f.jpg)![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/6315dbc6ac1249e2a136504769f62033.jpg)
 
  用diskgenius恢复RECOVERY、RESTORE、MYASUS
 
 然后打开dism++，左上角 文件-释放镜像，这一步恢复出厂系统
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e9045a768b0f45e795d61c9cc756a224.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e9045a768b0f45e795d61c9cc756a224.jpg)
 
  然后现在还是无法开机的，接下来我们重建引导。
 
@@ -90,11 +90,11 @@ MYASUS是200MB
 
 （右键某个分区，找到指定驱动器号就可以找到这个功能了 ）
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b486d0c1e63c4d2081f5be1dd89f9faf.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/b486d0c1e63c4d2081f5be1dd89f9faf.jpg)
 
 按win+r输入cmd
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d5879ab87e1544f9a97cb91818e09b49.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/d5879ab87e1544f9a97cb91818e09b49.jpg)
 
 
 
@@ -103,8 +103,6 @@ MYASUS是200MB
 ```
 bcdboot d:\windows /s c: /f UEFI /l zh-cn
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
  这里d:\windows中的d要看你那边os分区指定的驱动器号
 
@@ -118,7 +116,7 @@ bcdboot d:\windows /s c: /f UEFI /l zh-cn
 
  右键RECOVERY分区，更改分区参数，
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0640ca85d6c94b1fa42a49edc1fee88b.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0640ca85d6c94b1fa42a49edc1fee88b.jpg)
 
 文件系统类型改为Microsoft recovery partition其它的不用动
 
@@ -130,49 +128,47 @@ bcdboot d:\windows /s c: /f UEFI /l zh-cn
 
 进入bios把启动顺序改一下，
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a301e079bcf422a8a001663fb1eb6fd.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/3a301e079bcf422a8a001663fb1eb6fd.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a0c40faec38945de9b53f74cfb815a77.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a0c40faec38945de9b53f74cfb815a77.jpg)
 
 然后按f10保存并退出，这时候主板会断电一下，这时候把优盘赶紧把下来（不拔问题也不大咯） 
 
  七、配置当前系统的winre
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/029602c7a48448858b05c9cf6b42c9d3.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/029602c7a48448858b05c9cf6b42c9d3.jpg)
 
 开机又是这个东西
 
 一顿操作之后总算进来了，按win+s输入cmd以管理员身份运行
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/5f29599968824e44a7809a854bb00b6d.png)输入
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/5f29599968824e44a7809a854bb00b6d.png)输入
 
 ```
 reagnetc /info
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/636e88b582af4fb0985b324a24d26b5b.jpg)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/636e88b582af4fb0985b324a24d26b5b.jpg)
 
 果然很正常的出现了disabled
 
 然后修改一下显示隐藏文件和显示拓展名
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/052e1079000e44faa31e3111f5cdd802.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/052e1079000e44faa31e3111f5cdd802.png)
 
 接下来给winre指定镜像路径，在刚刚打开的命令提示符里面 照着我这样输入
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/613ce2a05f8b4711aca0812b77f7d548.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/613ce2a05f8b4711aca0812b77f7d548.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2ddf4c0be2b445b983d012a8e646543f.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2ddf4c0be2b445b983d012a8e646543f.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/4e9d23cb716f4e0e9a17e754c1469c83.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/4e9d23cb716f4e0e9a17e754c1469c83.jpg)
 
 这样就把recovery分区挂载上了
 
 进入recovery分区所在盘，找到winre，按shift键的同时按下鼠标右键复制为路径
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16b9fff2a8294fee93e388b0f4a7261b.jpg) 
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16b9fff2a8294fee93e388b0f4a7261b.jpg) 
 
 接下来我们另外再用管理员权限打开一个小黑窗
 
@@ -182,13 +178,11 @@ reagnetc /info
 reagentc /setreimage /path 刚刚复制的路径
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/3a60a583ab8443c3bcf2643431ec402b.jpg)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/3a60a583ab8443c3bcf2643431ec402b.jpg)
 
  然后修改winre配置文件
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1d654611eff242cd8acf714c68b8bda1.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1d654611eff242cd8acf714c68b8bda1.jpg)
 
 
 
@@ -196,15 +190,13 @@ reagentc /setreimage /path 刚刚复制的路径
 
 下面就是启用winre咯
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/9e1d5300104c4f75999d21e920c5155d.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/9e1d5300104c4f75999d21e920c5155d.jpg)
 
 在命令行里面输入
 
 ```ruby
 reagentc /enable
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
  不出意外的话这里会稍微停顿一下再出来操作成功的提示
 
@@ -214,8 +206,6 @@ reagentc /enable
 reagentc /info
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
  看一下是否成功启用了
 
 别急别急，这里才只是进行到三分之二
@@ -224,11 +214,11 @@ reagentc /info
 
 把这个文件复制到桌面
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e95634d43475492597360d1cb5af1d9e.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e95634d43475492597360d1cb5af1d9e.jpg)
 
 按住shift键的同时按下鼠标右键，复制路径
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/770fb2d4e7c847f7921bba10f6d4faa6.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/770fb2d4e7c847f7921bba10f6d4faa6.jpg)
 
 然后在命令行里面输入
 
@@ -236,19 +226,18 @@ reagentc /info
 reagentc /setbootshelllink /configfile 刚刚复制的路径
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
 
  到这里为止，现在用的这个系统的MYASUS in winre就已经配置好了
 
 我们可以按住shift不放，点击重启，就会出现这个蓝色的界面，然后点击疑难解答就会出现这个界面
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e5a85df5fac141629d4e72bea6412e92.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e5a85df5fac141629d4e72bea6412e92.jpg)
 
  八、配置asus.sum里面的winre
 
  点击这个向左的小箭头
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e8ed571a7e0047f986410f6ecf902ca9.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e8ed571a7e0047f986410f6ecf902ca9.png)
 
 然后选择继续使用win10，这里应该会重启一下，我们不断的按f2进入bios，然后进入pe
 
@@ -262,8 +251,6 @@ reagentc /setbootshelllink /configfile 刚刚复制的路径
 md d:\mount
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
 把asus.sum挂载到这个目录下面
 
  输入命令挂载
@@ -272,9 +259,7 @@ md d:\mount
 dism /mount-image /imagefile:你的asus.sum路径 /index:1 /MountDir:d:\mount
 ```
 
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
-
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0c52f66dc8384253bfd289bb69120af0.jpg)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0c52f66dc8384253bfd289bb69120af0.jpg)
 
 接下来将刚刚我们系统弄好的ReAgent.xml复制这个镜像里面对应的位置去
 
@@ -300,17 +285,17 @@ dism /Unmount-image /MountDir:d:\mount /commit
 
 选择MYASUS in winre
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/612ef3aad0454fada0b7eb5d8129b2ff.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/612ef3aad0454fada0b7eb5d8129b2ff.jpg)
 
 选择asus recovery
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/cf8a257638c74639a99b3095ab2312ed.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/cf8a257638c74639a99b3095ab2312ed.jpg)
 
 重置 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a94a198f08904916a63ddc35f33fa65c.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a94a198f08904916a63ddc35f33fa65c.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/a17bf8f869a94bd9b87c48e8cbea669c.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a17bf8f869a94bd9b87c48e8cbea669c.jpg)
 
 ok搞定，应该会自动重启，这时候要快点操作，插上优盘，重启的时候不断按f2进入bios，然后f8进入pe，
 
@@ -320,9 +305,9 @@ ok搞定，应该会自动重启，这时候要快点操作，插上优盘，重
 
 之后就可以打开傲梅备份备份全硬盘了
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/8a3e46d919544421a6ff33a29c18fed3.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/8a3e46d919544421a6ff33a29c18fed3.jpg)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e44f59cb7f8242018447a44f77bc0de0.jpg)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e44f59cb7f8242018447a44f77bc0de0.jpg)
 
 至此教程全部结束
 

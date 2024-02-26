@@ -9,7 +9,7 @@ categories:
 ---
 
 
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819142052214.png)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819142052214.png)
 
  就像这样，如果这时候点击下面的搜索，那么就会自动跳转到360的搜索引擎。
 
@@ -21,7 +21,7 @@ categories:
 
 下载phpstudy，采用php7+nginx
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819142355456.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819142355456.png)
 
 
 
@@ -86,9 +86,9 @@ header('location: https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=bai
 
 最后再设置下hosts
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819143249667.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819143249667.png)
 
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210819143304804.png)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819143304804.png)
 
 
 
@@ -96,4 +96,4 @@ header('location: https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=bai
 
 也就是改成服务模式
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/2021081914343462.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2021081914343462.png)

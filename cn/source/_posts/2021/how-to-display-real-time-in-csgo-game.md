@@ -12,11 +12,11 @@ csgo游戏中怎么显示现实中的时间
 
 xbox game bar下载这个应用就好了
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/842fb7cef3a141c8b552f137ebe37161.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/842fb7cef3a141c8b552f137ebe37161.png)
 
 这个更好使
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/e395dfe3eecc4367b5b0e0d1433b3cac.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e395dfe3eecc4367b5b0e0d1433b3cac.png)
 
 提供一个浏览器，这样的话想显示什么都可以了。
 

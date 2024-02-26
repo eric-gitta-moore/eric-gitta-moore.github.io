@@ -10,8 +10,8 @@ categories:
 
 删除“"C:\Users\TianhaoLTD\AppData\Roaming\JetBrains\PyCharm2021.2\eval\PyCharm212.evaluation.key"”即可
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210917082347618.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210917082347618.png)
 
 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210917082351244.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210917082351244.png)

@@ -13,7 +13,7 @@ categories:
 
 记得之前还有用浏览器挖矿的，索性就搜了一下 `web cpu gpu stress`，没想到还真有，还不少。不过效果都比较差，唯一一个效果拉满的是 `https://mprep.info/gpu/`，但是也仅限于 Windows 平台，比较完美的实现了双烤，
 
-![16965165614991696516560765.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16965165614991696516560765.png)
+![16965165614991696516560765.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16965165614991696516560765.png)
 
 在 macOS 14 下仅仅能实现 50%左右的 CPU 负载
 
@@ -23,7 +23,7 @@ categories:
 
 打开控制台，在点击压力测试按钮的时候发现加载了几个 worker
 
-![16965168514981696516850855.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16965168514981696516850855.png)
+![16965168514981696516850855.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16965168514981696516850855.png)
 
 **CPU部分**：
 
@@ -74,7 +74,7 @@ onmessage = function() {
 
 找到这个 `gpu-browser.min.js`，看看是啥
 
-![16965170325071696517032336.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16965170325071696517032336.png)
+![16965170325071696517032336.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16965170325071696517032336.png)
 
 原来是使用了 `gpu.js`，这个第三方库
 

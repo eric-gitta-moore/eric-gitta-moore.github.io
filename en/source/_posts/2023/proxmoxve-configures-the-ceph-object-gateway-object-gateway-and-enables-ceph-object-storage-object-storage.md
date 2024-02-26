@@ -17,11 +17,11 @@ categories:
 > 1. S3 兼容：通过与 Amazon S3 RESTful API 的大部分子集兼容的接口提供对象存储功能。
 > 2. Swift 兼容：通过与 OpenStack Swift API 的大部分子集兼容的接口提供对象存储功能。
 
-![16936499775391693649977331.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936499775391693649977331.png)
+![16936499775391693649977331.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936499775391693649977331.png)
 
-![16936499915351693649990576.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936499915351693649990576.png)
+![16936499915351693649990576.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936499915351693649990576.png)
 
-![16936500045381693650003669.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936500045381693650003669.png)
+![16936500045381693650003669.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936500045381693650003669.png)
 
 ------
 

@@ -20,47 +20,47 @@ categories:
 
 ### 过程
 
-![16936534599901693653459693.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936534599901693653459693.png)
+![16936534599901693653459693.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936534599901693653459693.png)
 
-![16936534749951693653474606.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936534749951693653474606.png)
+![16936534749951693653474606.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936534749951693653474606.png)
 
 据文档描述，只能通过CLI或者API调用，那我们先找找有没有CLI和API的文档
 
 点这里跳出去看看
 
-![16936534809901693653480372.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936534809901693653480372.png)
+![16936534809901693653480372.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936534809901693653480372.png)
 
 通读全文，发现底部这里有个api文档，于是豁然开朗
 
-![16936534949901693653494581.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936534949901693653494581.png)
+![16936534949901693653494581.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936534949901693653494581.png)
 
 走马观花看一下发现每个api都是http请求和cli写在一起的，那就好办了，直接去抓包看下在web控制台是怎么增加网卡的，然后找到对应的api，就一切就明白了
 
-![16936535029891693653502838.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535029891693653502838.png)
+![16936535029891693653502838.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535029891693653502838.png)
 
  一切就绪之后，点击添加 
 
-![16936535149901693653514717.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535149901693653514717.png)
+![16936535149901693653514717.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535149901693653514717.png)
 
 霍霍好家伙找到你了，
 
-![16936535269991693653526732.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535269991693653526732.png)
+![16936535269991693653526732.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535269991693653526732.png)
 
  切换到“标头”选项卡，就能找到api地址了
 
-![16936535359891693653535255.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535359891693653535255.png)
+![16936535359891693653535255.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535359891693653535255.png)
 
 于是去文档里面搜一下“config” 
 
 找到与之对应的path和method
 
-![16936535469961693653546646.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535469961693653546646.png)
+![16936535469961693653546646.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535469961693653546646.png)
 
 这里就是我们要的文档啦
 
 观察一下参数
 
-![16936535539901693653553493.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535539901693653553493.png)
+![16936535539901693653553493.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535539901693653553493.png)
 
 可以明显看到bridge这里是一个可选参数
 
@@ -85,12 +85,12 @@ Q1：你是怎么知道这个命令后面的参数是这样写的呢？
 
 A：一开始我也不知道怎么打这个命令就乱试了几个发现不行，于是找文档，看了一下里面的例子咋写的才知道是要加一个连接号
 
-![16936535729911693653572220.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535729911693653572220.png)
+![16936535729911693653572220.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535729911693653572220.png)
 
 
-![16936535829951693653582635.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535829951693653582635.png)
+![16936535829951693653582635.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535829951693653582635.png)
 
-![16936535919951693653591722.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936535919951693653591722.png)
+![16936535919951693653591722.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936535919951693653591722.png)
 
  Q2：nat是开好了，但是没网怎么办？
 

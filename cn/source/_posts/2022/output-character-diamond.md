@@ -160,7 +160,7 @@ int main() {
 >
 > 
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/97c2f43a62c24a3fada21a0f25db6c45.png)编辑
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/97c2f43a62c24a3fada21a0f25db6c45.png)编辑
  
 
  假设左边这里叫做halfWidth，则halfWidth=(行数- 1) / 2

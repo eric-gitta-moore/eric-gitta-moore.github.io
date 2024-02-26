@@ -15,13 +15,13 @@ categories:
 
 这篇文章适用于开启了核显和独显的，并且是核显直连。
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/1884ca57d7871a4763c5f6b9b5b69d6e.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/1884ca57d7871a4763c5f6b9b5b69d6e.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/39cc4fef70f173164bfc7ab9ff9a7741.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/39cc4fef70f173164bfc7ab9ff9a7741.png)
 
  之前一直在找，看了好多解决方案，都不行，换驱动，Xbox，游戏模式，游戏设置，启用Windows设备上的缓存，csgo控制台命令等等等，都不行。今天用微星小飞机监控又看了下，发现显存一直在跳
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b15c37b0d3b36c2f15d07d4fc474f948.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/b15c37b0d3b36c2f15d07d4fc474f948.png)
 
 查了下百度，发现有网友说是显卡没有工作。我怀疑是游戏跑起来太简单了，独显在摸鱼。就果断把刷新率限制解除了。结果还是卡得。然后把显示器分辨率也调高了，调成了144hz。
 
@@ -31,8 +31,8 @@ xbox game ba，r游戏模式其实是可以开的，没影响。csgo设置很重
 
 还有就是在英伟达控制面板设置一下
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/eb805776b462470ea200dcfc7f86b4c9.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/eb805776b462470ea200dcfc7f86b4c9.png)
 
- ![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/744eb2e706b941d1abddc6d772f6b95e.png)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/744eb2e706b941d1abddc6d772f6b95e.png)
 
 之后应该就没有问题了 

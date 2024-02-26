@@ -153,7 +153,7 @@ dist/assets/monaco.5273bca9.js             2600.87 KiB / gzip: 659.07 KiB       
 
 You can see that a bunch of languages have been packaged inside, whether they are used or not
 
-![16936514285391693651428183.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936514285391693651428183.png)
+![16936514285391693651428183.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936514285391693651428183.png)
 
 
 # Effect after optimization
@@ -185,4 +185,4 @@ dist/assets/monaco.5c75dc57.js          1730.89 KiB / gzip: 440.94 KiB          
 
 
 
-![16936514445371693651443998.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936514445371693651443998.png)
+![16936514445371693651443998.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936514445371693651443998.png)

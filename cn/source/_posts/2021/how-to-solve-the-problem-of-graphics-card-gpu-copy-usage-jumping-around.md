@@ -12,7 +12,7 @@ categories:
 
 如图所示
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173611331.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210813173611331.png)
 
 
 
@@ -22,10 +22,10 @@ categories:
 
 关闭xbox game bar
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173730779.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210813173730779.png)
 
 
 
 关闭游戏模式
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/20210813173813344.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210813173813344.png)

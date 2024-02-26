@@ -67,18 +67,18 @@ Usage Instructions:
 
 1. Install the certificate.
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/fbcf9e8fd26e4fcf8c6eeb53aa379751.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/fbcf9e8fd26e4fcf8c6eeb53aa379751.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/941f29f3e0d3428e89bc60962ee66af1.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/941f29f3e0d3428e89bc60962ee66af1.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/c0547c790b554a8a998a9bf415cf0383.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/c0547c790b554a8a998a9bf415cf0383.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/b613d304b85445e4bd14cf400a0e705a.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/b613d304b85445e4bd14cf400a0e705a.png)
 
 2. Install .msixbundle.
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/d49cccc7a5d14fe8be3cf2cf238a073a.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/d49cccc7a5d14fe8be3cf2cf238a073a.png)
 
 3. Enjoy!
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0ce46f9f23364b92bb1384bf9a4c717f.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0ce46f9f23364b92bb1384bf9a4c717f.png)

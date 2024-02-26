@@ -12,7 +12,7 @@ categories:
 
 本章我们继续来，OpenStack中的Glance镜像服务对接Ceph
 
-![16936502745351693650274372.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936502745351693650274372.png)
+![16936502745351693650274372.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936502745351693650274372.png)
 
 ------
 
@@ -66,13 +66,13 @@ rbd pool init vms
 
 在gui中的 “数据中心->节点->Ceph->配置->左上角的配置” 这里就是ceph.conf，对应于文件系统中的 "/etc/ceph/ceph.conf"
 
-![16936502865351693650285724.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936502865351693650285724.png)
+![16936502865351693650285724.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936502865351693650285724.png)
 
 在部署机的 **/etc/kolla/config/glance/ceph.conf** 中粘贴这个文件（没有这个文件的话创建一个）
 
 最后只保留 [global] 节点，其他的都删了。注意取消缩进
 
-![16936503145351693650314515.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936503145351693650314515.png)
+![16936503145351693650314515.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936503145351693650314515.png)
 
 # 4. 创建glance cinder ceph账户
 
@@ -110,11 +110,11 @@ kolla-ansible -i ./multinode deploy
 
 下载一个cirros-0.6.1-x86_64-disk.img镜像测试（很小20M）
 
-![16936503265361693650326517.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936503265361693650326517.png)
+![16936503265361693650326517.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936503265361693650326517.png)
 
  看到是运行中，那就大差不差已经成功了
 
-![16936503425391693650342492.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936503425391693650342492.png)
+![16936503425391693650342492.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936503425391693650342492.png)
 
 ## 7.2 验证存储池文件列表
 

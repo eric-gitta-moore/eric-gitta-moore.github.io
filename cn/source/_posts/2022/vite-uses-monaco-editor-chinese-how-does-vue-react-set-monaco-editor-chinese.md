@@ -14,7 +14,7 @@ categories:
 
 于是自己修复了一下pr给作者了
 
-![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/16936513475351693651346745.png)
+![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936513475351693651346745.png)
 
 #  使用
 

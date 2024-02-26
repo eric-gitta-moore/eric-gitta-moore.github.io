@@ -18,7 +18,7 @@ categories:
 
 把里面的东西都删了（我这里就一个游戏，要是你有其他游戏看清楚再删除，我这边地平线一共有四个文件）
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/0f496d6f4ebf4ef5b2d4a5005d71d8e5.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0f496d6f4ebf4ef5b2d4a5005d71d8e5.png)
 
 然后把自己的备份复制过去。
 
@@ -28,4 +28,4 @@ categories:
 
 可以看到这种app就是那一个文件，挂载了一个文件夹。那其他三个应该是下载进度啥的文件，我试过只复制那个最大的文件没有用还是要从头开始下载。
 
-![img](https://raw.githubusercontent.com/james-curtis/blog-img/img/img/eaad09ef7ccc49b2a2bc511de52cde0e.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/eaad09ef7ccc49b2a2bc511de52cde0e.png)
