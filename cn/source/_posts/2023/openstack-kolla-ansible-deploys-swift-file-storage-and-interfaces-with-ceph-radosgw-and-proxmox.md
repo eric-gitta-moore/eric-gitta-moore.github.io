@@ -271,7 +271,7 @@ kolla-ansible -i ./multinode deploy
 
 radosgw_back都是绿色就行
 
-![16936493045351693649304108.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936493045351693649304108.png)
+![16936493045351693649304108.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936493045351693649304108.png)
 
 # 5.2 验证客户端
 
@@ -305,12 +305,12 @@ Objects in policy "default-placement-bytes": 0
 
 随便创建一个
 
-![16936493265351693649325696.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936493265351693649325696.png)
+![16936493265351693649325696.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936493265351693649325696.png)
 
 创建成功
 
-![16936493485401693649348161.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936493485401693649348161.png)
+![16936493485401693649348161.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936493485401693649348161.png)
 
 上传文件，再下载，没问题
 
-![16936493665351693649365784.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936493665351693649365784.png)
+![16936493665351693649365784.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936493665351693649365784.png)

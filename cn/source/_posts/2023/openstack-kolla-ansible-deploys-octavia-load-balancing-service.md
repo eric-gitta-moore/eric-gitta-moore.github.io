@@ -12,7 +12,7 @@ categories:
 
 本章我们继续来完成OpenStack示例配置组件之Container Optimized中的Octavia负载均衡服务，OpenStack Kolla-Ansible部署Octavia负载均衡服务
 
-![16936490115341693649010827.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936490115341693649010827.png)
+![16936490115341693649010827.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936490115341693649010827.png)
 
 
 > Octavia 以服务的形式提供负载均衡。本指南涵盖了为 Amphora 驱动程序配置 Octavia。有关详细信息，请参阅Octavia 文档。安装指南是一个有用的参考。

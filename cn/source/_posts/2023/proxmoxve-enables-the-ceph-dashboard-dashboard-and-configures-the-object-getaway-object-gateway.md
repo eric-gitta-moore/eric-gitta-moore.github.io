@@ -16,7 +16,7 @@ Ceph Dashboard 是一个内置的基于 Web 的 Ceph 管理和监控应用程序
 
 新的Ceph Dashboard模块为 Ceph Manager 添加了基于 Web 的监控和管理。这个新模块的架构和功能源自openATTIC Ceph 管理和监控工具并受到其启发。开发由SUSE的 openATTIC 团队积极推动，并得到Red Hat和 Ceph 社区成员等公司的支持。
 
-![16936498705351693649870459.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936498705351693649870459.png)
+![16936498705351693649870459.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936498705351693649870459.png)
 
 ------
 

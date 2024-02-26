@@ -14,11 +14,11 @@ PE文件头里有个machine字段指定CPU类型，如果是0x8664就是64位程
  可以用c32asm工具导入dll文件查看
  这个是x86的：
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2d9188566c684db497cb4d7489f047ff.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2d9188566c684db497cb4d7489f047ff.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
 
 这个是x64的
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/5606fe864e7e4b9aaa26da0faba554fb.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/5606fe864e7e4b9aaa26da0faba554fb.png)![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)编辑
 
  出处
 

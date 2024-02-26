@@ -42,7 +42,7 @@ gnocchi_backend_storage: "ceph"
 
 回到Proxmox GUI，创建一个名为gnocchi的存储池，用于保存与资源使用量相关的计量数据 
 
-![16936491315381693649131336.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936491315381693649131336.png)
+![16936491315381693649131336.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936491315381693649131336.png)
 
 ## 2.2 创建身份
 
@@ -86,7 +86,7 @@ kolla-ansible -i ./multinode prechecks && kolla-ansible -i ./multinode deploy
 
 # 4. 完成
 
-![16936491485361693649147609.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936491485361693649147609.png)
+![16936491485361693649147609.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936491485361693649147609.png)
 
 ------
 

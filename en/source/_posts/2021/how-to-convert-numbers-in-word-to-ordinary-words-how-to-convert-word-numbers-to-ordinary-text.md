@@ -14,7 +14,7 @@ categories:
 
    Open File -> Options -> Customize Ribbon -> Check "Developer" -> OK
 
-   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/99bda1d4889d88663775466590df1445.png)
+   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/99bda1d4889d88663775466590df1445.png)
 
 2. Write a Macro
 
@@ -29,12 +29,12 @@ categories:
 
    Editor window content:
 
-   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/9f9edbfd72bef556c4edaad5727a61a6.png)
+   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/9f9edbfd72bef556c4edaad5727a61a6.png)
 
 3. Use the Macro
 
    Open the Word document you want to process. Click on Tools -> Macros -> Select the "NumToTxt" macro that we created earlier (the macro name should be displayed in the "Macro name" field) -> Run the macro. This will automatically remove the numbering format.
 
-   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/9fdc7987e2e65dfb6e60ac862c8a96bf.png)
+   ![Insert Image Description Here](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/9fdc7987e2e65dfb6e60ac862c8a96bf.png)
 
 Original article link: [How to Convert Word Numbering to Plain Text](https://blog.csdn.net/hevin_hy/article/details/107568487)

@@ -23,19 +23,19 @@ Interface status:
 ```
 
 
-![16936366885391693636687849.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936366885391693636687849.png)
+![16936366885391693636687849.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936366885391693636687849.png)
 
 # 故障原因
 
 各个接口的跃点数不能一致，默认创建接口之后跃点数是0
 
-![16936367075351693636706779.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936367075351693636706779.png)
+![16936367075351693636706779.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936367075351693636706779.png)
 
 # 解决方法
 
 在 网络-接口-WAN-高级设置-使用网关跃点数，这里手动把各个接口设置成不一样的即可 
 
-![16936367195391693636718808.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936367195391693636718808.png)
+![16936367195391693636718808.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936367195391693636718808.png)
 
 # 效果检验
 
@@ -49,4 +49,4 @@ Interface status:
 ```
 
 
-![16936367395351693636738707.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936367395351693636738707.png)
+![16936367395351693636738707.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936367395351693636738707.png)

@@ -20,7 +20,7 @@ categories:
 > - **可恢复**：故障应该易于诊断、调试和纠正
 > - **开放标准**：成为社区驱动的 api 的参考实现
 
-![16936488665401693648866003.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936488665401693648866003.png)
+![16936488665401693648866003.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936488665401693648866003.png)
 
 ------
 

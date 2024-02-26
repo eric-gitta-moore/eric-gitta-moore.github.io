@@ -24,4 +24,4 @@ print(session.get("https://test.ipw.cn/").text)
 
 ```
 
-![16936361955351693636194706.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936361955351693636194706.png)
+![16936361955351693636194706.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936361955351693636194706.png)

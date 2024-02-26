@@ -14,7 +14,7 @@ None of the first three methods in this approach worked.
 
 Resetting the shortcut keys also didn't work at all; it doesn't recognize them.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210821140241237.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210821140241237.png)
 
 Win+G simply doesn't work, while other shortcut keys do. Even if it works, pressing the newly set shortcut keys still doesn't bring it up.
 

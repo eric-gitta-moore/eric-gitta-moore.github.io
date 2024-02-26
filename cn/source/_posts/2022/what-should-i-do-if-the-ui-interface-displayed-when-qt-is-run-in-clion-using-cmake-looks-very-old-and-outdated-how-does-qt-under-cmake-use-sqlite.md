@@ -13,7 +13,7 @@ categories:
 
 如果使用Clion默认配置编译出来的UI界面看起来很老套，就像是win2000的界面。但是如果使用Qt Creator运行就没有问题，是现代windows的界面
 
-![16936509765371693650975967.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509765371693650975967.png)
+![16936509765371693650975967.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509765371693650975967.png)
 
 #  二、问题原因
 
@@ -21,13 +21,13 @@ categories:
 
 包括SQLite等其他模块会报错无法加载DLL驱动，“QSqlDatabase: QSQLITE driver not loaded”，都会涉及到这个问题，就是 cmake-build-debug 目录下的文件没有拿到Qt中MinGW下的plugins目录
 
-![16936509875381693650987433.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509875381693650987433.png)
+![16936509875381693650987433.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509875381693650987433.png)
 
-![16936509955371693650995461.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509955371693650995461.png)
+![16936509955371693650995461.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509955371693650995461.png)
 
  此时只要把，D:\Qt\Qt5.14.2\5.14.2\mingw73_64\plugins目录下的东西复制到cmake-build-debug下面就可以了
 
-![16936510065371693651005841.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936510065371693651005841.png)
+![16936510065371693651005841.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936510065371693651005841.png)
 
 不过这并不能一劳永逸，重新build项目之后还是需要手动配置 
 
@@ -40,6 +40,6 @@ categories:
             COMMAND ${CMAKE_COMMAND} -E copy_directory "${QT_INSTALL_PATH}/plugins/" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/")
 ```
 
-![16936510165371693651016389.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936510165371693651016389.png)
+![16936510165371693651016389.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936510165371693651016389.png)
 
  此时重新build项目再运行的时候会自动检查对应的plugins是否存在

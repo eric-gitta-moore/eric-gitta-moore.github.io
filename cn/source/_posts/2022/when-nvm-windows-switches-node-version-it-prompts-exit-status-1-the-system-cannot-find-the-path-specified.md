@@ -11,7 +11,7 @@ categories:
 #  **nvm-windows切换node版本提示exit status 1: The system cannot find the path specified.**
 
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/85e161a177b14afa9db0fa69c5d15509.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/85e161a177b14afa9db0fa69c5d15509.png)
 
 ```bash
 D:\Users\th>nvm uninstall 16.14.2
@@ -41,4 +41,4 @@ Now using node v16.14.2 (64-bit)
 
 原因是在安装时候选的那个目录不存在。所以这里要手动去建立一下nvm才能给软连接过去
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2cdb465df81044a99da3f5504e7c4eaa.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2cdb465df81044a99da3f5504e7c4eaa.png)

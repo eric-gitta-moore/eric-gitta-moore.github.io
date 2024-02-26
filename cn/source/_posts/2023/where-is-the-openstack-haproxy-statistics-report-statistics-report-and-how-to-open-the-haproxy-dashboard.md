@@ -15,7 +15,7 @@ haproxystats是HAProxy负载均衡器的统计数据收集器，它处理各种�
 3. 以非常低的间隔（10 秒）提取统计信息
 4. 灵活地将统计信息分发到不同的系统（Graphite、kafka）
 
-![16936495295341693649528613.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936495295341693649528613.png)
+![16936495295341693649528613.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936495295341693649528613.png)
 
 ------
 

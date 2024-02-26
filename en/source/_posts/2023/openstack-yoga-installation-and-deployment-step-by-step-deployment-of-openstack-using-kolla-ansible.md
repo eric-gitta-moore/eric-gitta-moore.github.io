@@ -549,7 +549,7 @@ localhost                  : ok=4    changed=0    unreachable=0    failed=0    s
 
 访问浮动ip地址就是前台页面，如果显示证书错误，那意思就是密码错误
 
-![16936507065351693650705770.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936507065351693650705770.png)
+![16936507065351693650705770.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936507065351693650705770.png)
 
 账号为admin
 
@@ -561,7 +561,7 @@ localhost                  : ok=4    changed=0    unreachable=0    failed=0    s
 cat /etc/kolla/passwords.yml |grep keystone_admin_password
 ```
 
-![16936507155351693650715007.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936507155351693650715007.png)
+![16936507155351693650715007.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936507155351693650715007.png)
 
 # 9. 使用 OpenStack 
 
@@ -582,13 +582,13 @@ pip install python-openstackclient -c https://releases.openstack.org/constraints
 
 记得选择对应的分支
 
-![16936507355351693650735288.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936507355351693650735288.png)
+![16936507355351693650735288.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936507355351693650735288.png)
 
  ，接着找到对应的文件
 
 
 
-![16936507435351693650743477.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936507435351693650743477.png)
+![16936507435351693650743477.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936507435351693650743477.png)
 
 打开原始文件，得到下面链接
 

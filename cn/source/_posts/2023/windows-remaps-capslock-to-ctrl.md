@@ -94,7 +94,7 @@ New-ItemProperty -Path $kbLayout -Name "Scancode Map" -PropertyType Binary -Valu
 
 Microsoft PowerToys：键盘管理器使您能够重新定义键盘上的按键。
 
-![16936313430601693631342489.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936313430601693631342489.png)
+![16936313430601693631342489.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936313430601693631342489.png)
 
 > 以上方法都有问题，如果你还使用其他依赖 `ctrl` 的软件可能就会出问题。
 >

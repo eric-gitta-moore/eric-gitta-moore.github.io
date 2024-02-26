@@ -14,7 +14,7 @@ categories:
 
 打开文件->选项->自定义功能区->选中开发工具->确定
 
-![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/99bda1d4889d88663775466590df1445.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/99bda1d4889d88663775466590df1445.png)
 
  ，
 
@@ -28,13 +28,13 @@ categories:
  最后点Visual Basic编辑器保存按钮，将宏保存到Normal模板，然后关闭VBA窗口并返回Word。
  编辑器窗口的内容：
 
-![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/9f9edbfd72bef556c4edaad5727a61a6.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/9f9edbfd72bef556c4edaad5727a61a6.png)
 
 ##   3. 使用宏
 
 打开你要处理的WORD文档，依次点击：工具－宏－选中NumToTxt这个我们刚刚创建的宏（选中后在“宏名”框内会显示NumToTxt）－运行，自动编号格式就被取消啦。
 
-![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/9fdc7987e2e65dfb6e60ac862c8a96bf.png)
+![在这里插入图片描述](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/9fdc7987e2e65dfb6e60ac862c8a96bf.png)
 
 
 

@@ -40,6 +40,6 @@ categories:
 
 
 
-![17014912290411701491228172.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/17014912290411701491228172.png)
+![17014912290411701491228172.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/17014912290411701491228172.png)
 
-![17014912430411701491242486.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/17014912430411701491242486.png)
+![17014912430411701491242486.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/17014912430411701491242486.png)

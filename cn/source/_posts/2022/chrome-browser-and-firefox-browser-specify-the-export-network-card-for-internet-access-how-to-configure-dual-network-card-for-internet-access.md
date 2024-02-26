@@ -26,14 +26,14 @@ categories:
 
 Firefox 需要将 about:config?filter=browser.launcherProcess.enabled 首选项设置为 false，否则 ForceBindIP 会附加到启动器而不是实际程序。
 
-![16936512345391693651233887.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512345391693651233887.png)
+![16936512345391693651233887.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936512345391693651233887.png)
 
 选择出口网卡和指定程序，点击run application即可
 
-![16936512455351693651245225.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512455351693651245225.png)
+![16936512455351693651245225.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936512455351693651245225.png)
 
  效果
 
-![16936512565411693651256481.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512565411693651256481.png)
+![16936512565411693651256481.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936512565411693651256481.png)
 
-![16936512665391693651266038.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936512665391693651266038.png)
+![16936512665391693651266038.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936512665391693651266038.png)

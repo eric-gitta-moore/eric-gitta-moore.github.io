@@ -16,9 +16,9 @@ categories:
 先简单介绍一下，这款app。不仅支持，普通签到、拍照签到（任选照片）、手势签到（不需要知道手势）、位置签到（任选位置）、二维码签到（无视十秒）、签到码签到（不需要知道签到码） 。也支持多账号签到，解除超星限制一设备一账号限制。
 这里是演示截图：
 
-![16936529099921693652909036.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529099921693652909036.png)
+![16936529099921693652909036.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529099921693652909036.png)
 
-![16936529199911693652919179.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529199911693652919179.png)
+![16936529199911693652919179.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529199911693652919179.png)
 
 
 ## 位置签到的方法
@@ -27,7 +27,7 @@ categories:
 
 1. 点击“我的”选项卡
 
-![16936529279921693652927367.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529279921693652927367.png)
+![16936529279921693652927367.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529279921693652927367.png)
 
 2. 点击“添加账号”，或者主页面上底部的“登录/重新登录”按钮
 3. 登录完成之后，切回到“活动”选项卡，再选择对应的课程。如果找不到课程的话，可以回到“课程”选项卡，找到对应的课程，并点击课程标题，或者课程头像，就会跳转到对应的活动页面

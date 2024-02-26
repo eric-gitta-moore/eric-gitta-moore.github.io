@@ -15,4 +15,4 @@ In practical tests, it has been found that disabling the following items within 
 - "Windows Virtual Machine Platform"
 - "Virtual Machine Platform"
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819101236284.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210819101236284.png)

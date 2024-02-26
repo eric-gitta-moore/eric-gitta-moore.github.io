@@ -58,7 +58,7 @@ categories:
 注意这里阿里云效devstudio跟正常的vscode好像不一样，`"type": "cppdbg"` 会报错，要改成 `"type": "lldb"`
 报错：`The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled.`
 
-![16936528309911693652830852.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936528309911693652830852.png)
+![16936528309911693652830852.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936528309911693652830852.png)
 
 到这里就可以调试了。阿里的使用 `开始执行(不调试)` 好像出不来结果。coding的没有问题，但是得去掉断点才能跑，不然还是会卡断点。
 

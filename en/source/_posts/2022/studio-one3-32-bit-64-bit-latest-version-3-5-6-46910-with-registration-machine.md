@@ -10,13 +10,13 @@ categories:
 
 I downloaded the installation package through a legitimate automatic update.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2c9a7aed25204dfb900eaeca60b40da1.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2c9a7aed25204dfb900eaeca60b40da1.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/4f1032dcad8c4d1c9ba40cea766ed61c.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/4f1032dcad8c4d1c9ba40cea766ed61c.png)
 
 Here's the 3.5.1.43560 version I downloaded from Google, including the Mac version.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/40649f34980044ca9c5d4118cf21e1cb.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/40649f34980044ca9c5d4118cf21e1cb.png)
 
 If you want the latest version for Mac, you can try this method.
 
@@ -24,7 +24,7 @@ If you want the latest version for Mac, you can try this method.
 >
 > Then, apply for a trial account, go inside, and click on "Check for updates." It will automatically download. Once the download is complete, locate the installation package, and you're good to go.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/139c7e617be4462d8eeafd1441e44a8b.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/139c7e617be4462d8eeafd1441e44a8b.png)
 
 ------
 

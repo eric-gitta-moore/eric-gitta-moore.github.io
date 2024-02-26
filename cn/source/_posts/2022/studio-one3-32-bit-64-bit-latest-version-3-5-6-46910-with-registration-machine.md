@@ -10,15 +10,15 @@ categories:
 
  我是通过正版自动更新下载过来的安装包
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2c9a7aed25204dfb900eaeca60b40da1.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2c9a7aed25204dfb900eaeca60b40da1.png)
 
 
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/4f1032dcad8c4d1c9ba40cea766ed61c.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/4f1032dcad8c4d1c9ba40cea766ed61c.png)
 
 这里还有谷歌上下载过来的3.5.1.43560，带mac版本
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/40649f34980044ca9c5d4118cf21e1cb.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/40649f34980044ca9c5d4118cf21e1cb.png)
 
 如果Mac也想要最新版可以试试我这个方法。
 
@@ -26,7 +26,7 @@ categories:
 >
 > 然后申请一个试用账号，进去之后点检查更新，会自动下载。下载完成找到安装包就ok了
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/139c7e617be4462d8eeafd1441e44a8b.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/139c7e617be4462d8eeafd1441e44a8b.png)
 
 
 

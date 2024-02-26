@@ -8,7 +8,7 @@ categories:
     - Default
 ---
 
- ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819142052214.png)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210819142052214.png)
 
  Like this, if you click the search button below at this moment, it will automatically redirect to 360's search engine.
 
@@ -20,7 +20,7 @@ Here are the practical steps:
 
 Download PHPStudy, use PHP7+ Nginx.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819142355456.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210819142355456.png)
 
  Open phpStudy\PHPTutorial\nginx\conf\vhosts.conf
 
@@ -75,10 +75,10 @@ header('location: https://www.baidu.com/s?ie=utf-8&f=3&rsv_bp=1&rsv_idx=1&tn=bai
 
 Finally, configure your hosts file:
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819143249667.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210819143249667.png)
 
- ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210819143304804.png)
+ ![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210819143304804.png)
 
 Then set it to start at boot (optional), which means switching to service mode:
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2021081914343462.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2021081914343462.png)

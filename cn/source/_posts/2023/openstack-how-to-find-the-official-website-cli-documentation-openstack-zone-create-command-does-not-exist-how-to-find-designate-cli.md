@@ -10,21 +10,21 @@ categories:
 
 #  1. 进入DOC
 
-![16936497175351693649717024.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936497175351693649717024.png)
+![16936497175351693649717024.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936497175351693649717024.png)
 
 ##  2. OpenStack Python绑定和客户端的文档
 
-![16936497275351693649727517.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936497275351693649727517.png)
+![16936497275351693649727517.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936497275351693649727517.png)
 
 # 3. 找到所需组件的文档
 
 > Unified OpenStack Client：python-openstackclient 的文档，一个统一的 shell 命令结构。 
 
-![16936497375351693649737231.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936497375351693649737231.png)
+![16936497375351693649737231.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936497375351693649737231.png)
 
 # 4. 完整文档 
 
-![16936497465351693649746399.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936497465351693649746399.png)
+![16936497465351693649746399.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936497465351693649746399.png)
 
 # 5. 安装cli client
 

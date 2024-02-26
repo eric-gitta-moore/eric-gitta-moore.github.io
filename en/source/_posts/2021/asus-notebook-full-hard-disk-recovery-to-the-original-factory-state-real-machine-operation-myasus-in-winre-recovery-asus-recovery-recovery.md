@@ -16,7 +16,7 @@ My machine is ASUS TUF Gaming A17 with i7-11800H, RTX 3060, 32GB RAM, and 512GB 
 
 > Here's my msinfo32: [Link](https://yunling.lanzouo.com/iJEO5xj1tgd)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/31aee62d00ec4844bf1b76c1e237f9aa.png)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/31aee62d00ec4844bf1b76c1e237f9aa.png)
 
 This tutorial will first explain how to perform a full format, and I'll cover how to do it without formatting next time. Let's get started.
 
@@ -24,45 +24,45 @@ First, prepare a bootable USB drive or external hard drive with a PE (Preinstall
 
 1. Insert the USB drive (or external hard drive), then boot or restart your computer and repeatedly press F2 to enter the BIOS.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2ce6bf9931e248378cb00151035f922c.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2ce6bf9931e248378cb00151035f922c.jpg)
 
 2. Press F8 to enter the PE environment.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/dbe67173bf55410b8dcd0362dcd56b57.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/dbe67173bf55410b8dcd0362dcd56b57.jpg)
 
 3. Partition your drive to match the factory configuration.
 
 I have backed up the factory partition table, so you can follow it for partitioning.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/08e3c070967f4b61adbb5813eec6c9b2.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/08e3c070967f4b61adbb5813eec6c9b2.jpg)
 
 You can ignore the "Local Disk D" and merge it into the OS. I created this local disk D shortly after getting my machine using Windows' built-in disk management tool because I prefer not to have such a large C drive.
 
 ① Start by creating a partition.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e7e11d2ca8834470979b16000ddcad42.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e7e11d2ca8834470979b16000ddcad42.jpg)
 
 Then adjust the OS partition to shrink it to 200GB because we don't know how much space we'll need later.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/7511ad1b11a94b58a8e0079add049be8.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/7511ad1b11a94b58a8e0079add049be8.jpg)
 
 Next, create the RECOVERY, RESTORE, and MYASUS partitions.
 
 - RECOVERY partition is 1000MB.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/00627725fd194e4d9bcae5c8d9c17720.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/00627725fd194e4d9bcae5c8d9c17720.jpg)
 
 - RESTORE partition is 19.5GB (approximately 19968MB).
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/3af4087c2c6148b9a39d2b1268c5b2ad.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/3af4087c2c6148b9a39d2b1268c5b2ad.jpg)
 
 - MYASUS partition is 200MB.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/dafa293bf5294ab9afb4b05bb0e48fa8.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/dafa293bf5294ab9afb4b05bb0e48fa8.jpg)
 
 Save the changes and allocate the remaining space back to the OS partition.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/36b45205c70e4c119e596e07b16086e7.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/36b45205c70e4c119e596e07b16086e7.jpg)
 
 4. Restore backups for each partition.
 
@@ -70,7 +70,7 @@ Use DiskGenius to restore the RECOVERY, RESTORE, and MYASUS partitions.
 
 Then open DISM++, go to "File" > "Release Image," and this step will restore the factory system.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e9045a768b0f45e795d61c9cc756a224.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e9045a768b0f45e795d61c9cc756a224.jpg)
 
 At this point, your computer may not be able to boot. Next, we will rebuild the bootloader.
 
@@ -78,11 +78,11 @@ Go back to DiskGenius and assign a drive letter to the ESP partition and the OS 
 
 (Right-click on a partition, and you will find the option to assign a drive letter.)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/b486d0c1e63c4d2081f5be1dd89f9faf.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/b486d0c1e63c4d2081f5be1dd89f9faf.jpg)
 
 Type "cmd" into the Run dialog (Win+R).
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/d5879ab87e1544f9a97cb91818e09b49.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/d5879ab87e1544f9a97cb91818e09b49.jpg)
 
 Enter the following command:
 
@@ -100,7 +100,7 @@ I forgot to mention a step earlier, but you can do it here.
 
 - Right-click on the RECOVERY partition and change the partition parameters.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0640ca85d6c94b1fa42a49edc1fee88b.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/0640ca85d6c94b1fa42a49edc1fee88b.jpg)
 
 Change the file system type to "Microsoft recovery partition," and leave the other settings unchanged.
 
@@ -112,21 +112,21 @@ Restart your computer and continuously press F2 to enter the BIOS.
 
 Adjust the boot order in BIOS.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/3a301e079bcf422a8a001663fb1eb6fd.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/3a301e079bcf422a8a001663fb1eb6fd.jpg)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a0c40faec38945de9b53f74cfb815a77.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/a0c40faec38945de9b53f74cfb815a77.jpg)
 
 Save and exit by pressing F10. Your motherboard may power off briefly at this point; you can remove the USB drive quickly (it's not necessary to unplug it).
 
 7. Configure WinRE for the current system.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/029602c7a48448858b05c9cf6b42c9d3.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/029602c7a48448858b05c9cf6b42c9d3.jpg)
 
 After restarting, you'll see this screen.
 
 After performing some operations, you should be able to enter. Open "cmd" as an administrator:
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/5f29599968824e44a7809a854bb00b6d.png)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/5f29599968824e44a7809a854bb00b6d.png)
 
 Enter the command:
 
@@ -134,13 +134,13 @@ Enter the command:
 reagentc /info
 ```
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/636e88b582af4fb0985b324a24d26b5b.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/636e88b582af4fb0985b324a24d26b5b.jpg)
 
 You should see "disabled," indicating that it's normal.
 
 Then, modify your file explorer settings to show hidden files and file extensions:
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/052e1079000e44faa31e3111f5cdd802.png)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/052e1079000e44faa31e3111f5cdd802.png)
 
 Next, specify the image path for WinRE. In the command prompt, enter:
 
@@ -148,9 +148,9 @@ Next, specify the image path for WinRE. In the command prompt, enter:
 reagentc /setreimage /path [the path you copied earlier]
 ```
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/613ce2a05f8b4711aca0812b77f7d548.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/613ce2a05f8b4711aca0812b77f7d548.jpg)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/2ddf4c0be2b445b983d012a8e646543f.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2ddf4c0be2b445b983d012a8e646543f.jpg)
 
 Now, WinRE is configured for your current system. You can enable it by entering:
 
@@ -168,11 +168,11 @@ Don't worry; we're almost there. There's one more step to write the MYASUS entry
 
 Copy this file to your desktop:
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e95634d43475492597360d1cb5af1d9e.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e95634d43475492597360d1cb5af1d9e.jpg)
 
 While holding Shift, right-click to copy the file path:
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/770fb2d4e7c847f7921bba10f6d4faa6.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/770fb2d4e7c847f7921bba10f6d4faa6.jpg)
 
 Now, in the command prompt, enter:
 
@@ -186,7 +186,7 @@ With this, you've configured MYASUS in WinRE. Now, when you restart your system 
 
 Click the left-pointing arrow:
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e8ed571a7e0047f986410f6ecf902ca9.png)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e8ed571a7e0047f986410f6ecf902ca9.png)
 
 Choose "Continue with Windows 10." Your computer will probably restart; enter BIOS by pressing F2 and then enter PE.
 
@@ -196,7 +196,7 @@ Open cmd, navigate to the drive where your OS is located (e.g., D drive), and cr
 md d:\mount
 ```
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0c52f66dc8384253bfd289bb69120af0.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/0c52f66dc8384253bfd289bb69120af0.jpg)
 
 Mount asus.sum to this directory with the following command:
 
@@ -204,7 +204,7 @@ Mount asus.sum to this directory with the following command:
 dism /mount-image /imagefile:[your asus.sum path] /index:1 /MountDir:d:\mount
 ```
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/0c52f66dc8384253bfd289bb69120af0.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/0c52f66dc8384253bfd289bb69120af0.jpg)
 
 Next, copy the ReAgent.xml you configured for your current system into the corresponding location in this mounted image. The path should be like this: d:\mount\Windows\System32\Recovery\ReAgent.xml.
 
@@ -226,17 +226,17 @@ Make sure to remove the USB drive when restarting and press F12 to enter WinRE.
 
 Select MYASUS in WinRE.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/612ef3aad0454fada0b7eb5d8129b2ff.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/612ef3aad0454fada0b7eb5d8129b2ff.jpg)
 
 Choose ASUS recovery.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/cf8a257638c74639a99b3095ab2312ed.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/cf8a257638c74639a99b3095ab2312ed.jpg)
 
 Reset your system.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a94a198f08904916a63ddc35f33fa65c.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/a94a198f08904916a63ddc35f33fa65c.jpg)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/a17bf8f869a94bd9b87c48e8cbea669c.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/a17bf8f869a94bd9b87c48e8cbea669c.jpg)
 
 Your system should automatically restart, and at this point, quickly insert your USB drive. While restarting, continuously press F2 to enter BIOS, and then press F8 to enter PE.
 
@@ -244,9 +244,9 @@ Once in PE, delete the logs generated by ASUS recovery in the RESTORE partition.
 
 Now, you can use AoMei Backupper to back up your entire hard drive.
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/8a3e46d919544421a6ff33a29c18fed3.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/8a3e46d919544421a6ff33a29c18fed3.jpg)
 
-![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/e44f59cb7f8242018447a44f77bc0de0.jpg)
+![Image](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e44f59cb7f8242018447a44f77bc0de0.jpg)
 
 That concludes the tutorial.
 

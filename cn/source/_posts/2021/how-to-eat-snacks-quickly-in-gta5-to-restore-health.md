@@ -75,7 +75,7 @@ KeyUps "M", 1
 ```
 
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210823173719741.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210823173719741.png)
 
 勾选“有效” ，更改热键就可以了。
 

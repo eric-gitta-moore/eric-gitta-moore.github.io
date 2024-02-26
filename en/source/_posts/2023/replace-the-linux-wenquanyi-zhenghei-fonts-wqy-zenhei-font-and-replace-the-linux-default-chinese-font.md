@@ -78,4 +78,4 @@ sudo fc-cache -f -v
 
 # 效果
 
-![16936350960641693635095476.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936350960641693635095476.png)
+![16936350960641693635095476.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936350960641693635095476.png)

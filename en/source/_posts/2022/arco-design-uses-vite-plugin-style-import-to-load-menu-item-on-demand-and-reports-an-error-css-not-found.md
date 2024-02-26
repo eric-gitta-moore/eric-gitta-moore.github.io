@@ -40,4 +40,4 @@ Error message:
  [vite] Internal server error: Failed to resolve import "D:/Programing/WebstormProjects/cow-Low-code/node_modules/@arco-design/web-vue/es/menu-item/style/css.js" from "src\views\HomeView.vue". Does the file exist?
 ```
 
-![16936515375371693651537473.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936515375371693651537473.png)
+![16936515375371693651537473.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936515375371693651537473.png)

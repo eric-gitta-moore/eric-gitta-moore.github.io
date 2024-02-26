@@ -10,4 +10,4 @@ categories:
 
  OpenStack 被分解为服务，允许您根据需要即插即用组件。openstack 地图为您提供了 openstack 景观的“一目了然”视图，以了解这些服务适合的位置以及它们如何协同工作。 
 
-![16936504175391693650416940.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936504175391693650416940.png)
+![16936504175391693650416940.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936504175391693650416940.png)

@@ -13,7 +13,7 @@ categories:
 
 If you compile the UI interface using the default configuration in CLion, it may appear outdated, resembling the Windows 2000 interface. However, if you run it using Qt Creator, there are no issues, and it looks like a modern Windows interface.
 
-![16936509765371693650975967.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509765371693650975967.png)
+![16936509765371693650975967.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509765371693650975967.png)
 
 # Section 2: Problem Cause
 
@@ -21,13 +21,13 @@ After some searching, I found a similar issue on StackOverflow. However, I provi
 
 Including other modules like SQLite will result in DLL driver loading errors, such as "QSqlDatabase: QSQLITE driver not loaded." This problem is related to the files in the cmake-build-debug directory not being copied to the plugins directory under MinGW in Qt.
 
-![16936509875381693650987433.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509875381693650987433.png)
+![16936509875381693650987433.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509875381693650987433.png)
 
-![16936509955371693650995461.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936509955371693650995461.png)
+![16936509955371693650995461.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936509955371693650995461.png)
 
 To resolve this, simply copy the contents of D:\Qt\Qt5.14.2\5.14.2\mingw73_64\plugins to the cmake-build-debug directory.
 
-![16936510065371693651005841.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936510065371693651005841.png)
+![16936510065371693651005841.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936510065371693651005841.png)
 
 However, this is not a permanent solution, as you will still need to configure it manually after rebuilding the project.
 
@@ -40,6 +40,6 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_directory "${QT_INSTALL_PATH}/plugins/" "$<TARGET_FILE_DIR:${PROJECT_NAME}>/")
 ```
 
-![16936510165371693651016389.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936510165371693651016389.png)
+![16936510165371693651016389.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936510165371693651016389.png)
 
 Now, when you rebuild the project and run it, it will automatically check whether the corresponding plugins exist.

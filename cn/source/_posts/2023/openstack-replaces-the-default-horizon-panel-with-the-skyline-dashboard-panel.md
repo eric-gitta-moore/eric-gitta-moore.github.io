@@ -38,7 +38,7 @@ https://github.com/openstack/skyline-apiserver
 
 任意找一个国内git平台克隆一份。我这里使用jihulab.com
 
-![16936505705351693650569618.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936505705351693650569618.png)
+![16936505705351693650569618.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936505705351693650569618.png)
 
 # 2. 下载skyline.yaml
 
@@ -46,7 +46,7 @@ https://github.com/openstack/skyline-apiserver
 
 打开这个文件原始链接，下载到服务器去
 
-![16936505805351693650580144.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936505805351693650580144.png)
+![16936505805351693650580144.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936505805351693650580144.png)
 
 得到如下链接
 
@@ -242,8 +242,8 @@ docker run -d --name skyline --restart=always -v /etc/skyline/skyline.yaml:/etc/
 
 现在你可以访问仪表盘: https://<浮动ip>:9999
 
-![16936505995351693650598690.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936505995351693650598690.png)
+![16936505995351693650598690.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936505995351693650598690.png)
 
-![16936506075361693650606920.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936506075361693650606920.png)
+![16936506075361693650606920.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936506075361693650606920.png)
 
-![16936506155351693650614565.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936506155351693650614565.png)
+![16936506155351693650614565.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936506155351693650614565.png)

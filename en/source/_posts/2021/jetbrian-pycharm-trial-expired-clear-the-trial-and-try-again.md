@@ -10,6 +10,6 @@ categories:
 
 Delete "C:\Users\TianhaoLTD\AppData\Roaming\JetBrains\PyCharm2021.2\eval\PyCharm212.evaluation.key"
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210917082347618.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210917082347618.png)
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/20210917082351244.png)
+![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210917082351244.png)

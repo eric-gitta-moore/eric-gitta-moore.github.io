@@ -14,9 +14,9 @@ categories:
 
 Let's start with a brief introduction to this app. It not only supports regular check-ins but also photo check-ins (you can choose a photo), gesture check-ins (no need to know specific gestures), location-based check-ins (choose any location), QR code check-ins (ignoring the ten-second rule), and sign-in code check-ins (no need to know the sign-in code). It also supports multiple account check-ins and removes the Chaoxing restriction of one device per account. Here are some demo screenshots:
 
-![16936529099921693652909036.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529099921693652909036.png)
+![16936529099921693652909036.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529099921693652909036.png)
 
-![16936529199911693652919179.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529199911693652919179.png)
+![16936529199911693652919179.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529199911693652919179.png)
 
 ## Location-based Check-in Method
 
@@ -24,7 +24,7 @@ Let's briefly explain the method for location-based check-ins:
 
 1. Click on the "My" tab.
 
-![16936529279921693652927367.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/static/images/16936529279921693652927367.png)
+![16936529279921693652927367.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936529279921693652927367.png)
 
 2. Click on "Add Account" or the "Login/Re-login" button at the bottom of the main page.
 3. After logging in, switch back to the "Activities" tab and select the corresponding course. If you can't find the course, go back to the "Courses" tab, find the course you want, and click on the course title or course avatar to navigate to the activity page.
