@@ -12,11 +12,11 @@ How to display real-world time in the csgo game?
 
 Simply download the Xbox Game Bar application.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/842fb7cef3a141c8b552f137ebe37161.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/842fb7cef3a141c8b552f137ebe37161.png)
 
 This one works better.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/e395dfe3eecc4367b5b0e0d1433b3cac.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/e395dfe3eecc4367b5b0e0d1433b3cac.png)
 
 Provide a browser so you can display whatever you want.
 

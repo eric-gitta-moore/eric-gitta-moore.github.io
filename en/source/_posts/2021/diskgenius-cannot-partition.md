@@ -10,7 +10,7 @@ categories:
 
 Today, my newly purchased laptop arrived, and I logged into my Microsoft account to set a password. However, I encountered an issue – a lock screen appeared.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210813174116155.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210813174116155.png)
 
 I couldn't partition the drive using DG (presumably a software or utility). 
 

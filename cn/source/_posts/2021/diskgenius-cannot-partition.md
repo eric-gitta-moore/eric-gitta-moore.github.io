@@ -10,7 +10,7 @@ categories:
 
 今天新买的笔记本到了，登录了一下Microsoft账号设置了个密码，结果出了个锁
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210813174116155.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210813174116155.png)
 
 用DG就没法分区了
 

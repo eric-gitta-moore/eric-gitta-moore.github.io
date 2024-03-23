@@ -12,7 +12,7 @@ categories:
 
 本章我们继续来完成OpenStack示例配置组件之Container Optimized中的Octavia负载均衡服务，OpenStack Kolla-Ansible部署Octavia负载均衡服务
 
-![16936490115341693649010827.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936490115341693649010827.png)
+![16936490115341693649010827.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936490115341693649010827.png)
 
 
 > Octavia 以服务的形式提供负载均衡。本指南涵盖了为 Amphora 驱动程序配置 Octavia。有关详细信息，请参阅Octavia 文档。安装指南是一个有用的参考。
@@ -65,7 +65,7 @@ sudo apt -y install debootstrap qemu-utils git kpartx
 # 官网命令（不建议）
 # git clone https://opendev.org/openstack/octavia -b stable/yoga
 # 镜像
-git clone https://jihulab.com/james-curtis/octavia.git -b stable/yoga
+git clone https://jihulab.com/eric-gitta-moore/octavia.git -b stable/yoga
 ```
 
 
@@ -106,10 +106,10 @@ pip install diskimage-builder
 导出环境变量
 
 ```
-export DIB_REPOLOCATION_amphora_agent=https://jihulab.com/james-curtis/octavia.git
-export DIB_REPOLOCATION_octavia_lib=https://jihulab.com/james-curtis/octavia-lib.git
+export DIB_REPOLOCATION_amphora_agent=https://jihulab.com/eric-gitta-moore/octavia.git
+export DIB_REPOLOCATION_octavia_lib=https://jihulab.com/eric-gitta-moore/octavia-lib.git
 export DIB_DISTRIBUTION_MIRROR=http://mirrors.ustc.edu.cn/ubuntu
-export DIB_REPOLOCATION_upper_constraints=https://jihulab.com/james-curtis/requirements/-/raw/stable/yoga/upper-constraints.txt
+export DIB_REPOLOCATION_upper_constraints=https://jihulab.com/eric-gitta-moore/requirements/-/raw/stable/yoga/upper-constraints.txt
 export DIB_PYPI_MIRROR_URL=https://pypi.tuna.tsinghua.edu.cn/simple
 export DIB_NO_PYPI_PIP=1
 ```
@@ -193,7 +193,7 @@ kolla-ansible post-deploy
 先把文件下载过来
 
 ```
-wget https://jihulab.com/james-curtis/requirements/-/raw/stable/yoga/upper-constraints.txt -O /tmp/upper-constraints.txt
+wget https://jihulab.com/eric-gitta-moore/requirements/-/raw/stable/yoga/upper-constraints.txt -O /tmp/upper-constraints.txt
 ```
 
 

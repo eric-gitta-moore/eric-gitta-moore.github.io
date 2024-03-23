@@ -14,11 +14,11 @@ In the PE file header, there is a "machine" field that specifies the CPU type. I
 
 This is for x86:
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/2d9188566c684db497cb4d7489f047ff.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/2d9188566c684db497cb4d7489f047ff.png)
 
 This is for x64:
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/5606fe864e7e4b9aaa26da0faba554fb.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/5606fe864e7e4b9aaa26da0faba554fb.png)
 
 Source:
 

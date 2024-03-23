@@ -10,7 +10,7 @@ categories:
 
 这个插件找了我好久哇
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/ce6f6e732fb0408a93de635f5ba12312.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/ce6f6e732fb0408a93de635f5ba12312.png)
 
 
 

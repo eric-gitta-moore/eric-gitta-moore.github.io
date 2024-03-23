@@ -14,7 +14,7 @@ categories:
 
 于是自己修复了一下pr给作者了
 
-![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936513475351693651346745.png)
+![16936513475351693651346745.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936513475351693651346745.png)
 
 #  使用
 
@@ -37,7 +37,7 @@ pnpm add -D git+https://github.com/microsoft/vscode-loc.git
 > 这条命令我只安装成功过一次。后面全部都是失败。配置各种代理，死活下载不过来。最后没办法只能中转一下。用gitlab给clone过来（不得不说码云真的坑，克隆这个仓库不给改公开权限）
 
 ```
-pnpm add -D git+https://jihulab.com/james-curtis/vscode-loc
+pnpm add -D git+https://jihulab.com/eric-gitta-moore/vscode-loc
 ```
 
 

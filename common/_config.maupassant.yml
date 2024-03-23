@@ -1,6 +1,6 @@
 utterances: ## See: https://utteranc.es
   enable: true ## If you want to use Utterances comment system, please set the value to true.
-  repo: james-curtis/james-curtis.github.io ## The repository utterances will connect to, e.g. tufu9441/comments
+  repo: eric-gitta-moore/eric-gitta-moore.github.io ## The repository utterances will connect to, e.g. tufu9441/comments
   identifier: pathname ## The mapping between blog posts and GitHub issues.
 
 google_search: false ## Use Google search, true/false.
@@ -32,7 +32,7 @@ menu:
     icon: fa-comments
 
 info:
-  avatar: https://avatars.githubusercontent.com/james-curtis
+  avatar: https://avatars.githubusercontent.com/eric-gitta-moore
   discription: To be a better man.
   outlinkitem:
     - name: twitter
@@ -42,7 +42,7 @@ info:
       outlink: mailto:jamescurtis@foxmail.com
       message: Email
     - name: github
-      outlink: https://github.com/james-curtis
+      outlink: https://github.com/eric-gitta-moore
       message: Github
     - name: rss
       outlink: /atom.xml
@@ -59,9 +59,9 @@ links:
     src: /en
   - title: GitHub
     desc: GitHub
-    url: https://github.com/james-curtis
-    src: https://github.com/james-curtis
+    url: https://github.com/eric-gitta-moore
+    src: https://github.com/eric-gitta-moore
   - title: CSS 参考手册
     desc: CSS 参考手册 - web前端开发参考手册系列
-    url: https://james-curtis.github.io/css-handbook/
-    src: https://james-curtis.github.io/css-handbook/
+    url: https://eric-gitta-moore.github.io/css-handbook/
+    src: https://eric-gitta-moore.github.io/css-handbook/

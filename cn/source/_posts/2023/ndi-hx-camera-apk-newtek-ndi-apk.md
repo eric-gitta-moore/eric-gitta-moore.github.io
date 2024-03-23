@@ -39,5 +39,5 @@ NDI®HX相机将您的Android影像设备变成高质量的无线视音频源，
 
 ## 下载
 
-- https://github.com/james-curtis/attachment/releases/download/ndi/NDI.HX.Camera_1.28.apk
-- https://github.com/james-curtis/attachment/releases/download/ndi/NewTek.NDI_1.1.apk
+- https://github.com/eric-gitta-moore/attachment/releases/download/ndi/NDI.HX.Camera_1.28.apk
+- https://github.com/eric-gitta-moore/attachment/releases/download/ndi/NewTek.NDI_1.1.apk

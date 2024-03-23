@@ -12,11 +12,11 @@ categories:
 
 本章我们继续来完成OpenStack示例配置组件之Web Application中的Cinder块存储服务，OpenStack中的Cinder块存储对接Ceph
 
-![16936501215371693650120968.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936501215371693650120968.png)
+![16936501215371693650120968.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936501215371693650120968.png)
 
-![16936501345371693650134249.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936501345371693650134249.png)
+![16936501345371693650134249.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936501345371693650134249.png)
 
-![16936501465361693650145937.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936501465361693650145937.png)
+![16936501465361693650145937.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936501465361693650145937.png)
 
 ------
 
@@ -147,11 +147,11 @@ root@control01:~#
 
 回到Horizon，可以看到在 项目 中会多出一个卷。.
 
-![16936501665351693650166117.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936501665351693650166117.png)
+![16936501665351693650166117.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936501665351693650166117.png)
 
 这里随便新建一个任意大小的卷，能创建成功就没问题。
 
-![16936501745361693650174022.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936501745361693650174022.png)
+![16936501745361693650174022.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936501745361693650174022.png)
 
 回到proxmox看下存储池里面有没有这个卷，注意卷的ID
 

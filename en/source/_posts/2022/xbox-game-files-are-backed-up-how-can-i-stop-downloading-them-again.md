@@ -20,7 +20,7 @@ The same process works for other games.
 
 3. Delete everything inside it. (In my case, there's only one game, so make sure to check if you have other games before deleting. In my case, Horizon has a total of four files.)
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/0f496d6f4ebf4ef5b2d4a5005d71d8e5.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/0f496d6f4ebf4ef5b2d4a5005d71d8e5.png)
 
 4. Then copy your backup files into this directory.
 
@@ -28,4 +28,4 @@ The same process works for other games.
 
 You can see that this app consists of one main file, which is mounted as a folder. The other three files are probably related to download progress or similar. I tried copying only the largest file, but it didn't work; it still required downloading from the beginning.
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/eaad09ef7ccc49b2a2bc511de52cde0e.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/eaad09ef7ccc49b2a2bc511de52cde0e.png)

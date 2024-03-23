@@ -8,7 +8,7 @@ categories:
     - Default
 ---
 
-![16936530179911693653017662.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530179911693653017662.png)
+![16936530179911693653017662.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530179911693653017662.png)
 
 # Download Links for Cloud Images
 
@@ -68,59 +68,59 @@ You can choose any location for importing; it should be easily accessible. I sav
 
 1. General
 
-![16936530389901693653038585.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530389901693653038585.png)
+![16936530389901693653038585.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530389901693653038585.png)
 
 2. Operating System
 
 No need for a hard drive here.
 
-![16936530489901693653048509.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530489901693653048509.png)
+![16936530489901693653048509.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530489901693653048509.png)
 
 3. System
 
 Make sure to check "qemu agent."
 
-![16936530579901693653057056.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530579901693653057056.png)
+![16936530579901693653057056.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530579901693653057056.png)
 
 4. Disks
 
 You can leave the disk settings as they are; we'll remove them later.
 
-![16936530789901693653078906.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530789901693653078906.png)
+![16936530789901693653078906.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530789901693653078906.png)
 
 5. CPU (default)
 
-![16936530929911693653092777.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530929911693653092777.png)
+![16936530929911693653092777.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530929911693653092777.png)
 
 6. Memory
 
 I changed it to 1024 since I'm creating a template.
 
-![16936531029951693653102123.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531029951693653102123.png)
+![16936531029951693653102123.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531029951693653102123.png)
 
 7. Network (default)
 
-![16936531109931693653110485.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531109931693653110485.png)
+![16936531109931693653110485.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531109931693653110485.png)
 
 8. Confirm and finish the creation.
 
-![16936531239951693653123848.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531239951693653123848.png)
+![16936531239951693653123848.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531239951693653123848.png)
 
 ## Modify Hardware
 
 1. Detach and delete the hard drive.
 
-![16936531349901693653134701.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531349901693653134701.png)
+![16936531349901693653134701.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531349901693653134701.png)
 
 2. Delete the CD/DVD drive.
 
-![16936531469921693653146623.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531469921693653146623.png)
+![16936531469921693653146623.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531469921693653146623.png)
 
 3. Add a Cloud-init device.
 
-![16936531579941693653157099.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531579941693653157099.png)
+![16936531579941693653157099.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531579941693653157099.png)
 
-![16936531669901693653166526.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531669901693653166526.png)
+![16936531669901693653166526.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531669901693653166526.png)
 
 > The article mentions adding USB and serial devices, but I'm not sure what they are used for. The official documentation also suggests adding a serial device and changing the monitor to serial, but in my testing, it didn't seem necessary. Maybe I made a mistake in my operation. I would appreciate guidance from experts.
 
@@ -143,11 +143,11 @@ The import should be successful.
 
 Go back to the panel and check for an unused disk, double-click on it, and enable it.
 
-![16936532099941693653209439.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532099941693653209439.png)
+![16936532099941693653209439.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532099941693653209439.png)
 
-![16936532189931693653218099.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532189931693653218099.png)
+![16936532189931693653218099.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532189931693653218099.png)
 
-![16936532279901693653227208.png](https://raw.githubusercontent.com/james-curtis/blog-img/img
+![16936532279901693653227208.png](https://raw.githubusercontent.com/eric-gitta-moore/blog-img/img
 
 /img/16936532279901693653227208.png)
 
@@ -155,13 +155,13 @@ Go back to the panel and check for an unused disk, double-click on it, and enabl
 
 Select the disk you just enabled and remove the network boot option.
 
-![16936532389901693653238304.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532389901693653238304.png)
+![16936532389901693653238304.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532389901693653238304.png)
 
 # Step Six: Configure Cloud-init
 
 When you first open it, it should look like this:
 
-![16936532459901693653245247.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532459901693653245247.png)
+![16936532459901693653245247.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532459901693653245247.png)
 
 > Special Note:
 >
@@ -179,13 +179,13 @@ IP Configuration: Here I set it to DHCP.
 
 The configuration should look like this:
 
-![16936532539911693653253522.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532539911693653253522.png)
+![16936532539911693653253522.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532539911693653253522.png)
 
 > Cloud-init will use the VM's name as the hostname.
 
 # Step Seven: Boot and Test
 
-![16936532689911693653268088.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532689911693653268088.png)
+![16936532689911693653268088.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532689911693653268088.png)
 
 Success!
 
@@ -197,6 +197,6 @@ Edit the `/etc/ssh/sshd_config` file and modify `PermitRootLogin` to "yes" and `
 
 Shutdown the VM and then right-click on it and select "Convert to Template."
 
-![16936532819921693653281915.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532819921693653281915.png)
+![16936532819921693653281915.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532819921693653281915.png)
 
 Now, you can link to or fully clone the template.

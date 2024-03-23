@@ -20,7 +20,7 @@ https://yunling.lanzout.com/iiKti144mgra
 
 release 也发了一份
 
-https://github.com/james-curtis/macOS-font/releases/download/font/PingFang.19.0d4e2.ttc
+https://github.com/eric-gitta-moore/macOS-font/releases/download/font/PingFang.19.0d4e2.ttc
 
 sha1: A3104073F3CC498BB5D7F38DB91926F9DA9CA437
 

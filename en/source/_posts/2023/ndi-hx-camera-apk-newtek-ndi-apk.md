@@ -52,5 +52,5 @@ support
 
 ## Download
 
-- https://github.com/james-curtis/attachment/releases/download/ndi/NDI.HX.Camera_1.28.apk
-- https://github.com/james-curtis/attachment/releases/download/ndi/NewTek.NDI_1.1.apk
+- https://github.com/eric-gitta-moore/attachment/releases/download/ndi/NDI.HX.Camera_1.28.apk
+- https://github.com/eric-gitta-moore/attachment/releases/download/ndi/NewTek.NDI_1.1.apk

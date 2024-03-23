@@ -57,7 +57,7 @@ You can choose between `all in one` and `c/c++` projects in the YunXiao DevStudi
 
 Note that in YunXiao DevStudio, it seems different from regular VSCode, and `"type": "cppdbg"` might result in an error. You should change it to `"type": "lldb"` to resolve the error: "The debug type is not recognized. Make sure that you have a corresponding debug extension installed and that it is enabled."
 
-![16936528309911693652830852.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936528309911693652830852.png)
+![16936528309911693652830852.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936528309911693652830852.png)
 
 At this point, you should be able to debug. Using "Start Without Debugging" may not produce the expected result in Aliyun DevStudio. Coding works fine, but you need to remove breakpoints to run it; otherwise, it will still pause at the breakpoints.
 

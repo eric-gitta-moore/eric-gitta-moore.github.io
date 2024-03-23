@@ -10,7 +10,7 @@ categories:
 
 我是VMware16
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820120717730.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820120717730.png)
 
 
 
@@ -18,7 +18,7 @@ categories:
 
 最新版7601
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820120832952.png) 
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820120832952.png) 
 
 ```
 文件名：cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso
@@ -32,7 +32,7 @@ ed2k://|file|cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso|3420557312|B585
 
  安装VMware提示这个
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/211be5072aba99fda55111d2c31fcdf9.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/211be5072aba99fda55111d2c31fcdf9.png)
 
 根据https://kb.vmware.com/s/article/78708所述，应该是无法验证签名？
 
@@ -40,19 +40,19 @@ ed2k://|file|cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso|3420557312|B585
 
 [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/search.aspx?q=kb4474419)
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820121051189.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820121051189.png)
 
 [Microsoft Update Catalog](https://www.catalog.update.microsoft.com/search.aspx?q=4490628)
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820121103198.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820121103198.png)
 
 然后在VMware连接光驱
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820121218761.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820121218761.png)
 
 
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210820121232724.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210820121232724.png)
 
 
 

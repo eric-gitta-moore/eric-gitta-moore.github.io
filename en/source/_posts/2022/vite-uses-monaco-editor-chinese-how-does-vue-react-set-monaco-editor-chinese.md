@@ -14,7 +14,7 @@ However, when I used it, I didn't succeed in localizing it, as I found that this
 
 So, I fixed it myself and submitted a pull request to the author.
 
-![16936513475351693651346745.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936513475351693651346745.png)
+![16936513475351693651346745.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936513475351693651346745.png)
 
 # Usage
 
@@ -33,7 +33,7 @@ pnpm add -D git+https://github.com/microsoft/vscode-loc.git
 > I have only successfully installed this package once. Later attempts all failed. I tried various proxies, but I couldn't download it. In the end, I had no choice but to transfer it. I cloned it using GitLab (I have to say, Gitee is really tricky, it doesn't allow cloning without public access).
 
 ```
-pnpm add -D git+https://jihulab.com/james-curtis/vscode-loc
+pnpm add -D git+https://jihulab.com/eric-gitta-moore/vscode-loc
 ```
 
 Then, configure your `vite.config.ts` file, and you're good to go.

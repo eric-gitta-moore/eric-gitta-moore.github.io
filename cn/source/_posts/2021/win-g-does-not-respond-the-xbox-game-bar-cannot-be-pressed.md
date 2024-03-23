@@ -14,7 +14,7 @@ categories:
 
 重新设置快捷键也没有用根本就不识别
 
-![img](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/20210821140241237.png)
+![img](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/20210821140241237.png)
 
 win+g就是填不进去，其它快捷键可以，就算填进去了，再按新设置的快捷键也出不来
 

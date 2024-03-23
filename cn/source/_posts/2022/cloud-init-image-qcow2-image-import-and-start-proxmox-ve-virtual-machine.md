@@ -8,7 +8,7 @@ categories:
     - 默认
 ---
 
-![16936530179911693653017662.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530179911693653017662.png)
+![16936530179911693653017662.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530179911693653017662.png)
 
 # cloud images下载地址 
 
@@ -67,59 +67,59 @@ categories:
 
 1.常规
 
-![16936530389901693653038585.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530389901693653038585.png)
+![16936530389901693653038585.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530389901693653038585.png)
 
 2. 操作系统
 
 这里不需要硬盘
 
-![16936530489901693653048509.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530489901693653048509.png)
+![16936530489901693653048509.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530489901693653048509.png)
 
 3.系统
 
 注意勾选qemu代理
 
-![16936530579901693653057056.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530579901693653057056.png)
+![16936530579901693653057056.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530579901693653057056.png)
 
 4.磁盘
 
 磁盘这里也可以不用动，待会会删除掉
 
-![16936530789901693653078906.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530789901693653078906.png)
+![16936530789901693653078906.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530789901693653078906.png)
 
 5.CPU，默认
 
-![16936530929911693653092777.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936530929911693653092777.png)
+![16936530929911693653092777.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936530929911693653092777.png)
 
 6.内存。由于是制作模板所以我改成1024
 
-![16936531029951693653102123.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531029951693653102123.png)
+![16936531029951693653102123.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531029951693653102123.png)
 
 
 7.网络。默认
 
-![16936531109931693653110485.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531109931693653110485.png)
+![16936531109931693653110485.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531109931693653110485.png)
 
 8.确认。完成创建
 
-![16936531239951693653123848.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531239951693653123848.png)
+![16936531239951693653123848.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531239951693653123848.png)
 
 ## 修改硬件
 
  1.分离并删除硬盘
 
-![16936531349901693653134701.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531349901693653134701.png)
+![16936531349901693653134701.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531349901693653134701.png)
 
 2.删除CD/DVD驱动器
 
-![16936531469921693653146623.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531469921693653146623.png)
+![16936531469921693653146623.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531469921693653146623.png)
 
 
 3.添加Cloud-init设备 
 
-![16936531579941693653157099.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531579941693653157099.png)
+![16936531579941693653157099.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531579941693653157099.png)
 
-![16936531669901693653166526.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531669901693653166526.png)
+![16936531669901693653166526.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531669901693653166526.png)
 
 > 那篇文章里面说还要添加USB设备和串口设备不知道是干嘛的。官方文档也是说要添加串口设备，并且显示器也要改成串口。我实测好像不太行 。可能是我操作有问题吧。恳请大佬指点迷津
 
@@ -137,13 +137,13 @@ qm importdisk 105 /var/lib/vz/images/CentOS-7-x86_64-GenericCloud-1907.qcow2 loc
 
 105指的是刚刚创建的那台机器id，如图所示
 
-![16936531749901693653174398.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531749901693653174398.png)
+![16936531749901693653174398.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531749901693653174398.png)
 
  /var/lib/vz/images/CentOS-7-x86_64-GenericCloud-1907.qcow2是我上传的镜像位置
 
 local-lvm是我的这里是我的存储节点，如图所示
 
-![16936531969901693653196513.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936531969901693653196513.png)
+![16936531969901693653196513.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936531969901693653196513.png)
 
  --format=qcow2表示以qcow2格式导入，如果镜像后缀本来就是qcow2后缀就没必要用这个选项。我这里懒得删了，一样的
 
@@ -153,26 +153,26 @@ local-lvm是我的这里是我的存储节点，如图所示
 
 回到面板去看一下有一块未使用磁盘，双击并启用他
 
-![16936532099941693653209439.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532099941693653209439.png)
+![16936532099941693653209439.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532099941693653209439.png)
 
-![16936532189931693653218099.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532189931693653218099.png)
+![16936532189931693653218099.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532189931693653218099.png)
 
 
 
-![16936532279901693653227208.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532279901693653227208.png)
+![16936532279901693653227208.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532279901693653227208.png)
 
 
 #  第五步：设置引导顺序
 
 勾选刚刚启用的那一块硬盘。网络引导就取消吧没有用了
 
-![16936532389901693653238304.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532389901693653238304.png)
+![16936532389901693653238304.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532389901693653238304.png)
 
 #  第六步：配置cloudinit
 
 刚刚打开的时候是这样的
 
-![16936532459901693653245247.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532459901693653245247.png)
+![16936532459901693653245247.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532459901693653245247.png)
 
 > 特别注意：
 >
@@ -190,13 +190,13 @@ IP配置：这里我设置为DHCP
 
 配置完成如下
 
-![16936532539911693653253522.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532539911693653253522.png)
+![16936532539911693653253522.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532539911693653253522.png)
 
 > 其中cloudinit会使vm的名字作为主机名
 
 #  第七步：开机试试
 
-![16936532689911693653268088.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532689911693653268088.png)
+![16936532689911693653268088.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532689911693653268088.png)
 
 成功了
 
@@ -210,6 +210,6 @@ vi /etc/ssh/sshd_config
 
 关机，然后右键机器点击转换成模板
 
-![16936532819921693653281915.png](https://raw.githubusercontent.com/james-curtis/james-curtis.github.io/main/static/images/16936532819921693653281915.png)
+![16936532819921693653281915.png](https://raw.githubusercontent.com/eric-gitta-moore/eric-gitta-moore.github.io/main/static/images/16936532819921693653281915.png)
 
 然后就可以链接或完整克隆
