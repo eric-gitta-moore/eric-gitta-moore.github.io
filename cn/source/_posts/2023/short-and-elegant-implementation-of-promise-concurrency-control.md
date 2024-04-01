@@ -14,10 +14,8 @@ categories:
 ```js
 function pLimit(concurrent) {
     let task = [], active = 0;
-    return (fn) => new Promise(async res => {
+    return fn => new Promise(res => {
         task.push(async () => (active++, res(await fn()), active--, task.pop()?.()));
-        // 感觉可以去掉，一样可以同步 cnt++ 和 concurrency
-        await Promise.resolve();
         active < concurrent && task.pop()?.();
     });
 }
