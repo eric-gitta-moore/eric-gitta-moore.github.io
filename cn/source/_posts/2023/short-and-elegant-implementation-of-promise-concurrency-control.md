@@ -21,4 +21,19 @@ function pLimit(concurrent) {
         active < concurrent && task.pop()?.();
     });
 }
+
+const limit = pLimit(2);
+const fetchSome = size => fetch(`https://speed.cloudflare.com/__down?bytes=${size}`)
+const input = [
+	limit(() => fetchSome(100)),
+	limit(() => fetchSome(9)),
+	limit(() => fetchSome(66)),
+	limit(() => fetchSome(616)),
+	limit(() => fetchSome(91)),
+	limit(() => fetchSome(11)),
+];
+
+// Only one promise is run at once
+const result = await Promise.all(input);
+console.log(result);
 ```
