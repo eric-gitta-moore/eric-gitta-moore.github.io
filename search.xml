@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>Mac OS hosts 文件的锁定保护及修改</title>
+      <link href="/2024/lock-protection-and-modification-of-mac-os-hosts-files/"/>
+      <url>/2024/lock-protection-and-modification-of-mac-os-hosts-files/</url>
+      
+        <content type="html"><![CDATA[<h3 id="锁死hosts文件"><a href="#锁死hosts文件" class="headerlink" title="锁死hosts文件"></a>锁死hosts文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chflags uchg /etc/hosts</span><br><span class="line">sudo chflags schg /etc/hosts</span><br></pre></td></tr></table></figure><h3 id="解锁hosts文件"><a href="#解锁hosts文件" class="headerlink" title="解锁hosts文件"></a>解锁hosts文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chflags -hv noschg /etc/hosts</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>10 行实现简单 Promise</title>
       <link href="/2024/10-lines-implement-a-simple-promise/"/>
       <url>/2024/10-lines-implement-a-simple-promise/</url>
