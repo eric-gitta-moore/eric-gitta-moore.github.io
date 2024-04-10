@@ -1,7 +1,7 @@
 ---
 title: 浪潮M2220主板加NVME BIOS
 subtitle: Inspur M2220 motherboard with NVME BIOS
-date: 
+date: 2023-12-02 12:27:11
 toc: true
 tags: 
 categories: 
