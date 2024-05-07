@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>ipa 签名工具</title>
+      <link href="/2024/ipa-sign/"/>
+      <url>/2024/ipa-sign/</url>
+      
+        <content type="html"><![CDATA[<ul><li>爱思助手</li><li>Sideloadly</li><li>AltStore</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 默认 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Mac OS hosts 文件的锁定保护及修改</title>
       <link href="/2024/lock-protection-and-modification-of-mac-os-hosts-files/"/>
       <url>/2024/lock-protection-and-modification-of-mac-os-hosts-files/</url>
