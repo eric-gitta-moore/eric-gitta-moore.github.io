@@ -73,6 +73,8 @@ categories:
 
 coding !
 
+现在电脑也不卡了，人也精神了 😅😅
+
 ## 参考
 - https://github.com/nodejs/node/issues/52230#issuecomment-2024353730
 - https://github.com/nvm-sh/nvm/issues/2218#issuecomment-902697494
