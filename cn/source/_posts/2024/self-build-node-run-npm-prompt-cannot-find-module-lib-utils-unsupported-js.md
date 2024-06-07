@@ -37,7 +37,7 @@ Require stack:
 ```
 
 ## 解决方法
-重新指定 `make --prefix=` 到 `~/.nvm/versions/node/v14.999.999` 目录，再 `make install` 即可
+重新指定 `./configure --prefix=` 到 `~/.nvm/versions/node/v14.999.999` 目录，再 `make install` 即可
 
 ## 故障原因
 copy 到 .nvm 目录的过程中丢失了软连接，导致 node 寻找依赖的逻辑不符合预期
