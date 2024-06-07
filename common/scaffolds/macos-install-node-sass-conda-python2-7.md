@@ -9,7 +9,9 @@ categories:
 ---
 
 ## 背景
-traffic-campaign 最开始尝试使用 node 16，但是发现无法编译 node-sass
+个别前端项目有使用 node-sass 依赖
+
+最开始尝试使用 node 16，但是发现无法编译 node-sass
 
 于是尝试修改为同年份的 sass，发现个别语法不兼容
 
