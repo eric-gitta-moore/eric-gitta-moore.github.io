@@ -25,6 +25,40 @@ categories:
 > cd node
 > git checkout v14.21.3
 > mkdir ~/.nvm/versions/node/v14.21.3
+```
+
+然后需要修改一下文件 `vim common.gypi` ，大概是这个位置 https://github.com/nodejs/node/blob/v14.21.3/common.gypi#L498
+
+```diff
+      ['OS=="mac"', {
+        'defines': ['_DARWIN_USE_64_BIT_INODE=1'],
+        'xcode_settings': {
+          'ALWAYS_SEARCH_USER_PATHS': 'NO',
+          'GCC_CW_ASM_SYNTAX': 'NO',                # No -fasm-blocks
+          'GCC_DYNAMIC_NO_PIC': 'NO',               # No -mdynamic-no-pic
+                                                    # (Equivalent to -fPIC)
+          'GCC_ENABLE_CPP_EXCEPTIONS': 'NO',        # -fno-exceptions
+          'GCC_ENABLE_CPP_RTTI': 'NO',              # -fno-rtti
+          'GCC_ENABLE_PASCAL_STRINGS': 'NO',        # No -mpascal-strings
+          'PREBINDING': 'NO',                       # No -Wl,-prebind
+          'MACOSX_DEPLOYMENT_TARGET': '10.13',      # -mmacosx-version-min=10.13
+          'USE_HEADERMAP': 'NO',
+          'OTHER_CFLAGS': [
+            '-fno-strict-aliasing',
+          ],
+          'WARNING_CFLAGS': [
+            '-Wall',
+            '-Wendif-labels',
+            '-W',
+            '-Wno-unused-parameter',
++            '-Wno-enum-constexpr-conversion',
+          ],
+        },
+```
+
+然后继续 make & install 就 ok
+
+```shell
 > ./configure --prefix=`realpth ~/.nvm/versions/node/v14.21.3`
 > make -j `sysctl hw.logicalcpu`
 > make install
