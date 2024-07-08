@@ -15,6 +15,13 @@ sudo sed -i 's/security.ubuntu.com/mirrors.cernet.edu.cn/g' /etc/apt/sources.lis
 sudo apt update
 ```
 
+## pacman
+ref: https://mirrors.tuna.tsinghua.edu.cn/help/msys2/
+
+```sh
+sed -i "s#https\?://mirror.msys2.org/#https://mirrors.tuna.tsinghua.edu.cn/msys2/#g" /etc/pacman.d/mirrorlist*
+```
+
 ## pdm
 ```sh
 pdm config pypi.url https://mirrors.cernet.edu.cn/pypi/web/simple
