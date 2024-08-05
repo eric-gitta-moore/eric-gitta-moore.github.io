@@ -11,30 +11,60 @@ categories:
 ```js
 class MyPromise {
     constructor(fn) {
-        fn(value=>this.cb?.(value))
+        fn(value => queueMicrotask(() => this.cb?.(value)))
     }
-    then(fn) {
-        return new MyPromise(res=>this.cb = val=>{
-            const thenCb = fn(val)
-            thenCb instanceof MyPromise ? thenCb.then(res) : res(thenCb)
+    then(onFulfilled) {
+        return new MyPromise(resolve => this.cb = val => {
+            const thenCb = onFulfilled(val)
+            thenCb instanceof MyPromise ? thenCb.then(resolve) : resolve(thenCb)
         })
     }
 }
 
-new MyPromise((resolve)=>{
-    setTimeout(()=>{
-        resolve(1)
-    }, 1000)
-}
-).then((res)=>{
-    console.log(res)
-    return new MyPromise((resolve)=>{
-        setTimeout(()=>{
-            resolve(2)
-        }, 1000)
-    })
-}
-).then(res=>{
-    console.log(res)
-})
+
+```
+
+testCase:
+
+```js
+const testCase = [
+    () => {
+        new MyPromise((resolve) => {
+            setTimeout(() => {
+                resolve(1)
+            }, 1000)
+        }
+        ).then((res) => {
+            console.log(res)
+            return new MyPromise((resolve) => {
+                setTimeout(() => {
+                    resolve(2)
+                }, 1000)
+            })
+        }
+        ).then(res => {
+            console.log(res)
+        })
+    },
+    () => {
+        let p = new MyPromise((resolve) => {
+            resolve(1)
+        }).then((res) => {
+            console.log(res)
+            return new MyPromise((resolve) => {
+                setTimeout(() => {
+                    resolve(2)
+                }, 150)
+            })
+        })
+        setTimeout(() => {
+            p.then(res => {
+                console.log(res)
+            })
+        }, 100);
+    }
+]
+
+// testCase[0]()
+testCase[1]()
 ```
