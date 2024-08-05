@@ -68,3 +68,14 @@ const testCase = [
 // testCase[0]()
 testCase[1]()
 ```
+
+
+es5 版本
+```js
+// es5 版本
+function FnPromise(fn) { fn(value => queueMicrotask(() => this.cb?.(value))) }
+FnPromise.prototype.then = onFulfilled => new MyPromise(resolve => this.cb = val => {
+    const thenValue = onFulfilled(val)
+    thenValue instanceof MyPromise ? thenValue.then(resolve) : resolve(thenValue)
+})
+```
