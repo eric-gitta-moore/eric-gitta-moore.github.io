@@ -12,3 +12,4 @@ archive_generator:
 theme: maupassant
 
 public_dir: ../public
+post_asset_folder: true
