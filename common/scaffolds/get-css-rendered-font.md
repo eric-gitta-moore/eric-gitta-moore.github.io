@@ -13,14 +13,25 @@ categories:
 
 ## 尝试方式
 
-### 计算样式 getComputedStyles
+### 计算样式 getComputedStyle
+> ref: https://stackoverflow.com/a/7444724
+
+```js
+function css( element, property ) {
+    return window.getComputedStyle( element, null ).getPropertyValue( property );
+}
+```
+
+只能获取到计算后的 font-family 有哪些，并无法得知实际使用的字体
+
+![alt text](image.png)
 
 ### FontFaceSet.prototype.check
 
-### canvas 绘制+逐字对比
+### Canvas 绘制+逐字对比
 
 
-### Chrome DevTool Protocal
+### Chrome DevTools Protocol
 
 
 ## 结论
