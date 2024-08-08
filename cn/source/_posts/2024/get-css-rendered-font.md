@@ -28,7 +28,7 @@ css($0, 'font-family')
 
 只能获取到计算后的 font-family 有哪些，并无法得知实际使用的字体
 
-![alt text](image.png)
+![alt text](./get-css-rendered-font/image.png)
 
 ### FontFaceSet.prototype.check
 > mdn: https://developer.mozilla.org/zh-CN/docs/Web/API/FontFaceSet/check
@@ -122,13 +122,13 @@ renderedfont($0)
 ### Chrome DevTools Protocol
 这里我们换一个思路，既然控制台能够看到 rendered font，也可以从这里下手。只不过使用 cdp 实现的要派上用场会有点麻烦，用户不一定安装我们自己写的浏览器插件
 
-![alt text](image.png)
+![alt text](./get-css-rendered-font/image.png)
 
 打开 DevTools 的实验性选项 `Protocol Monitor`，在 `Elements` tab 选中元素的时候发现会请求一个带有 font 字样的 cdp api `getPlatformFontsForNode`
 
 经过查阅 [cdp](https://chromedevtools.github.io/devtools-protocol/) 的 api 发现 `CSS.getPlatformFontsForNode` 确实可以获取到 rendered fonts，而且还能够区分是本地字体还是网络字体
 
-![alt text](image-1.png)
+![alt text](./get-css-rendered-font/image-1.png)
 
 api 的返回结果是 `array[ PlatformFontUsage ]`
 
@@ -147,7 +147,7 @@ api 的返回结果是 `array[ PlatformFontUsage ]`
 
 4、PlatformFontUsage.isCustomFont：Indicates if the font was downloaded or resolved locally.
 
-![alt text](image-2.png)
+![alt text](./get-css-rendered-font/image-2.png)
 
 ## 结论
 1、计算样式，只能获取设置的字体，无法获取实际渲染字体 ❌
