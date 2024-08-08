@@ -10,7 +10,7 @@
 
 
 @media print,
-screen and (min-width: 1700px) {
+screen and (min-width: 1500px) {
     #toc {
         position: fixed;
         top: 20vh;
