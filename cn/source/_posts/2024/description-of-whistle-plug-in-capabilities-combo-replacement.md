@@ -262,12 +262,74 @@ module.exports = (server, options) => {
 
 #### 获取 combo 资源 & 拼接 Buffer
 
+```js
+module.exports = function (server, options) {
+  server.on("request", async (req, res) => {
+    // const ruleValue = ...
+    // const rewriteList = ...
+    // ...
+
+    /**
+     * @type {Uint8Array[]}
+     */
+    const comboBuffer = Array.from({ length: rewriteList.length });
+    const tasks = rewriteList.map(async (e, idx) => {
+      // 挨个请求数据拿到 buffer （其实也可以合并一下没有被替换掉，但是会麻烦一点，需要保持被替换的 js 在返回结果中的上下位置不变）
+      const data = await fetch(e).then((e) => e.arrayBuffer());
+      comboBuffer[idx] = new Uint8Array(data);
+    });
+    await Promise.all(tasks);
+
+    // ...
+    req.passThrough(); // 直接放行
+  });
+};
+```
 
 #### 构造响应 & 返回数据
 
 
+```js
+
+module.exports = function (server, options) {
+  server.on("request", async (req, res) => {
+    // const ruleValue = ...
+    // const rewriteList = ...
+    // const comboBuffer = ...
+    // ...
+
+    const client = req.request((svrRes) => {
+      // 长度有变，直接删除
+      delete svrRes.headers["content-length"];
+      // 目前的 comboBuffer 是没有 gzip 压缩过，删除服务端下发的压缩编码
+      delete svrRes.headers["content-encoding"];
+      // 写请求头
+      res.writeHead(
+        finalRule.resStatusCode,
+        Object.assign({}, svrRes.headers, finalRule.OverrideResHeaders),
+      );
+      // 发送 buffer
+      res.end(Buffer.concat(comboBuffer));
+    });
+    // 处理请求，必须。不然请求方的 socket 会被挂起
+    req.pipe(client);
+
+    // req.passThrough(); // 直接放行
+  });
+};
+```
+到目前为止，整个插件的功能已经完成了。
 
 
+#### 测试
+可以在插件项目根目录下面运行 `w2 run`，这个时候会自动读取当前目录下的插件
 
+![](./description-of-whistle-plug-in-capabilities-combo-replacement/image.png)
+
+命中，在检查一下返回的数据，确实被替换了
+
+![](./description-of-whistle-plug-in-capabilities-combo-replacement/image%20copy.png)
+
+完结
 
 
