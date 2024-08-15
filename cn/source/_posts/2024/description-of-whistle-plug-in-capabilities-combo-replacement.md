@@ -9,6 +9,10 @@ categories:
 ---
 
 ## TL;DR;
+combo 介绍：这个就是
+`https://d.alicdn.com/alilog/??aplus/1.13.5/aplus_pc.js,aplus/1.13.5/plugin/aplus_spmact.js?v=20240718161046`
+
+
 [whistle.combo-url](https://github.com/eric-gitta-moore/whistle.combo-url) 是最终的成品插件，可以根据 README 提示上手使用一下
 
 ~~~yaml
