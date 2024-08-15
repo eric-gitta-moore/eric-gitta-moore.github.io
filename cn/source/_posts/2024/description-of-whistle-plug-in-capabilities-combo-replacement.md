@@ -328,7 +328,7 @@ module.exports = function (server, options) {
 
 命中，在检查一下返回的数据，确实被替换了
 
-![](./description-of-whistle-plug-in-capabilities-combo-replacement/image%20copy.png)
+![](./description-of-whistle-plug-in-capabilities-combo-replacement/image2.png)
 
 完结
 
