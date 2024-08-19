@@ -31,9 +31,7 @@ eBPF 是一种可以在特权上下文（例如操作系统内核）中运行程
 >
 > 在父进程中 `fork` 一个子进程，在子进程中调用exec函数启动新的程序。`exec` 函数一共有六个，其中 `execve` 为内核级系统调用，其他（execl，execle，execlp，execv，execvp）都是调用 execve 的库函数。
 >
-> **函数定义**: 
-> 
-> `int execve(const char *filename, char *const argv[ ], char *const envp[ ]);`
+> **函数定义**: int execve(const char *filename, char *const argv[ ], char *const envp[ ]);
 >
 > **返回值**: 函数执行成功时没有返回值，执行失败时的返回值为-1.
 >
