@@ -1,7 +1,7 @@
 ---
 title: 另一种范式的 p-limit 实现 ｜ 字节面试题
 subtitle: Another paradigm, p-limit, implements | byte interview questions
-date: another-paradigm-p-limit-implements-byte-interview-questions
+date: 2024-09-05 00:12:53
 toc: true
 tags: 
 categories: 
