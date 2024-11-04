@@ -49,3 +49,6 @@ categories:
 命中断点，enjoy
 
 ![](./how-to-debug-napi-rs-debug-node-cpp-rust-module-vscode-debug-napi-rs/image.png)
+
+## Ref
+- https://stackoverflow.com/a/51176075
