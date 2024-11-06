@@ -45,6 +45,8 @@ PR 也有的，https://www.reddit.com/r/premiere/comments/18tyti0/sound_isolatio
 
 相关文档应该在这里: [System-Supplied Audio Units in OS X](https://developer.apple.com/library/archive/documentation/MusicAudio/Conceptual/CoreAudioOverview/SystemAudioUnits/SystemAudioUnits.html)，但是可能有些落后，没有覆盖到 isolation
 
+相关 API 介绍: [QuietNow](https://github.com/spotlightishere/QuietNow)
+
 ### Reference
 - [Enhancing microphone input with audio effects](https://rogueamoeba.com/support/knowledgebase/?showArticle=MicEffects&product=audiohijack)
 - https://github.com/LeXuanKhanh/noise-suppression-for-voice/tree/macos-instruction?tab=readme-ov-file#macos
