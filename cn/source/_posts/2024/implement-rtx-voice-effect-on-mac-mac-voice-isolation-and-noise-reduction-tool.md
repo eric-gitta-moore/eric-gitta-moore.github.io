@@ -39,7 +39,7 @@ mac 上实现 RTX-Voice 效果，mac 语音隔离，降噪工具，怎么实现 
 
 ![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image.png)
 
-![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool//image1.png)
+![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy.png)
 
 实际上我注意到 SoundSource 也是支持这功能的，参考: https://weblog.rogueamoeba.com/2023/05/23/get-soundsource-5-6-now/
 
