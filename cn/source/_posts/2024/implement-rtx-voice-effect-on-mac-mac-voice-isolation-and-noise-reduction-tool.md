@@ -45,10 +45,10 @@ A 选择高质量，R 设置 VAD 阈值为 `0.95`
 
 还可以加个 `Magic Boost` 声音小的话可以提上来，最后输出前建议再加个 `Limiter` 限制器抑制最大声音 
 
-![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy.png)
+![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/i2.png)
 
 参考，我加了个 `W1 Limiter`
-![成品图](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy%202.png)
+![成品图](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/i3.png)
 
 
 实际上我注意到 SoundSource 也是支持这功能的，参考: https://weblog.rogueamoeba.com/2023/05/23/get-soundsource-5-6-now/
