@@ -8,6 +8,13 @@
     margin: 0;
 }
 
+.post .post-content p a {
+    word-break: break-all !important;
+}
+
+.post .post-content p {
+    word-break: break-all !important;
+}
 
 @media print,
 screen and (min-width: 1500px) {
