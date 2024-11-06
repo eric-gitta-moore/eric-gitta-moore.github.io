@@ -8,6 +8,8 @@ categories:
     - 默认
 ---
 
+mac 上实现 RTX-Voice 效果，mac 语音隔离，降噪工具，怎么实现 NVIDIA Broadcast 降噪，人声隔离
+
 找了很久这种工具
 
 因为 mac 新版自带了一个 Voice Isolation，但是在 chrome 里面没法用，所以想找其他工具替代
