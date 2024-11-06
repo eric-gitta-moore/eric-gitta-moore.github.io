@@ -48,7 +48,7 @@ A 选择高质量，R 设置 VAD 阈值为 `0.95`
 ![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy.png)
 
 参考，我加了个 `W1 Limiter`
-![成品图](image copy 2.png)
+![成品图](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy%202.png)
 
 
 实际上我注意到 SoundSource 也是支持这功能的，参考: https://weblog.rogueamoeba.com/2023/05/23/get-soundsource-5-6-now/
