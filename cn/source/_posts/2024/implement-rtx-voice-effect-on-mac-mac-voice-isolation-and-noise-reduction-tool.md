@@ -43,7 +43,7 @@ mac 上实现 RTX-Voice 效果，mac 语音隔离，降噪工具，怎么实现 
 
 A 选择高质量，R 设置 VAD 阈值为 `0.95`
 
-还可以加个 `Magic Boost` 声音小的话可以提上来，最后输出前建议再加个 `Gain Gate` 抑制最大声音 
+还可以加个 `Magic Boost` 声音小的话可以提上来，最后输出前建议再加个 `Limiter` 限制器抑制最大声音 
 
 ![alt text](./implement-rtx-voice-effect-on-mac-mac-voice-isolation-and-noise-reduction-tool/image%20copy.png)
 
