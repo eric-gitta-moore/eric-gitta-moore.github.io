@@ -3,6 +3,7 @@
 <p>如题，mac 上面安装了小米互联服务，想试一下传说中的可以在 mac 上投屏并且控制手机的“妙享桌面”，但是一直没办法找到手机，连同一 wifi 试了，mac 连小米的热点也试了，一直是“当前暂无设备”，但是上面的“文件互传”是好的，小米手机的系统和相关软件都升级过了，mac 也是 15.3 的最新系统，有大佬能指点一下吗？</p>
 </blockquote>
 <p>我感觉公司屏蔽了 udp 多播，想看看具体是不是。顺便看下能不能搞个诱骗器之类的强制走单播连接</p>
+<p>之前也大概了解一下 mDNS，rfc6762</p>
 <p>找到了一些端倪，</p>
 <p>wireshark 抓包显示，过滤所有组播 ip <code>ip.dst &gt;= 224.0.0.0 and ip.dst &lt;= 239.255.255.255</code></p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Standard query response 0x0000 PTR, cache flush Android.local PTR, cache flush Android.local A, cache flush 192.168.136.46 AAAA, cache flush fe80::30b8:51ff:fe17:4903 NSEC, cache flush 46.136.168.192.in-addr.arpa NSEC, cache flush 3.0.9.4.7.1.E.F.F.F.1.5.8.B.0.3.0.0.0.0.0.0.0.0.0.0.0.0.0.8.E.F.ip6.arpa NSEC, cache flush Android.local</span><br><span class="line">Standard query 0x0000 PTR _mi-connect._udp.local, &quot;QU&quot; question</span><br><span class="line">Standard query 0x0000 PTR _lyra-mdns._udp.local, &quot;QU&quot; question</span><br></pre></td></tr></table></figure>
