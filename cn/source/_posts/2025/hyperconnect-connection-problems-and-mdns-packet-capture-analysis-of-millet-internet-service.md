@@ -244,3 +244,7 @@ IP 地址: 192.168.136.46
 属性: {'AppData': 'AkEBPy5Svug7AAIBDwoDAYNPAQEgAhlNYXR0aGV3IFBlcmV655qEUmVkbWkgSzUwIwAjAr+Q', 'MediumType': '64', 'DebugInfo': '{msg:reply, ifname:ap0, v4:192.$)+.$&).46, v6:fe80::&#<+:($@@:@?$*:4903}'}
 
 ```
+
+---
+
+感觉不太行，wireshark 捕获包之后重复都无法触发，估计还会有单播包的心跳或者校验包
