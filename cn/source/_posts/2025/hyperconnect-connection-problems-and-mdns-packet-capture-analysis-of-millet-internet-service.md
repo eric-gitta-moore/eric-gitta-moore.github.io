@@ -91,3 +91,156 @@ Timestamp     A/R  Flags         IF  Hostname                               Addr
 
 我在想，能不能伪造这个东西，搞个 mDNS 诱骗器之类的，向 loopback 发这个 mDNS 广播，让小米互联、Xcode debug remote 之类的 app 发现这个设备，然后解析出具体 ip，剩下的流程走单播，这样就能通了
 
+---
+
+python 代码如下
+```py
+#!/usr/bin/env python3
+
+from zeroconf import ServiceBrowser, Zeroconf
+import time
+import socket
+from typing import List, Dict, Optional
+
+class MDNSListener:
+    def __init__(self):
+        self.services: Dict[str, Dict] = {}
+
+    def remove_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        print(f"服务被移除: {name}")
+        if name in self.services:
+            del self.services[name]
+
+    def add_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        info = zeroconf.get_service_info(type_, name)
+        if info:
+            addresses = [socket.inet_ntoa(addr) for addr in info.addresses]
+            self.services[name] = {
+                'name': name,
+                'type': type_,
+                'addresses': addresses,
+                'port': info.port,
+                'server': info.server,
+                'properties': info.properties
+            }
+            print(f"发现新服务: {name}")
+            print(f"  地址: {', '.join(addresses)}")
+            print(f"  端口: {info.port}")
+            print(f"  服务器: {info.server}")
+
+    def update_service(self, zeroconf: Zeroconf, type_: str, name: str) -> None:
+        print(f"服务更新: {name}")
+        self.add_service(zeroconf, type_, name)
+
+def discover_services(duration: int = 5) -> Dict[str, Dict]:
+    """发现本地网络中的所有mDNS服务"""
+    zeroconf = Zeroconf()
+    listener = MDNSListener()
+    
+    # 常见的服务类型
+    service_types = [
+        # "_http._tcp.local.",
+        # "_https._tcp.local.",
+        # "_workstation._tcp.local.",
+        # "_printer._tcp.local.",
+        # "_ipp._tcp.local.",
+        # "_airplay._tcp.local.",
+        # "_spotify-connect._tcp.local.",
+        # "_googlecast._tcp.local.",
+        # "_googlecast._tcp.local.",
+        "_mi-connect._udp.local.",
+        "_lyra-mdns._udp.local.",
+    ]
+    
+    browsers = [ServiceBrowser(zeroconf, service_type, listener) 
+               for service_type in service_types]
+    
+    try:
+        print(f"正在扫描mDNS服务，持续{duration}秒...")
+        time.sleep(duration)
+    finally:
+        zeroconf.close()
+    
+    return listener.services
+
+def query_service_details(service_name: str, service_type: str) -> Optional[Dict]:
+    """查询特定服务的详细信息"""
+    zeroconf = Zeroconf()
+    try:
+        info = zeroconf.get_service_info(service_type, service_name)
+        if info:
+            addresses = [socket.inet_ntoa(addr) for addr in info.addresses]
+            return {
+                'name': service_name,
+                'type': service_type,
+                'addresses': addresses,
+                'port': info.port,
+                'server': info.server,
+                'properties': {k.decode(): v.decode() if isinstance(v, bytes) else v 
+                             for k, v in info.properties.items()}
+            }
+    finally:
+        zeroconf.close()
+    return None
+
+def main():
+    # 1. 发现所有服务
+    print("开始扫描本地网络中的mDNS服务...")
+    services = discover_services(10)  # 扫描10秒
+    
+    # 2. 显示所有发现的服务
+    print("\n发现的所有服务:")
+    for name, service in services.items():
+        print(f"\n服务名称: {name}")
+        print(f"服务类型: {service['type']}")
+        print(f"IP地址: {', '.join(service['addresses'])}")
+        print(f"端口: {service['port']}")
+        print(f"服务器: {service['server']}")
+    
+    # 3. 如果发现了服务，查询第一个服务的详细信息
+    if services:
+        first_service = next(iter(services.items()))
+        name, service = first_service
+        print(f"\n获取服务 '{name}' 的详细信息:")
+        details = query_service_details(name, service['type'])
+        if details:
+            print("详细信息:")
+            print(f"属性: {details['properties']}")
+        else:
+            print("无法获取详细信息")
+    else:
+        print("\n未发现任何服务")
+
+if __name__ == "__main__":
+    main()
+```
+
+响应结果
+
+```bash
+❯ python mdns_discovery.py
+开始扫描本地网络中的 mDNS 服务...
+正在扫描 mDNS 服务，持续 10 秒...
+发现新服务: 3F2E52BE._lyra-mdns._udp.local.
+地址: 192.168.136.46
+端口: 5353
+服务器: 3F2E52BE.local.
+服务更新: 3F2E52BE._lyra-mdns._udp.local.
+发现新服务: 3F2E52BE._lyra-mdns._udp.local.
+地址: 192.168.136.46
+端口: 5353
+服务器: 3F2E52BE.local.
+
+发现的所有服务:
+
+服务名称: 3F2E52BE._lyra-mdns._udp.local.
+服务类型: _lyra-mdns._udp.local.
+IP 地址: 192.168.136.46
+端口: 5353
+服务器: 3F2E52BE.local.
+
+获取服务 '3F2E52BE._lyra-mdns._udp.local.' 的详细信息:
+详细信息:
+属性: {'AppData': 'AkEBPy5Svug7AAIBDwoDAYNPAQEgAhlNYXR0aGV3IFBlcmV655qEUmVkbWkgSzUwIwAjAr+Q', 'MediumType': '64', 'DebugInfo': '{msg:reply, ifname:ap0, v4:192.$)+.$&).46, v6:fe80::&#<+:($@@:@?$*:4903}'}
+
+```
