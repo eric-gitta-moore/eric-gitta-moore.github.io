@@ -10,7 +10,7 @@ categories:
 
 same as https://www.reddit.com/r/google_antigravity/comments/1p0oxvj/antigravity_support_please_one_moment_the_agent/
 
-![](https://imgur.com/a/Z8Y0hU4)
+https://imgur.com/a/Z8Y0hU4
 
 same here. 
 Meanwhile, I got the following output under anti-gravity output.
@@ -56,4 +56,4 @@ or recheck your proxifier rules
 
 Make sure that the "localhost to direct" rule is placed at the top level.
 
-![](https://imgur.com/AGtXifW)
+https://imgur.com/AGtXifW
