@@ -51,3 +51,9 @@ After I tried various methods, I read the log carefully again. Could it be that 
 2025-12-29 14:30:41.205 [info] 2025/12/29 14:30:41 http: TLS handshake error from 127.0.0.1:61297: EOF
 2025-12-29 14:30:41.205 [info] 2025/12/29 14:30:41 http: TLS handshake error from 127.0.0.1:61298: EOF
 ```
+
+or recheck your proxifier rules
+
+Make sure that the "localhost to direct" rule is placed at the top level.
+
+![](https://imgur.com/AGtXifW)
