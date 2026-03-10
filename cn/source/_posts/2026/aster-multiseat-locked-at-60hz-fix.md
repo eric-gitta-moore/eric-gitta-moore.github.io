@@ -120,3 +120,8 @@ EDID/DisplayID Writer 是一个用于向显示屏写入新的 EDID 或 DisplayID
 
 > 警告： 此程序会修改显示屏中的 EEPROM 数据。如果出现错误，显示屏可能无法使用，直到数据被修正。特别是 NVIDIA 显卡无法识别数据无效的显示屏，因此您需要使用 AMD 显卡或其他方法来修复数据。请自行承担风险。
 
+
+## 参考
+
+1. [第二世代的EDID–VESA® DisplayID 2.1规范与构架](https://www.graniteriverlabs.com.cn/technical-blog/display-id-21/)
+2. [Wikipedia EDID 1.4 data format](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data)
