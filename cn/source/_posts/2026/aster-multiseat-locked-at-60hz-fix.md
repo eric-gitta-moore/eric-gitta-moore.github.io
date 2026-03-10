@@ -72,3 +72,12 @@ categories:
 
 
 另外，使用 aster 的时候还有个情况是主屏可以正常修改刷新率。那有可能把 4K 高刷屏放到主屏上，第二屏换其他的分辨率和刷新率没那么高的就行
+
+5. 继续深入 EDID 数据格式
+
+[Wikipedia EDID 1.4 data format](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data)
+
+pixel clock 值的上限来源于 [EDID Detailed Timing](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data#Detailed_Timing_Descriptor) 数据结构带来的，
+
+头两个字节就是 pixel clock 最大值是 65535，所以 `65535 × 10 kHz = 655350 kHz = 655.35 MHz` 限制就来了
+
