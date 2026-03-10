@@ -89,7 +89,7 @@ categories:
 
 pixel clock 值的上限来源于 [EDID Detailed Timing](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data#Detailed_Timing_Descriptor) 数据结构带来的，
 
-头两个字节就是 pixel clock 最大值是 65535，
+头两个字节就是 pixel clock 最大值是 0xffff = 65535，
 
 所以 `65535 × 10 kHz = 655350 kHz = 655.35 MHz` 限制就来了
 
