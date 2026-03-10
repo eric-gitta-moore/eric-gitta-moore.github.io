@@ -1,7 +1,7 @@
 ---
 title: Antigravity support please | "One moment, the agent is currently loading... stuck" | how to fix?
 subtitle: 
-date: 
+date: 2025-12-29 15:15:39
 toc: true
 tags: 
 categories: 
