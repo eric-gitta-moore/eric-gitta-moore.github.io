@@ -36,7 +36,17 @@ categories:
 软件: [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU)
 
 
-对于 300hz 的，得把 detailed resolutions 默认的第一个改成 300hz+interlaced。如果是 144hz 直接 add 添加一个 参数默认 改刷新率 144 然后挪到第一个就行，其他都可以不要动。如果要折腾也行，reset-all.exe 重置一下就和没事一样。（不知道这个 interlaced 交错扫描会不会有什么负面影响，肉眼没看出来）
+对于 300hz 的，得把 detailed resolutions 默认的第一个改成 300hz+interlaced。我这里改完后就是 2560x1440i@300hz
+
+如果是 144hz 直接 add 添加一个 参数默认 改刷新率 144 然后挪到第一个就行，其他都可以不要动。改完后就是 1920x1080p@144hz
+
+> i 是 interlaced 交错扫描，一帧分两次（奇行 + 偶行）显示
+> 
+> p 是 progressive 逐行扫描，一帧完整画面一次显示
+
+如果要折腾也行，reset-all.exe 重置一下就和没事一样。
+
+（不知道这个 interlaced 交错扫描还会不会有什么负面影响，其实对比逐行扫描的 EDID 肉眼没看出来区别）
 
 ![设置和效果](./aster-multiseat-locked-at-60hz-fix/微信图片_20260310112625_97_2.avif)
 
