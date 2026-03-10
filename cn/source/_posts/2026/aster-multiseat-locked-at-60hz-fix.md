@@ -93,3 +93,6 @@ pixel clock 值的上限来源于 [EDID Detailed Timing](https://en.wikipedia.or
 
 所以 `65535 × 10 kHz = 655350 kHz = 655.35 MHz` 限制就来了
 
+6. 开启 aster 之后就变成屏幕复制模式了
+
+改成扩展屏模式似乎可以解决一些什么莫名其妙的bug（包括 aster 开启前和开启后）
