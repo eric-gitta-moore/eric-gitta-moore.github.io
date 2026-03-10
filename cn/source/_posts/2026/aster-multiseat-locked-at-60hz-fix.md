@@ -124,6 +124,8 @@ EDID/DisplayID Writer 是一个用于向显示屏写入新的 EDID 或 DisplayID
 
 [EDID读取工具: Monitor Asset Manager](https://www.entechtaiwan.com/util/moninfo.shtm)
 
+![Monitor Asset Manager](https://www.entechtaiwan.com/images/moninfo2.gif)
+
 
 ## 参考
 
