@@ -57,7 +57,15 @@ categories:
 另外， CRU 那个 restart64.exe/restart.exe 好像没啥用，我这里用了就是黑屏。还是重启电脑来应用配置比较好使。
 
 
+4. 4K 高刷怎么办(>144hz)
+
+对于 CRU 里面第一栏的 `detailed resolutions`，其实是 EDID 限制，EDID 时序的像素时钟上限是 655.35 MHz。
+
+就算开了 interlaced 交错扫描也会超过 655MHz 的 pixel color。这个暂时还不知道怎么解。不过设置 144hz 刷新率是可以的。
+
+> 作者提到: DisplayID 与 EDID 的唯一区别在于它不局限于 4095x4095 或 655.35 MHz 像素时钟，并且 DisplayID 2.0 支持像素时钟精度达到小数点后三位。
+> 
+> 来源: https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU?page=863
 
 
-
-
+另外，使用 aster 的时候还有个情况是主屏可以正常修改刷新率。那有可能把 4K 高刷屏放到主屏上，第二屏换其他的分辨率和刷新率没那么高的就行
