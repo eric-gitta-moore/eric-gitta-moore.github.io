@@ -33,6 +33,9 @@ categories:
 > 原帖译文: 这个问题可能与 Windows 处理不同刷新率的多显示器的方式有关。请尝试在 NVIDIA/AMD 控制面板中手动设置刷新率，而不是在 Windows 显示设置中进行设置。此外，请确保您的显卡驱动程序已更新至最新版本。如果问题仍然存在，请考虑使用分辨率调整工具（例如 CRU，即 Custom Resolution Utility ）强制将刷新率调整到您所需的水平。 
 
 
+软件: [Custom Resolution Utility](https://www.monitortests.com/forum/Thread-Custom-Resolution-Utility-CRU)
+
+
 对于 300hz 的，得把 detailed resolutions 默认的第一个改成 300hz+interlaced。如果是 144hz 直接 add 添加一个 参数默认 改刷新率 144 然后挪到第一个就行，其他都可以不要动。如果要折腾也行，reset-all.exe 重置一下就和没事一样。（不知道这个 interlaced 交错扫描会不会有什么负面影响，肉眼没看出来）
 
 ![设置和效果](./aster-multiseat-locked-at-60hz-fix/微信图片_20260310112625_97_2.avif)
