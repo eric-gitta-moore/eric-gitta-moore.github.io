@@ -91,7 +91,19 @@ pixel clock 值的上限来源于 [EDID Detailed Timing](https://en.wikipedia.or
 
 头两个字节就是 pixel clock 最大值是 0xffff = 65535，
 
-所以 `65535 × 10 kHz = 655350 kHz = 655.35 MHz` 限制就来了
+所以 `65535 × 10 kHz = 655350 kHz = 655.35 MHz` 限制就来了。
+
+但是对于 DisplayID 1.2/1.3 或者 DisplayID 2.0/2.1 就不一样了，
+
+Pixel Clock 多了 1 个字节，也就是从 2 字节变成了 3 字节
+
+```
+DisplayID 1.x / Type I
+pixel clock = 3 字节 little-endian，单位 10 kHz
+
+DisplayID 2.x / Type VII
+pixel clock = 3 字节 little-endian，单位 1 kHz
+```
 
 6. 开启 aster 之后就变成屏幕复制模式了
 
