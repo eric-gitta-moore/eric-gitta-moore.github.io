@@ -96,3 +96,15 @@ pixel clock 值的上限来源于 [EDID Detailed Timing](https://en.wikipedia.or
 6. 开启 aster 之后就变成屏幕复制模式了
 
 改成扩展屏模式似乎可以解决一些什么莫名其妙的bug（包括 aster 开启前和开启后）
+
+
+## 扩展
+
+1. EDID/DisplayID Writer
+
+EDID/DisplayID Writer 是一个用于向显示屏写入新的 EDID 或 DisplayID 的工具。
+
+[EDID/DisplayID Writer](https://www.monitortests.com/forum/Thread-EDID-DisplayID-Writer)
+
+> 警告： 此程序会修改显示屏中的 EEPROM 数据。如果出现错误，显示屏可能无法使用，直到数据被修正。特别是 NVIDIA 显卡无法识别数据无效的显示屏，因此您需要使用 AMD 显卡或其他方法来修复数据。请自行承担风险。
+
