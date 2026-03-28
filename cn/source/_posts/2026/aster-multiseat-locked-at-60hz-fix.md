@@ -132,3 +132,23 @@ EDID/DisplayID Writer 是一个用于向显示屏写入新的 EDID 或 DisplayID
 1. [第二世代的EDID–VESA® DisplayID 2.1规范与构架](https://www.graniteriverlabs.com.cn/technical-blog/display-id-21/)
 2. [Wikipedia EDID 1.4 data format](https://en.wikipedia.org/wiki/Extended_Display_Identification_Data)
 
+
+---
+
+update: 2026-03-28 14:19:24
+
+前几天问了下 youtube 其他国家的经销商，联系到了技术支持，他们那边提到说已经知道了这个问题但是还没有人力修复。但是做了小工具可以很方便的临时解决一下
+
+软件使用很简单，选择刷新率，然后 apply 就完事了
+
+![ASTER Display Manager_1.0.0_x64-setup.exe](aster-multiseat-locked-at-60hz-fix/utools_1774679128931.avif)
+
+
+文件哈希：
+```
+#sha1#ASTER Display Manager_1.0.0_x64-setup.exe#1970.01.01@00.00:00
+02774816F1BF9328B2A77426D13B743DAE53E52D *ASTER Display Manager_1.0.0_x64-setup.exe
+```
+
+下载地址: https://codeberg.org/eric-gitta-moore/aster-display-manager/releases/tag/v0.0.1
+
